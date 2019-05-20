@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Department {
     private String nome;
-    private HashMap<int, Paciente> pacientes;
+    private HashMap<Integer, Paciente> pacientes;
     public Department(String nome){
         this.nome=nome;
         this.pacientes = new HashMap<>();
@@ -15,7 +15,7 @@ public class Department {
         this.pacientes.put(paciente.getNum(),paciente);
     }
 
-    public HashMap<int, Paciente> getPacientes(){
+    public HashMap<Integer, Paciente> getPacientes(){
         return this.pacientes;
     }
 
