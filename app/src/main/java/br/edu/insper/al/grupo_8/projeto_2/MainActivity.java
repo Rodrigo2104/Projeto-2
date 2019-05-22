@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button button_login = findViewById(R.id.button_login);
 
-        button_login.setOnClickListener((view -> {
-            startHomeActivity();
-        }));
+        button_login.setOnClickListener((view -> startHomeActivity()));
     }
 }
