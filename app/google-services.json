@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "397697603691",
+    "firebase_url": "https://projeto-2-1a6c3.firebaseio.com",
+    "project_id": "projeto-2-1a6c3",
+    "storage_bucket": "projeto-2-1a6c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397697603691:android:487075c2a295c3a3",
+        "android_client_info": {
+          "package_name": "br.edu.insper.al.grupo_8.projeto_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397697603691-ahu79uas7r1uth1hjis6hg3no414080f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.insper.al.grupo_8.projeto_2",
+            "certificate_hash": "d871a30991f682422439c693ef299051a039e38a"
+          }
+        },
+        {
+          "client_id": "397697603691-97tg102lqtfqid01k4nlbo8j20kqaan1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhT_NXYs8PB4pGukBR5LvjY4ISXP5i2oI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397697603691-97tg102lqtfqid01k4nlbo8j20kqaan1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
