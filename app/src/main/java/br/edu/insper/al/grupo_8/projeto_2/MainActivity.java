@@ -21,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         SharedPreferences sh = this.getSharedPreferences("perguntas",MODE_PRIVATE);
-        sh.ge
-
 
         Button button_login = findViewById(R.id.button_login);
 
