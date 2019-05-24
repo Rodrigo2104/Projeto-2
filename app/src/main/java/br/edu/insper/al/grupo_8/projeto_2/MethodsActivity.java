@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
-import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
+//import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
 
 import java.lang.reflect.Method;
 
@@ -13,10 +13,20 @@ public class MethodsActivity extends AppCompatActivity {
 
     private Class MethodVActivity;
 
-    private void startMethodActivity(Class classe){
-        Intent intent = new Intent(this, classe);
+    private void startMethodActivity(Class oi){
+        Intent intent = new Intent(this, oi);
         startActivity(intent);
     }
+    private void startMetodo1(){
+        Intent intent = new Intent(this, metodo1.class);
+        startActivity(intent);
+    }
+
+    private void startMetodo2(){
+        Intent intent = new Intent(this, metodo2.class);
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +36,10 @@ public class MethodsActivity extends AppCompatActivity {
         // LEMBRE-SE DE CRIAR UM ATRIBUTO DO TIPO CLASS PARA A ACTIVITY DO SEU MÉTODO
 
         Button buttonGoMethodI = findViewById(R.id.button_goMethodI);
-        //buttonGoMethodI.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodI.setOnClickListener((view) -> startMetodo1());
 
         Button buttonGoMethodII = findViewById(R.id.button_goMethodII);
-        //buttonGoMethodII.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodII.setOnClickListener((view) -> startMetodo2());
 
         Button buttonGoMethodIII = findViewById(R.id.button_goMethodIII);
         //buttonGoMethodIII.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
