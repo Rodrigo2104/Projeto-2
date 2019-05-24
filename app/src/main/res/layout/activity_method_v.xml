@@ -1,9 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MethodVActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"
+
+            android:fontFamily="sans-serif"
+            android:text="Em relação ao uso do telefone."
+            android:textAlignment="viewStart"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="60dp"
+
+                android:fontFamily="sans-serif"
+                android:text="Recebe e faz ligações sem assistência."
+                android:textAlignment="viewStart"
+                android:textSize="18dp" />
+
+            <CheckBox android:layout_marginRight="60dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="60dp"
+
+                android:fontFamily="sans-serif"
+                android:text="Necessita de assistência para realizar ligações telefônicas."
+                android:textAlignment="viewStart"
+                android:textSize="18dp" />
+
+            <CheckBox android:layout_marginRight="60dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="60dp"
+
+                android:fontFamily="sans-serif"
+                android:text="Não tem o hábito ou é incapaz de usar o telefone."
+                android:textAlignment="viewStart"
+                android:textSize="18dp" />
+
+            <CheckBox android:layout_marginRight="60dp" />
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"
+
+            android:fontFamily="sans-serif"
+            android:text="Em relação a viagens."
+            android:textAlignment="viewStart"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="60dp"
+
+                android:fontFamily="sans-serif"
+                android:text="Realiza viagem sozinho."
+                android:textAlignment="viewStart"
+                android:textSize="18dp" />
+
+            <CheckBox android:layout_marginRight="60dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="60dp"
+
+                android:fontFamily="sans-serif"
+                android:text="Somente viaja quando tem companhia."
+                android:textAlignment="viewStart"
+                android:textSize="18dp" />
+
+            <CheckBox android:layout_marginRight="60dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="60dp"
+
+                android:fontFamily="sans-serif"
+                android:text="Não tem o hábito ou é incapaz de viajar."
+                android:textAlignment="viewStart"
+                android:textSize="18dp" />
+
+            <CheckBox android:layout_marginRight="60dp" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

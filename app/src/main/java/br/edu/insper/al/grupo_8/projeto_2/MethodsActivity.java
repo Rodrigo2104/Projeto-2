@@ -5,13 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
-import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
-
-import java.lang.reflect.Method;
-
 public class MethodsActivity extends AppCompatActivity {
 
-    private Class MethodVActivity;
+    private Class MethodVActivity = br.edu.insper.al.grupo_8.projeto_2.MethodVActivity.class;
 
     private void startMethodActivity(Class classe){
         Intent intent = new Intent(this, classe);
