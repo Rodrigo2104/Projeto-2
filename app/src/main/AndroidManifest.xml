@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="br.edu.insper.al.grupo_8.projeto_2">
 
     <application
@@ -8,20 +9,30 @@
         android:label="Projeto 2"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MethodXActivity" />
+        <activity android:name=".MethodIXActivity" />
+        <activity android:name=".MethodVIIIActivity" />
+        <activity android:name=".MethodVIIActivity" />
+        <activity android:name=".MethodVIActivity" />
+        <activity android:name=".MethodIVActivity" />
+        <activity android:name=".MethodIIActivity" />
+        <activity android:name=".MethodIActivity" />
+        <activity android:name=".MethodIIIActivity" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppCompat.TelaCheia">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".MethodsActivity" />
         <activity android:name=".MethodVActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
