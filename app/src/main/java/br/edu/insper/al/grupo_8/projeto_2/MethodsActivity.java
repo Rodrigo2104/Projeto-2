@@ -7,8 +7,6 @@ import android.widget.Button;
 
 public class MethodsActivity extends AppCompatActivity {
 
-    private Class MethodVActivity = br.edu.insper.al.grupo_8.projeto_2.MethodVActivity.class;
-
     private void startMethodActivity(Class classe){
         Intent intent = new Intent(this, classe);
         startActivity(intent);
