@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MethodXActivity"
+    tools:context=".MethodIIIActivity"
     android:orientation="vertical">
 
     <TextView
@@ -45,76 +45,6 @@
             android:layout_marginRight="20dp"
             android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/b344"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:text="1"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-
-            android:layout_marginLeft="5dp"
-            />
-        <TextView
-            android:id="@+id/b345"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:text="2"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-
-            android:layout_marginLeft="5dp"
-            />
-        <TextView
-            android:id="@+id/b346"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:text="3"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-
-            android:layout_marginLeft="5dp"
-            />
-        <TextView
-            android:id="@+id/b347"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:text="4"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-
-            android:layout_marginLeft="5dp"
-            />
-        <TextView
-            android:id="@+id/b348"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:text="5"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-
-            android:layout_marginLeft="5dp"
-            />
-        <TextView
-            android:id="@+id/b349"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:text="6"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-
-            android:layout_marginLeft="5dp"
-            />
-        <TextView
-            android:id="@+id/b350"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:text="7"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-
-            android:layout_marginLeft="5dp"
-            />
 
 
     </LinearLayout>
@@ -123,13 +53,75 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-        <LinearLayout
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:gravity="center">
 
+            <!--Cabeçalho-->
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/palavra_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="10sp"
+                android:text="Palavra Principal"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/palavra_associacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_margin="10sp"
+                android:text="Palavras de Associação"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_columnSpan="0"/>
+
+            <TextView android:id="@+id/a01"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="1. OSTEOPOROSE"
+                android:textColor="@color/black"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="10sp"
+                android:textSize="15sp"/>
+            <TextView android:id="@+id/a11"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="OSSO"
+                android:textColor="@color/black"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_margin="10sp"
+                android:textSize="15sp"/>
+            <TextView android:id="@+id/a21"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="músculo"
+                android:textColor="@color/black"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_margin="10sp"
+                android:textSize="15sp"/>
+            <TextView android:id="@+id/a02"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="2. PAPANICOLAOU"
+                android:textColor="@color/black"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_margin="10sp"
+                android:textSize="15sp"/>
+
+        </GridLayout>
     </ScrollView>
 </LinearLayout>
