@@ -58,10 +58,10 @@ public class MethodsActivity extends AppCompatActivity {
         //buttonGoMethodIX.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
 
         Button buttonGoMethodX = findViewById(R.id.button_goMethodX);
-        //buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodX.setOnClickListener((view) -> startHomeActivityXI());
 
         Button buttonGoMethodXI = findViewById(R.id.button_goMethodXI);
-        buttonGoMethodX.setOnClickListener((view) -> startHomeActivityXI());
+        //buttonGoMethodX.setOnClickListener((view) -> startHomeActivityXI());
 
     }
 }

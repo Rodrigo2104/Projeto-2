@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void startHomeActivity(){
-        Intent intent = new Intent(this, metodo1.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
