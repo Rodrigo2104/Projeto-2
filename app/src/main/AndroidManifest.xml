@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MethodsActivity" />
+        <activity android:name=".ApendiceIV" />
         <activity android:name=".MethodVActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">

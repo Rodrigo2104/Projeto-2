@@ -18,6 +18,11 @@ public class MethodsActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void startHomeActivityXI(){
+        Intent intent = new Intent(this, ApendiceIV.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +59,9 @@ public class MethodsActivity extends AppCompatActivity {
 
         Button buttonGoMethodX = findViewById(R.id.button_goMethodX);
         //buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+
+        Button buttonGoMethodXI = findViewById(R.id.button_goMethodXI);
+        buttonGoMethodX.setOnClickListener((view) -> startHomeActivityXI());
 
     }
 }
