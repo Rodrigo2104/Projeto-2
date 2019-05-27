@@ -5,16 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
-//import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
-
-import java.lang.reflect.Method;
 
 public class MethodsActivity extends AppCompatActivity {
 
-    private Class MethodVActivity;
-
-    private void startMethodActivity(Class oi){
-        Intent intent = new Intent(this, oi);
+    private void startMethodActivity(Class classe){
+        Intent intent = new Intent(this, classe);
         startActivity(intent);
     }
     private void startMetodo1(){
@@ -36,34 +31,34 @@ public class MethodsActivity extends AppCompatActivity {
         // LEMBRE-SE DE CRIAR UM ATRIBUTO DO TIPO CLASS PARA A ACTIVITY DO SEU MÉTODO
 
         Button buttonGoMethodI = findViewById(R.id.button_goMethodI);
-        buttonGoMethodI.setOnClickListener((view) -> startMetodo1());
+        buttonGoMethodI.setOnClickListener((view) -> startMethodActivity(MethodIActivity.class));
 
         Button buttonGoMethodII = findViewById(R.id.button_goMethodII);
-        buttonGoMethodII.setOnClickListener((view) -> startMetodo2());
+        buttonGoMethodII.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
 
         Button buttonGoMethodIII = findViewById(R.id.button_goMethodIII);
-        //buttonGoMethodIII.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodIII.setOnClickListener((view) -> startMethodActivity(MethodIIIActivity.class));
 
         Button buttonGoMethodIV = findViewById(R.id.button_goMethodIV);
-        //buttonGoMethodIV.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodIV.setOnClickListener((view) -> startMethodActivity(MethodIVActivity.class));
 
         Button buttonGoMethodV = findViewById(R.id.button_goMethodV);
-        buttonGoMethodV.setOnClickListener((view) -> startMethodActivity(MethodVActivity));
+        buttonGoMethodV.setOnClickListener((view) -> startMethodActivity(MethodVActivity.class));
 
         Button buttonGoMethodVI = findViewById(R.id.button_goMethodVI);
-        //buttonGoMethodVI.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodVI.setOnClickListener((view) -> startMethodActivity(MethodVIActivity.class));
 
         Button buttonGoMethodVII = findViewById(R.id.button_goMethodVII);
-        //buttonGoMethodVII.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodVII.setOnClickListener((view) -> startMethodActivity(MethodVIIActivity.class));
 
         Button buttonGoMethodVIII = findViewById(R.id.button_goMethodVIII);
-        //buttonGoMethodVIII.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodVIII.setOnClickListener((view) -> startMethodActivity(MethodVIIIActivity.class));
 
         Button buttonGoMethodIX = findViewById(R.id.button_goMethodIX);
-        //buttonGoMethodIX.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodIX.setOnClickListener((view) -> startMethodActivity(MethodIXActivity.class));
 
         Button buttonGoMethodX = findViewById(R.id.button_goMethodX);
-        //buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(NOME_DA_CLASSE));
+        buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(MethodXActivity.class));
 
     }
 }
