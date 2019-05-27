@@ -449,7 +449,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/divider7"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:context=".metodo1">
+                tools:context=".MethodIActivity">
 
                 <RelativeLayout
                     android:id="@+id/RelativeLayoutKI"

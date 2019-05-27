@@ -12,26 +12,7 @@ public class MethodsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, classe);
         startActivity(intent);
     }
-    private void startMetodo1(){
-        Intent intent = new Intent(this, metodo1.class);
-        startActivity(intent);
-    }
 
-    private void startMetodo2(){
-        Intent intent = new Intent(this, metodo2.class);
-        startActivity(intent);
-    }
-
-
-    private void startHomeActivityXI(){
-        Intent intent = new Intent(this, MethodXIActivity.class);
-        startActivity(intent);
-    }
-
-    private void startHomeActivityXII(){
-        Intent intent = new Intent(this, metodo11.class);
-        startActivity(intent);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +51,12 @@ public class MethodsActivity extends AppCompatActivity {
 
         Button buttonGoMethodX = findViewById(R.id.button_goMethodX);
         buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(MethodXActivity.class));
+
+        Button buttonGoMethodXI = findViewById(R.id.button_goMethodXI);
+        buttonGoMethodXI.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
+
+        Button buttonGoMethodXII = findViewById(R.id.button_goMethodXII);
+        buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIIActivity.class));
 
     }
 }

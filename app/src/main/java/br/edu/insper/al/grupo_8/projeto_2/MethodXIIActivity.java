@@ -3,7 +3,7 @@ package br.edu.insper.al.grupo_8.projeto_2;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class metodo11 extends AppCompatActivity {
+public class MethodXIIActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
