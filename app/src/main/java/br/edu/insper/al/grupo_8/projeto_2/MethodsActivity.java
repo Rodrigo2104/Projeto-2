@@ -5,6 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIVActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIXActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXIIActivity;
+
 
 public class MethodsActivity extends AppCompatActivity {
 
