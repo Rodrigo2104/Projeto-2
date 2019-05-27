@@ -20,6 +20,7 @@
         <activity android:name=".MethodsActivity" />
         <activity android:name=".ApendiceIV" />
         <activity android:name=".metodo1" />
+        <activity android:name=".metodo11" />
         <activity android:name=".MethodVActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
