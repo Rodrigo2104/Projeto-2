@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">Projeto-2</string>
+    <string name="short_assessement_of_health_literacy_for_portuguese_speaking_adults">Short Assessement of Health Literacy for Portuguese Speaking - Adults</string>
+    <string name="teste_IX">Escala Hospitalar de Ansiedade e Depressão(HADS)</string>
+    <string name="teste_X">Escala de Resiliência(ER)</string>
+    <string name="instrucoes_teste_3">1 - Antes de iniciar os cartões de estímulo e o formulário de aplicação para anotar as respostas. \n2 - Diga: Agora eu vou te mostrar alguns cartões com 03 palavras. Primeiro eu quero que você leia a palavra de cima em voz alta. .Então eu vou ler as duas palavras de baixo e quero que você me diga qual deles está mais relacionada com a de cima. Se você não souber a resposta diga \'não sei\'- não tente adivinhar. \n3 - Mostre o primeiro cartão. \n4 - Diga: Agora, por favor, leia a palavra de cima em voz alta. \n5 - Em seguida leia as duas palavras de associação e diga: Qual dessas duas palavras está mais relacionada com a de cima? \n6 - Repita as instruções nos itens frequentes até que o paciente esteja confortável com o procedimento. \n7 - O item considerado correto apenas quando o paciente acerta pronúncia e a associação. Cada item correto recebe um ponto e o escore total é obtido pela soma dos itens, variando de 0 a 18. \n8 - Um escore entre 0 e 14 sugere alfabetismo em saúde inadequado.</string>
+    <string name="instrucoes_teste_X">Por favor, leia as instruções.
+Encontrará sete números, variando de \"1\" (Discordo Totalmente)
+a \"7\" (Concordo Totalmente). Assinale com um check o número
+que melhor indica seus sentimentos sobre essa afirmação. Por
+exemplo, se você discordar totalmente com a afirmação, assinale
+\"1\". Se você é neutro, assinale \"4\" e se concordar totalmente,
+assinale \"7\".</string>
+    <string name="teste_X1">Quando eu faço planos, eu levo eles até o fim</string>
+    <string name="teste_X2">Eu costumo lidar com os problemas de uma forma ou de outra</string>
+    <string name="teste_X3">Eu sou capaz de depender de mim mais do que qualquer outra pessoa</string>
+    <string name="teste_X4">Manter interesse nas coisas é importante para mim</string>
+    <string name="teste_X5">Eu posso estar por minha conta se eu precisar</string>
+    <string name="teste_X6">Eu sinto orgulho de ter realizado coisas em minha vida</string>
+    <string name="teste_X7">Eu costumo aceitar as coisas sem muita preocupação</string>
+    <string name="teste_X8">Eu sou amigo de mim mesmo</string>
+    <string name="teste_X9">Eu sinto que posso lidar com várias coisas ao mesmo tempo</string>
+    <string name="teste_X10">Eu sou determinado</string>
+    <string name="teste_X11">Eu raramente penso sobre o objetivo das coisas</string>
+    <string name="teste_X12">Eu faço as coisas um dia de cada vez</string>
+    <string name="teste_X13">Eu posso enfrentar tempos difíceis porque já experimentei dificuldades antes</string>
+    <string name="teste_X14">Eu sou disciplinado</string>
+    <string name="teste_X15">Eu mantenho interesse nas coisas</string>
+    <string name="teste_X16">Eu normalmente posso achar motivo para rir</string>
+    <string name="teste_X17">Minha crença em mim mesmo me leva a atravessar tempos difíceis</string>
+    <string name="teste_X18">Em uma emergência, eu sou uma pessoa em quem as pessoas podem contar</string>
+    <string name="teste_X19">Eu posso geralmente olhar uma situação em diversas maneiras</string>
+    <string name="teste_X20">Às vezes eu me obrigo a fazer coisas querendo ou não</string>
+    <string name="teste_X21">Minha vida tem sentido</string>
+    <string name="teste_X22">Eu não insisto em coisas as quais eu não posso fazer nada sobre elas</string>
+    <string name="teste_X23">Quando eu estou numa situação difícil, eu normalmente acho uma saída</string>
+    <string name="teste_X24">Eu tenho energia suficiente para fazer o que eu tenho que fazer</string>
+    <string name="teste_X25">Tudo bem se há pessoas que não gostam de mim</string>
+
 </resources>
