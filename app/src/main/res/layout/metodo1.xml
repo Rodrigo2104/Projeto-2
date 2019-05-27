@@ -863,7 +863,7 @@
                         android:text="Pergunte as 3 palavras ditas anteriormente para o paciente"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                </RelativeLayout>
+                    </RelativeLayout>
 
             </LinearLayout>
 
