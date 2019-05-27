@@ -24,7 +24,7 @@ public class MethodsActivity extends AppCompatActivity {
 
 
     private void startHomeActivityXI(){
-        Intent intent = new Intent(this, ApendiceIV.class);
+        Intent intent = new Intent(this, MethodXIActivity.class);
         startActivity(intent);
     }
 

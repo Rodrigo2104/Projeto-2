@@ -8,6 +8,6 @@ public class MethodIActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_method_i);
+        setContentView(R.layout.metodo1);
     }
 }
