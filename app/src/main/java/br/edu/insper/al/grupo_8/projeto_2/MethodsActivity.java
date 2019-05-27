@@ -5,12 +5,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
+
 public class MethodsActivity extends AppCompatActivity {
 
     private void startMethodActivity(Class classe){
         Intent intent = new Intent(this, classe);
         startActivity(intent);
     }
+    private void startMetodo1(){
+        Intent intent = new Intent(this, metodo1.class);
+        startActivity(intent);
+    }
+
+    private void startMetodo2(){
+        Intent intent = new Intent(this, metodo2.class);
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
