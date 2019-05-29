@@ -1,4 +1,4 @@
-package br.edu.insper.al.grupo_8.projeto_2;
+package br.edu.insper.al.grupo_8.projeto_2.Methods;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+import br.edu.insper.al.grupo_8.projeto_2.R;
 
-import org.w3c.dom.Text;
 
 import java.util.HashMap;
 import java.util.LinkedList;

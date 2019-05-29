@@ -11,15 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MethodXActivity" />
-        <activity android:name=".MethodIXActivity" />
-        <activity android:name=".MethodVIIIActivity" />
-        <activity android:name=".MethodVIIActivity" />
-        <activity android:name=".MethodVIActivity" />
-        <activity android:name=".MethodIVActivity" />
-        <activity android:name=".MethodIIActivity" />
-        <activity android:name=".MethodIActivity" />
-        <activity android:name=".MethodIIIActivity" />
+        <activity android:name=".Methods.MethodXActivity" />
+        <activity android:name=".Methods.MethodIXActivity" />
+        <activity android:name=".Methods.MethodVIIIActivity" />
+        <activity android:name=".Methods.MethodVIIActivity" />
+        <activity android:name=".Methods.MethodVIActivity" />
+        <activity android:name=".Methods.MethodIVActivity" />
+        <activity android:name=".Methods.MethodIIActivity" />
+        <activity android:name=".Methods.MethodIActivity" />
+        <activity android:name=".Methods.MethodIIIActivity" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppCompat.TelaCheia">
@@ -30,10 +30,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MethodsActivity" />
-        <activity android:name=".ApendiceIV" />
-        <activity android:name=".metodo1" />
-        <activity android:name=".metodo11" />
-        <activity android:name=".MethodVActivity" />
+        <activity android:name=".Methods.MethodXIActivity" />
+        <activity android:name=".Methods.MethodXIIActivity" />
+        <activity android:name=".Methods.MethodVActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity" />
     </application>

@@ -8,6 +8,7 @@
     android:layout_marginTop="8dp"
     android:layout_marginEnd="8dp"
     android:layout_marginBottom="8dp"
+    tools:context=".Methods.MethodXIActivity"
     android:orientation="vertical">
 
     <android.support.constraint.ConstraintLayout
@@ -509,7 +510,7 @@
                     android:id="@+id/textView7"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="6 - Como o Sr (a) considera a humanização em todas as etapas do atendimento?"
+                    android:text="Como o Sr (a) considera a humanização em todas as etapas do atendimento?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

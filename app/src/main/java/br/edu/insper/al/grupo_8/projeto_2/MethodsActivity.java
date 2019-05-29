@@ -5,6 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIVActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIXActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXIIActivity;
+
 
 public class MethodsActivity extends AppCompatActivity {
 
@@ -12,26 +25,7 @@ public class MethodsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, classe);
         startActivity(intent);
     }
-    private void startMetodo1(){
-        Intent intent = new Intent(this, metodo1.class);
-        startActivity(intent);
-    }
 
-    private void startMetodo2(){
-        Intent intent = new Intent(this, metodo2.class);
-        startActivity(intent);
-    }
-
-
-    private void startHomeActivityXI(){
-        Intent intent = new Intent(this, ApendiceIV.class);
-        startActivity(intent);
-    }
-
-    private void startHomeActivityXII(){
-        Intent intent = new Intent(this, metodo11.class);
-        startActivity(intent);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +64,12 @@ public class MethodsActivity extends AppCompatActivity {
 
         Button buttonGoMethodX = findViewById(R.id.button_goMethodX);
         buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(MethodXActivity.class));
+
+        Button buttonGoMethodXI = findViewById(R.id.button_goMethodXI);
+        buttonGoMethodXI.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
+
+        Button buttonGoMethodXII = findViewById(R.id.button_goMethodXII);
+        buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIIActivity.class));
 
     }
 }
