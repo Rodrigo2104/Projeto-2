@@ -10,6 +10,7 @@ import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIIIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIVActivity;
 import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIXActivity;
+import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodPaciente;
 import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVActivity;
 import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIIActivity;
@@ -70,6 +71,9 @@ public class MethodsActivity extends AppCompatActivity {
 
         Button buttonGoMethodXII = findViewById(R.id.button_goMethodXII);
         buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIIActivity.class));
+
+        Button buttonGoMethodXIII = findViewById(R.id.button_goMethodXIII);
+        buttonGoMethodXIII.setOnClickListener((view) -> startMethodActivity(MethodPaciente.class));
 
     }
 }

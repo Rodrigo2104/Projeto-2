@@ -78,6 +78,7 @@
                     android:layout_below="@+id/textView1"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="16dp"
+                    android:onClick="checkone" />
                     android:text="Pequenos erros de espaçamento" />
 
                 <CheckBox
@@ -87,6 +88,7 @@
                     android:layout_alignStart="@+id/textView1"
                     android:layout_alignTop="@+id/checkBox7"
                     android:layout_marginTop="0dp"
+                    android:onClick="checkone" />
                     android:text="Sem erros" />
 
                 <CheckBox
@@ -96,6 +98,7 @@
                     android:layout_alignTop="@+id/checkBox7"
                     android:layout_alignEnd="@+id/textView1"
                     android:layout_marginTop="0dp"
+                    android:onClick="checkone" />
                     android:text="Outros erros" />
             </RelativeLayout>
 
@@ -126,6 +129,7 @@
                     android:layout_below="@+id/textView2"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="19dp"
+                    android:onClick="checkone" />
                     android:text="1 ou 2" />
 
                 <CheckBox
@@ -136,6 +140,7 @@
                     android:layout_alignEnd="@+id/textView2"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="0dp"
+                    android:onClick="checkone" />
                     android:text="Mais do que 2" />
 
                 <CheckBox
@@ -146,6 +151,7 @@
                     android:layout_alignTop="@+id/checkBox30"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
+                    android:onClick="checkone" />
                     android:text="0" />
             </RelativeLayout>
 
@@ -183,6 +189,7 @@
                     android:layout_alignEnd="@+id/textView3"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="-64dp"
+                    android:onClick="checkone" />
                     android:text="Ruim" />
 
                 <CheckBox
@@ -193,6 +200,7 @@
                     android:layout_alignTop="@+id/checkBoxz"
                     android:layout_marginStart="-40dp"
                     android:layout_marginTop="-5dp"
+                    android:onClick="checkone" />
                     android:text="Excelente Muito boa Boa " />
 
             </RelativeLayout>
@@ -223,6 +231,7 @@
                     android:layout_alignTop="@+id/textView8"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="0dp"
+                    android:onClick="checkone" />
                     android:layout_toEndOf="@+id/textView8" />
             </RelativeLayout>
 
@@ -331,6 +340,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/textView32"
                     android:layout_marginTop="-9dp"
+                    android:onClick="checkone"
                     android:layout_toStartOf="@+id/textView9" />
 
                 <CheckBox
@@ -349,6 +359,7 @@
                     android:layout_below="@+id/checkBox31"
                     android:layout_alignStart="@+id/checkBox31"
                     android:layout_marginStart="0dp"
+                    android:onClick="checkone"
                     android:layout_marginTop="8dp" />
 
                 <CheckBox
@@ -358,6 +369,7 @@
                     android:layout_below="@+id/checkBox32"
                     android:layout_alignStart="@+id/checkBox32"
                     android:layout_marginStart="0dp"
+                    android:onClick="checkone"
                     android:layout_marginTop="7dp" />
 
                 <CheckBox
@@ -367,6 +379,7 @@
                     android:layout_alignTop="@+id/textView31"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="-5dp"
+                    android:onClick="checkone"
                     android:layout_toEndOf="@+id/textView31" />
 
                 <CheckBox
@@ -376,6 +389,7 @@
                     android:layout_below="@+id/checkBox37"
                     android:layout_alignStart="@+id/checkBox37"
                     android:layout_marginStart="0dp"
+                    android:onClick="checkone"
                     android:layout_marginTop="5dp" />
 
                 <CheckBox
@@ -385,6 +399,7 @@
                     android:layout_below="@+id/checkBox38"
                     android:layout_alignStart="@+id/checkBox38"
                     android:layout_marginStart="0dp"
+                    android:onClick="checkone"
                     android:layout_marginTop="7dp" />
 
                 <CheckBox
@@ -394,6 +409,7 @@
                     android:layout_below="@+id/checkBox39"
                     android:layout_alignStart="@+id/checkBox39"
                     android:layout_marginStart="0dp"
+                    android:onClick="checkone"
                     android:layout_marginTop="8dp" />
 
             </RelativeLayout>

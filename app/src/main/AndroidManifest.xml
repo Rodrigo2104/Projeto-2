@@ -33,6 +33,7 @@
         <activity android:name=".Methods.MethodXIActivity" />
         <activity android:name=".Methods.MethodXIIActivity" />
         <activity android:name=".Methods.MethodVActivity" />
+        <activity android:name=".Methods.MethodPaciente" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity" />
     </application>
