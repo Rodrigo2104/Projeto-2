@@ -45,165 +45,135 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
+            android:orientation="vertical">
 
 
-            <RelativeLayout
-                android:id="@+id/RelativeLayout1"
+            <TextView
+                android:id="@+id/textView47"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp">
+                android:text='Por favor, imagine que este círculo é um relógio. Eu gostaria que você colocasse os números nas posições corretas e que depois incluísse os ponteiros de forma a indicar "onze horas e dez minutos".'
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <TextView
-                    android:id="@+id/textView1"
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginStart="17dp"
-                    android:text='Por favor, imagine que este círculo é um relógio. Eu gostaria que você colocasse os números nas posições corretas e que depois incluísse os ponteiros de forma a indicar "onze horas e dez minutos".'
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <CheckBox
-                    android:id="@+id/checkBox7"
-                    android:layout_width="167dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView1"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="16dp"
-                    android:onClick="checkone" />
-                    android:text="Pequenos erros de espaçamento" />
-
-                <CheckBox
-                    android:id="@+id/checkBox9"
-                    android:layout_width="107dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/textView1"
-                    android:layout_alignTop="@+id/checkBox7"
-                    android:layout_marginTop="0dp"
-                    android:onClick="checkone" />
+                    android:layout_weight="1"
                     android:text="Sem erros" />
 
-                <CheckBox
-                    android:id="@+id/checkBox22"
-                    android:layout_width="133dp"
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/checkBox7"
-                    android:layout_alignEnd="@+id/textView1"
-                    android:layout_marginTop="0dp"
-                    android:onClick="checkone" />
+                    android:layout_weight="1"
+                    android:text="Pequenos erros de espaçamento" />
+
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="Outros erros" />
-            </RelativeLayout>
+            </RadioGroup>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
 
-            <RelativeLayout
-                android:id="@+id/RelativeLayout2"
+            <TextView
+                android:id="@+id/textView50"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerHorizontal="true"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp">
+                android:text="Nos últimos 12 meses, quantas vezes você foi internado (a)?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="504dp"
-                    android:layout_height="37dp"
-                    android:layout_centerHorizontal="true"
-                    android:text='Nos últimos 12 meses, quantas vezes você foi internado (a)?'
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox30"
-                    android:layout_width="88dp"
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton13"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView2"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="19dp"
-                    android:onClick="checkone" />
-                    android:text="1 ou 2" />
+                    android:layout_weight="1"
+                    android:text="Nenhuma" />
 
-                <CheckBox
-                    android:id="@+id/checkBox23"
-                    android:layout_width="129dp"
+                <RadioButton
+                    android:id="@+id/radioButton14"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/checkBox30"
-                    android:layout_alignEnd="@+id/textView2"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:onClick="checkone" />
-                    android:text="Mais do que 2" />
+                    android:layout_weight="1"
+                    android:text="Uma ou duas vezes" />
 
-                <CheckBox
-                    android:id="@+id/checkBox24"
-                    android:layout_width="52dp"
+                <RadioButton
+                    android:id="@+id/radioButton15"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/textView2"
-                    android:layout_alignTop="@+id/checkBox30"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:onClick="checkone" />
-                    android:text="0" />
-            </RelativeLayout>
+                    android:layout_weight="1"
+                    android:text="Mais que duas vezes" />
+            </RadioGroup>
 
-            <RelativeLayout
-                android:id="@+id/RelativeLayout3"
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView51"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp">
+                android:text="De modo geral, como você descreveria sua saúde?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton16"
+                    android:layout_width="10dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:text="De modo geral, como você descreveria sua saúde?"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <CheckBox
-                    android:id="@+id/checkBoxz"
-                    android:layout_width="101dp"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView3"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="24dp"
-                    android:text="Razoável" />
-
-                <CheckBox
-                    android:id="@+id/checkBoxk"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/checkBoxz"
-                    android:layout_alignEnd="@+id/textView3"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="-64dp"
-                    android:onClick="checkone" />
-                    android:text="Ruim" />
-
-                <CheckBox
-                    android:id="@+id/checkBoxi"
-                    android:layout_width="136dp"
-                    android:layout_height="46dp"
-                    android:layout_alignStart="@+id/textView3"
-                    android:layout_alignTop="@+id/checkBoxz"
-                    android:layout_marginStart="-40dp"
-                    android:layout_marginTop="-5dp"
-                    android:onClick="checkone" />
+                    android:layout_weight="1"
                     android:text="Excelente Muito boa Boa " />
 
-            </RelativeLayout>
+                <RadioButton
+                    android:id="@+id/radioButton17"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Razoável" />
+
+                <RadioButton
+                    android:id="@+id/radioButton18"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ruim" />
+            </RadioGroup>
 
             <RelativeLayout
                 android:id="@+id/RelativeLayout8"
@@ -231,9 +201,10 @@
                     android:layout_alignTop="@+id/textView8"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/textView8"
                     android:onClick="checkone" />
-                    android:layout_toEndOf="@+id/textView8" />
             </RelativeLayout>
+
 
             <RelativeLayout
                 android:id="@+id/RelativeLayout4"
@@ -340,8 +311,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/textView32"
                     android:layout_marginTop="-9dp"
-                    android:onClick="checkone"
-                    android:layout_toStartOf="@+id/textView9" />
+                    android:layout_toStartOf="@+id/textView9"
+                    android:onClick="checkone" />
 
                 <CheckBox
                     android:id="@+id/checkBox31"
@@ -359,8 +330,8 @@
                     android:layout_below="@+id/checkBox31"
                     android:layout_alignStart="@+id/checkBox31"
                     android:layout_marginStart="0dp"
-                    android:onClick="checkone"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:onClick="checkone" />
 
                 <CheckBox
                     android:id="@+id/checkBox36"
@@ -369,8 +340,8 @@
                     android:layout_below="@+id/checkBox32"
                     android:layout_alignStart="@+id/checkBox32"
                     android:layout_marginStart="0dp"
-                    android:onClick="checkone"
-                    android:layout_marginTop="7dp" />
+                    android:layout_marginTop="7dp"
+                    android:onClick="checkone" />
 
                 <CheckBox
                     android:id="@+id/checkBox37"
@@ -379,8 +350,8 @@
                     android:layout_alignTop="@+id/textView31"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="-5dp"
-                    android:onClick="checkone"
-                    android:layout_toEndOf="@+id/textView31" />
+                    android:layout_toEndOf="@+id/textView31"
+                    android:onClick="checkone" />
 
                 <CheckBox
                     android:id="@+id/checkBox38"
@@ -389,8 +360,8 @@
                     android:layout_below="@+id/checkBox37"
                     android:layout_alignStart="@+id/checkBox37"
                     android:layout_marginStart="0dp"
-                    android:onClick="checkone"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="5dp"
+                    android:onClick="checkone" />
 
                 <CheckBox
                     android:id="@+id/checkBox39"
@@ -399,8 +370,8 @@
                     android:layout_below="@+id/checkBox38"
                     android:layout_alignStart="@+id/checkBox38"
                     android:layout_marginStart="0dp"
-                    android:onClick="checkone"
-                    android:layout_marginTop="7dp" />
+                    android:layout_marginTop="7dp"
+                    android:onClick="checkone" />
 
                 <CheckBox
                     android:id="@+id/checkBox40"
@@ -409,58 +380,52 @@
                     android:layout_below="@+id/checkBox39"
                     android:layout_alignStart="@+id/checkBox39"
                     android:layout_marginStart="0dp"
-                    android:onClick="checkone"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:onClick="checkone" />
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/RelativeLayout5"
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quando você necessita de ajuda, pode contar com alguém que esteja disponível e apto para atender as suas necessidades"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="564dp"
-                    android:layout_height="62dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="5dp"
-                    android:text="Quando você necessita de ajuda, pode contar com alguém que esteja disponível e apto para atender as suas necessidades?"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <CheckBox
-                    android:id="@+id/checkBox41"
+                <RadioButton
+                    android:id="@+id/radioButton19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView5"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:text="Às vezes" />
-
-                <CheckBox
-                    android:id="@+id/checkBox42"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/textView5"
-                    android:layout_alignTop="@+id/checkBox41"
-                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
                     android:text="Sempre" />
 
-                <CheckBox
-                    android:id="@+id/checkBox43"
+                <RadioButton
+                    android:id="@+id/radioButton20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/checkBox41"
-                    android:layout_alignEnd="@+id/textView5"
-                    android:layout_marginTop="-1dp"
-                    android:text="Nunca" />
+                    android:layout_weight="1"
+                    android:text="Às vezes" />
 
-            </RelativeLayout>
+                <RadioButton
+                    android:id="@+id/radioButton21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nunca" />
+            </RadioGroup>
 
             <RelativeLayout
                 android:id="@+id/RelativeLayout6"
@@ -552,56 +517,47 @@
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:id="@+id/RelativeLayout7"
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='Gostaria que se sentasse nesta cadeira com suas costas e braços apoiados. Quando eu disser "vá", por favor, fique em pé e ande novamente a marca no chão (+/- 3 m de distância), depois volte para a cadeira e sente-se novamente. '
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentStart="true"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="614dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="5dp"
-                    android:text='Gostaria que se sentasse nesta cadeira com suas costas e braços apoiados. Quando eu disser "vá", por favor, fique em pé e ande novamente a marca no chão (+/- 3 m de distância), depois volte para a cadeira e sente-se novamente. '
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <CheckBox
-                    android:id="@+id/checkBox48"
+                <RadioButton
+                    android:id="@+id/radioButton24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView7"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="20dp"
-                    android:text="10-20 seg" />
-
-                <CheckBox
-                    android:id="@+id/checkBox49"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/textView7"
-                    android:layout_alignTop="@+id/checkBox48"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
                     android:text="0-10 seg" />
 
-                <CheckBox
-                    android:id="@+id/checkBox50"
-                    android:layout_width="139dp"
+                <RadioButton
+                    android:id="@+id/radioButton23"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/checkBox48"
-                    android:layout_alignEnd="@+id/textView7"
-                    android:layout_marginTop="-1dp"
-                    android:layout_marginEnd="0dp"
-                    android:text="20 segs. Ou não quer fazer" />
+                    android:layout_weight="1"
+                    android:text="10-20 seg" />
 
-            </RelativeLayout>
+                <RadioButton
+                    android:id="@+id/radioButton22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mais de 20 seg. ou não quer fazer" />
+            </RadioGroup>
 
         </LinearLayout>
     </ScrollView>

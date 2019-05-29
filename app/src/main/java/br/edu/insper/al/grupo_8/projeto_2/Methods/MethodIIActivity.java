@@ -12,4 +12,6 @@ public class MethodIIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_ii);
     }
+
+
 }
