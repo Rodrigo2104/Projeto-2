@@ -74,6 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Sem erros" />
 
                 <RadioButton
@@ -81,6 +82,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Pequenos erros de espaçamento" />
 
                 <RadioButton
@@ -88,6 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Outros erros" />
             </RadioGroup>
 
@@ -116,6 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Nenhuma" />
 
                 <RadioButton
@@ -123,6 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Uma ou duas vezes" />
 
                 <RadioButton
@@ -130,6 +135,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Mais que duas vezes" />
             </RadioGroup>
 
@@ -158,6 +164,7 @@
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Excelente Muito boa Boa " />
 
                 <RadioButton
@@ -165,6 +172,7 @@
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Razoável" />
 
                 <RadioButton
@@ -172,6 +180,7 @@
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Ruim" />
             </RadioGroup>
 
@@ -320,7 +329,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@+id/checkBox4"
+                    android:onClick="checkone"
                     android:layout_alignParentBottom="true" />
+
 
                 <CheckBox
                     android:id="@+id/checkBox4"
@@ -408,6 +419,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Sempre" />
 
                 <RadioButton
@@ -415,6 +427,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Às vezes" />
 
                 <RadioButton
@@ -422,6 +435,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Nunca" />
             </RadioGroup>
 
@@ -463,6 +477,7 @@
                     android:layout_alignTop="@+id/textView6"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
+                    android:onClick="checkone"
                     android:layout_toEndOf="@+id/textView6" />
 
                 <CheckBox
@@ -472,6 +487,7 @@
                     android:layout_alignTop="@+id/textView35"
                     android:layout_alignEnd="@+id/textView35"
                     android:layout_marginTop="11dp"
+                    android:onClick="checkone"
                     android:layout_marginEnd="-60dp" />
 
                 <TextView
@@ -502,6 +518,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@+id/checkBox11"
                     android:layout_alignTop="@+id/textView34"
+                    android:onClick="checkone"
                     android:layout_marginTop="19dp" />
 
                 <CheckBox
@@ -511,6 +528,7 @@
                     android:layout_alignTop="@+id/textView33"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="12dp"
+                    android:onClick="checkone"
                     android:layout_toEndOf="@+id/textView33" />
 
             </RelativeLayout>
@@ -540,6 +558,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="0-10 seg" />
 
                 <RadioButton
@@ -547,6 +566,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="10-20 seg" />
 
                 <RadioButton
@@ -554,8 +574,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="checkone"
                     android:text="Mais de 20 seg. ou não quer fazer" />
             </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOTAL:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         </LinearLayout>
     </ScrollView>

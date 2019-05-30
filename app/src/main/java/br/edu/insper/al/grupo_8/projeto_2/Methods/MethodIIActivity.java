@@ -1,8 +1,10 @@
 package br.edu.insper.al.grupo_8.projeto_2.Methods;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -13,6 +15,10 @@ import br.edu.insper.al.grupo_8.projeto_2.R;
 
 public class MethodIIActivity extends AppCompatActivity {
     private HashMap<RadioButton, Integer> testes = new HashMap<RadioButton, Integer>();
+    private HashMap<CheckBox, Integer> testes_checkBox = new HashMap<CheckBox, Integer>();
+    private HashMap<CheckBox, Integer> testes_meio = new HashMap<CheckBox, Integer>();
+
+
     private int Resultados;
 
     private TextView resultado;
@@ -36,6 +42,25 @@ public class MethodIIActivity extends AppCompatActivity {
 
 
 
+
+    private CheckBox checkBox1;
+    private CheckBox checkBox2;
+    private CheckBox checkBox3;
+    private CheckBox checkBox4;
+    private CheckBox checkBox5;
+    private CheckBox checkBox6;
+    private CheckBox checkBox7;
+    private CheckBox checkBox8;
+    private CheckBox checkBox9;
+    private CheckBox checkBox10;
+    private CheckBox checkBox11;
+    private CheckBox checkBox12;
+    private CheckBox checkBox13;
+    private CheckBox checkBox14;
+    private CheckBox checkBox15;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,6 +80,23 @@ public class MethodIIActivity extends AppCompatActivity {
         radioButton13 = (RadioButton) findViewById(R.id.radioButton13);
         radioButton14 = (RadioButton) findViewById(R.id.radioButton14);
         radioButton15 = (RadioButton) findViewById(R.id.radioButton15);
+        resultado = (TextView) findViewById(R.id.textView46);
+        //=============================================================
+        checkBox1 = (CheckBox) findViewById(R.id.checkBox1);
+        checkBox2 = (CheckBox) findViewById(R.id.checkBox2);
+        checkBox3 =  (CheckBox) findViewById(R.id.checkBox3);
+        checkBox4 =  (CheckBox) findViewById(R.id.checkBox4);
+        checkBox5 =  (CheckBox) findViewById(R.id.checkBox5);
+        checkBox6 =  (CheckBox) findViewById(R.id.checkBox6);
+        checkBox7 =  (CheckBox) findViewById(R.id.checkBox7);
+        checkBox8 =  (CheckBox) findViewById(R.id.checkBox8);
+        checkBox9 =  (CheckBox) findViewById(R.id.checkBox9);
+        checkBox10 =  (CheckBox) findViewById(R.id.checkBox10);
+        checkBox11 =  (CheckBox) findViewById(R.id.checkBox11);
+        checkBox12 =  (CheckBox) findViewById(R.id.checkBox12);
+        checkBox13 =  (CheckBox) findViewById(R.id.checkBox13);
+        checkBox14 =  (CheckBox) findViewById(R.id.checkBox14);
+        checkBox15 =  (CheckBox) findViewById(R.id.checkBox15);
 
     }
 
@@ -164,8 +206,119 @@ public class MethodIIActivity extends AppCompatActivity {
         }else {
             testes.put(radioButton15,0);
         }
+        //==============================
+        if (checkBox1.isChecked()){
+            testes_checkBox.put(checkBox1,1);
+
+        }else {
+            testes_checkBox.put(checkBox1,0);
+        }
+        //===========================================
+        if (checkBox10.isChecked()){
+            testes_checkBox.put(checkBox10,1);
+
+        }else {
+            testes_checkBox.put(checkBox10,0);
+        }
+        if (checkBox11.isChecked()){
+            testes_checkBox.put(checkBox11,1);
+
+        }else {
+            testes_checkBox.put(checkBox11,0);
+        }
+        if (checkBox12.isChecked()){
+            testes_checkBox.put(checkBox12,1);
+
+        }else {
+            testes_checkBox.put(checkBox12,0);
+        }
+        if (checkBox13.isChecked()){
+            testes_checkBox.put(checkBox13,1);
+
+        }else {
+            testes_checkBox.put(checkBox13,0);
+        }
+        //=========================================
+        if (checkBox2.isChecked()){
+            testes_meio.put(checkBox2,1);
+
+        }else {
+            testes_meio.put(checkBox2,0);
+        }
+        if (checkBox3.isChecked()){
+            testes_meio.put(checkBox3,1);
+
+        }else {
+            testes_meio.put(checkBox3,0);
+        }
+        if (checkBox4.isChecked()){
+            testes_meio.put(checkBox4,1);
+
+        }else {
+            testes_meio.put(checkBox4,0);
+        }
+        if (checkBox5.isChecked()){
+            testes_meio.put(checkBox5,1);
+
+        }else {
+            testes_meio.put(checkBox5,0);
+        }
+        if (checkBox6.isChecked()){
+            testes_meio.put(checkBox6,1);
+
+        }else {
+            testes_meio.put(checkBox6,0);
+        }
+        if (checkBox7.isChecked()){
+            testes_meio.put(checkBox7,1);
+
+        }else {
+            testes_meio.put(checkBox7,0);
+        }
+        if (checkBox8.isChecked()){
+            testes_meio.put(checkBox8,1);
+
+        }else {
+            testes_meio.put(checkBox8,0);
+        }
+        if (checkBox9.isChecked()){
+            testes_meio.put(checkBox9,1);
+
+        }else {
+            testes_meio.put(checkBox9,0);
+        }
+        resultados();
 //        int radio = rg.getCheckedRadioButtonId();
 //        RadioButton radioButton1 = (RadioButton)findViewById(radio);
+
+    }
+
+    @SuppressLint("SetTextI18n")
+    public void resultados(){
+        this.Resultados = 0;
+        int meio = 0;
+        for (int e : testes.values()){
+
+            this.Resultados += e;
+        }
+        for (int e : testes_checkBox.values()){
+
+            this.Resultados += e;
+        }
+
+        for (int e : testes_meio.values()){
+
+            meio += e;
+        }
+        if (meio>=2){
+            this.Resultados += 1;
+        }
+        if (meio>=5){
+            this.Resultados += 1;
+        }
+
+        resultado.setText("TOTAL : " + String.valueOf(Resultados));
+
 
     }
 
