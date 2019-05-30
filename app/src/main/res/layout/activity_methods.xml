@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,24 +7,24 @@
     tools:context=".MethodsActivity">
 
     <LinearLayout
-        android:layout_gravity="center"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/button_goMethodI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 1"/>
+            android:text="Método 1" />
 
         <Button
             android:id="@+id/button_goMethodII"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 2"/>
+            android:text="Método 2" />
 
 
         <Button
@@ -33,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 3"/>
+            android:text="Método 3" />
 
 
         <Button
@@ -41,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 4"/>
+            android:text="Método 4" />
 
 
         <Button
@@ -49,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 5"/>
+            android:text="Método 5" />
 
 
         <Button
@@ -57,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 6"/>
+            android:text="Método 6" />
 
 
         <Button
@@ -65,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 7"/>
+            android:text="Método 7" />
 
 
         <Button
@@ -73,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 8"/>
+            android:text="Método 8" />
 
 
         <Button
@@ -81,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 9"/>
+            android:text="Método 9" />
 
 
         <Button
@@ -89,21 +88,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 10"/>
+            android:text="Método 10" />
 
         <Button
             android:id="@+id/button_goMethodXII"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Metodo 11"/>
+            android:text="Metodo 11" />
 
         <Button
             android:id="@+id/button_goMethodXI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="SATISFAÇÃO AO CLIENTE"/>
+            android:text="SATISFAÇÃO AO CLIENTE" />
 
     </LinearLayout>
 

@@ -1,8 +1,8 @@
 package br.edu.insper.al.grupo_8.projeto_2;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
 import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIActivity;
@@ -21,7 +21,7 @@ import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXIIActivity;
 
 public class MethodsActivity extends AppCompatActivity {
 
-    private void startMethodActivity(Class classe){
+    private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
         startActivity(intent);
     }

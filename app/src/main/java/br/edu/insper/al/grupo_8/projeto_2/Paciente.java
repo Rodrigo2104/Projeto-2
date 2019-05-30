@@ -8,29 +8,32 @@ public class Paciente {
     private String nome;
     private int num;
     private Date dataDeEntrada;
-    private HashMap <String, LinkedList<String>> resultados;
+    private HashMap<String, LinkedList<String>> resultados;
 
-    public void Paciente(String nome, int num){
+    public void Paciente(String nome, int num) {
         this.nome = nome;
         this.num = num;
-        this.resultados = new HashMap <String, LinkedList<String>>();
+        this.resultados = new HashMap<String, LinkedList<String>>();
         dataDeEntrada = new Date();
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
-    public int getNum(){
+
+    public int getNum() {
         return num;
     }
-    public Date getDataDeEntrada(){
+
+    public Date getDataDeEntrada() {
         return dataDeEntrada;
     }
-    public HashMap getResultados(){
+
+    public HashMap getResultados() {
         return resultados;
     }
 
-    public void addToResultados(String teste, LinkedList<String> resultado){
+    public void addToResultados(String teste, LinkedList<String> resultado) {
         resultados.put(teste, resultado);
     }
 

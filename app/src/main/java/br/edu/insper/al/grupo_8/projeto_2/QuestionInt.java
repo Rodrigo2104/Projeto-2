@@ -2,18 +2,18 @@ package br.edu.insper.al.grupo_8.projeto_2;
 
 import java.util.HashMap;
 
-public class QuestionInt extends Question{
+public class QuestionInt extends Question {
     private int numberOfQuestions;
-    private HashMap<String,UnitQuestion> options;
+    private HashMap<String, UnitQuestion> options;
 
-    public QuestionInt(String question, int numberOfQuestions){
+    public QuestionInt(String question, int numberOfQuestions) {
         super(question);
-        this.numberOfQuestions=numberOfQuestions;
-        options=new HashMap<>();
+        this.numberOfQuestions = numberOfQuestions;
+        options = new HashMap<>();
     }
 
-    public void putQuestion(String question,UnitQuestion option){
-        this.options.put(question,option);
+    public void putQuestion(String question, UnitQuestion option) {
+        this.options.put(question, option);
     }
 
     public HashMap<String, UnitQuestion> getOptions() {

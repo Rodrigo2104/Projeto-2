@@ -6,20 +6,21 @@ import java.util.HashMap;
 public class Department {
     private String nome;
     private HashMap<Integer, Paciente> pacientes;
-    public Department(String nome){
-        this.nome=nome;
+
+    public Department(String nome) {
+        this.nome = nome;
         this.pacientes = new HashMap<>();
     }
 
-    public void addPaciente(Paciente paciente){
-        this.pacientes.put(paciente.getNum(),paciente);
+    public void addPaciente(Paciente paciente) {
+        this.pacientes.put(paciente.getNum(), paciente);
     }
 
-    public HashMap<Integer, Paciente> getPacientes(){
+    public HashMap<Integer, Paciente> getPacientes() {
         return this.pacientes;
     }
 
-    public void delPaciente(Paciente paciente){
+    public void delPaciente(Paciente paciente) {
         this.pacientes.remove(paciente.getNum());
     }
 }
