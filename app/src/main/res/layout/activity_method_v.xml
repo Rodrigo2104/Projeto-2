@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,13 +16,13 @@
             android:layout_margin="25dp"
             android:orientation="vertical">
 
- <!-- ===== TESTE A ===== -->
+            <!-- ===== TESTE A ===== -->
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="20dp"
 
                 android:fontFamily="sans-serif"
                 android:text="Em relação ao uso do telefone."
@@ -50,7 +49,7 @@
                 <CheckBox
                     android:id="@+id/cb_1_testA"
                     android:layout_marginRight="60dp"
-                    android:text="1"/>
+                    android:text="1" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -65,7 +64,7 @@
                 <CheckBox
                     android:id="@+id/cb_2_testA"
                     android:layout_marginRight="60dp"
-                    android:text="2"/>
+                    android:text="2" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -80,15 +79,15 @@
                 <CheckBox
                     android:id="@+id/cb_3_testA"
                     android:layout_marginRight="60dp"
-                    android:text="3"/>
+                    android:text="3" />
 
             </GridLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="20dp"
 
                 android:fontFamily="sans-serif"
                 android:text="Em relação a viagens."
@@ -115,7 +114,7 @@
                 <CheckBox
                     android:id="@+id/cb_1_testB"
                     android:layout_marginRight="60dp"
-                    android:text="1"/>
+                    android:text="1" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -130,7 +129,7 @@
                 <CheckBox
                     android:id="@+id/cb_2_testB"
                     android:layout_marginRight="60dp"
-                    android:text="2"/>
+                    android:text="2" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -145,15 +144,15 @@
                 <CheckBox
                     android:id="@+id/cb_3_testB"
                     android:layout_marginRight="60dp"
-                    android:text="3"/>
+                    android:text="3" />
 
             </GridLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="20dp"
 
                 android:fontFamily="sans-serif"
                 android:text="Em relação a realização de compras."
@@ -180,7 +179,7 @@
                 <CheckBox
                     android:id="@+id/cb_1_testC"
                     android:layout_marginRight="60dp"
-                    android:text="1"/>
+                    android:text="1" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -195,7 +194,7 @@
                 <CheckBox
                     android:id="@+id/cb_2_testC"
                     android:layout_marginRight="60dp"
-                    android:text="2"/>
+                    android:text="2" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -210,15 +209,15 @@
                 <CheckBox
                     android:id="@+id/cb_3_testC"
                     android:layout_marginRight="60dp"
-                    android:text="3"/>
+                    android:text="3" />
 
             </GridLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="20dp"
 
                 android:fontFamily="sans-serif"
                 android:text="Em relação ao preparo de refeições."
@@ -245,7 +244,7 @@
                 <CheckBox
                     android:id="@+id/cb_1_testD"
                     android:layout_marginRight="60dp"
-                    android:text="1"/>
+                    android:text="1" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -260,7 +259,7 @@
                 <CheckBox
                     android:id="@+id/cb_2_testD"
                     android:layout_marginRight="60dp"
-                    android:text="2"/>
+                    android:text="2" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -275,15 +274,15 @@
                 <CheckBox
                     android:id="@+id/cb_3_testD"
                     android:layout_marginRight="60dp"
-                    android:text="3"/>
+                    android:text="3" />
 
             </GridLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="20dp"
 
                 android:fontFamily="sans-serif"
                 android:text="Em relação ao trabalho doméstico."
@@ -310,7 +309,7 @@
                 <CheckBox
                     android:id="@+id/cb_1_testE"
                     android:layout_marginRight="60dp"
-                    android:text="1"/>
+                    android:text="1" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -325,7 +324,7 @@
                 <CheckBox
                     android:id="@+id/cb_2_testE"
                     android:layout_marginRight="60dp"
-                    android:text="2"/>
+                    android:text="2" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -340,15 +339,15 @@
                 <CheckBox
                     android:id="@+id/cb_3_testE"
                     android:layout_marginRight="60dp"
-                    android:text="3"/>
+                    android:text="3" />
 
             </GridLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="20dp"
 
                 android:fontFamily="sans-serif"
                 android:text="Em relação ao uso de medicamentos."
@@ -375,7 +374,7 @@
                 <CheckBox
                     android:id="@+id/cb_1_testF"
                     android:layout_marginRight="60dp"
-                    android:text="1"/>
+                    android:text="1" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -390,7 +389,7 @@
                 <CheckBox
                     android:id="@+id/cb_2_testF"
                     android:layout_marginRight="60dp"
-                    android:text="2"/>
+                    android:text="2" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -405,15 +404,15 @@
                 <CheckBox
                     android:id="@+id/cb_3_testF"
                     android:layout_marginRight="60dp"
-                    android:text="3"/>
+                    android:text="3" />
 
             </GridLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="20dp"
 
                 android:fontFamily="sans-serif"
                 android:text="Em relação ao manuseio do dinheiro."
@@ -440,7 +439,7 @@
                 <CheckBox
                     android:id="@+id/cb_1_testG"
                     android:layout_marginRight="60dp"
-                    android:text="1"/>
+                    android:text="1" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -455,7 +454,7 @@
                 <CheckBox
                     android:id="@+id/cb_2_testG"
                     android:layout_marginRight="60dp"
-                    android:text="2"/>
+                    android:text="2" />
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -470,7 +469,7 @@
                 <CheckBox
                     android:id="@+id/cb_3_testG"
                     android:layout_marginRight="60dp"
-                    android:text="3"/>
+                    android:text="3" />
 
             </GridLayout>
 
@@ -478,8 +477,8 @@
                 android:id="@+id/result"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="20dp"
 
                 android:fontFamily="sans-serif"
                 android:text="TOTAL :"
@@ -490,8 +489,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="start"
+                android:layout_marginTop="20dp"
 
                 android:fontFamily="sans-serif"
                 android:text="TOTAL :"

@@ -14,5 +14,4 @@ public class MethodXIIActivity extends AppCompatActivity {
     }
 
 
-
 }

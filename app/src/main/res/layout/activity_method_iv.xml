@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Methods.MethodIVActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Methods.MethodIVActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Escala de Katz"
-        android:gravity="center"
         android:layout_gravity="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Escala de Katz"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,8 +28,8 @@
             android:layout_marginLeft="15sp"
             android:layout_marginRight="15sp"
             android:columnCount="4"
-            android:rowCount="8"
-            android:gravity="center">
+            android:gravity="center"
+            android:rowCount="8">
 
             <!--Cabeçalho-->
 
@@ -40,8 +39,8 @@
                 android:layout_height="match_parent"
                 android:layout_row="0"
                 android:layout_column="3"
-                android:layout_margin="10sp"
                 android:layout_gravity="center"
+                android:layout_margin="10sp"
                 android:text="(1 ou 0)"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
@@ -53,10 +52,10 @@
                 android:layout_row="0"
                 android:layout_column="0"
                 android:layout_margin="10sp"
-                android:text="INDEPENDÊNCIA \n(1 ponto) \nSEM supervisão, orientação ou assistência técnica"
                 android:gravity="center"
+                android:text="INDEPENDÊNCIA \n(1 ponto) \nSEM supervisão, orientação ou assistência técnica"
                 android:textColor="@color/black"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/dependencia"
@@ -77,9 +76,9 @@
                 android:layout_height="wrap_content"
                 android:layout_row="1"
                 android:layout_column="3"
+                android:layout_margin="10sp"
                 android:text="Banhar-se"
-                android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox1"
@@ -87,9 +86,9 @@
                 android:layout_height="wrap_content"
                 android:layout_row="2"
                 android:layout_column="3"
+                android:layout_margin="10sp"
                 android:text="Vestir-se"
-                android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox2"
@@ -97,9 +96,9 @@
                 android:layout_height="wrap_content"
                 android:layout_row="3"
                 android:layout_column="3"
+                android:layout_margin="10sp"
                 android:text="Ir ao Banheiro"
-                android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox3"
@@ -107,9 +106,9 @@
                 android:layout_height="wrap_content"
                 android:layout_row="4"
                 android:layout_column="3"
+                android:layout_margin="10sp"
                 android:text="Transferência"
-                android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox4"
@@ -117,9 +116,9 @@
                 android:layout_height="wrap_content"
                 android:layout_row="5"
                 android:layout_column="3"
+                android:layout_margin="10sp"
                 android:text="Continência"
-                android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                android:textSize="15sp" />
 
             <CheckBox
                 android:id="@+id/checkBox5"
@@ -127,9 +126,9 @@
                 android:layout_height="wrap_content"
                 android:layout_row="6"
                 android:layout_column="3"
+                android:layout_margin="10sp"
                 android:text="Alimentação"
-                android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                android:textSize="15sp" />
         </GridLayout>
     </ScrollView>
 </LinearLayout>

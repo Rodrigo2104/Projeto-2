@@ -1,7 +1,7 @@
 package br.edu.insper.al.grupo_8.projeto_2.Methods;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
 

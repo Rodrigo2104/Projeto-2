@@ -1,18 +1,15 @@
 package br.edu.insper.al.grupo_8.projeto_2.Methods;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.TextView;
-import br.edu.insper.al.grupo_8.projeto_2.R;
 
-
-import java.util.HashMap;
 import java.util.LinkedList;
 
-public class MethodVActivity extends AppCompatActivity{
+import br.edu.insper.al.grupo_8.projeto_2.R;
+
+public class MethodVActivity extends AppCompatActivity {
 
     private int soma;
 
@@ -23,7 +20,7 @@ public class MethodVActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_v);
 
-        boxes = new LinkedList<CheckBox>();
+        boxes = new LinkedList<>();
 
         // === TESTE A ===
 
@@ -90,24 +87,20 @@ public class MethodVActivity extends AppCompatActivity{
 
         TextView resultSoma = findViewById(R.id.result);
 
-        for(CheckBox box : boxes){
-            box.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (box.isChecked()){
-                        soma += Integer.parseInt(box.getText().toString());
-                        resultSoma.setText("TOTAL : " + String.valueOf(soma));
-                    }
-
-                    if (!box.isChecked()){
-                        soma -= Integer.parseInt(box.getText().toString());
-                        resultSoma.setText("TOTAL : " + String.valueOf(soma));
-                    }
+        for (CheckBox box : boxes) {
+            box.setOnClickListener(v -> {
+                if (box.isChecked()) {
+                    soma += Integer.parseInt(box.getText().toString());
                 }
+
+                if (!box.isChecked()) {
+                    soma -= Integer.parseInt(box.getText().toString());
+                }
+                resultSoma.setText("TOTAL : " + String.valueOf(soma));
+
             });
         }
     }
-
 
 
 }

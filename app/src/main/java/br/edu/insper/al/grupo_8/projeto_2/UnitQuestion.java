@@ -4,7 +4,7 @@ public class UnitQuestion {
     private boolean activated;
     private int value;
 
-    public UnitQuestion(int value){
+    public UnitQuestion(int value) {
         this.value = value;
         this.activated = false;
     }
