@@ -12,7 +12,6 @@ import java.util.HashSet;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 
 public class MethodIActivity extends AppCompatActivity {
-    private CheckBox checkBoxes;
     private HashMap<CheckBox, Integer> testes = new HashMap<CheckBox, Integer>();
     private int Resultados;
 
