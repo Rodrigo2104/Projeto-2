@@ -5,18 +5,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIIActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIIIActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIVActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodIXActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIIActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodVIIIActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXIActivity;
-import br.edu.insper.al.grupo_8.projeto_2.Methods.MethodXIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodIIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodIVActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodIXActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodVActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodVIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodVIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodVIIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIIActivity;
 
 
 public class MethodsActivity extends AppCompatActivity {

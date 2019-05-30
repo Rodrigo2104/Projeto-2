@@ -36,5 +36,19 @@ assinale \"7\".</string>
     <string name="teste_X23">Quando eu estou numa situação difícil, eu normalmente acho uma saída</string>
     <string name="teste_X24">Eu tenho energia suficiente para fazer o que eu tenho que fazer</string>
     <string name="teste_X25">Tudo bem se há pessoas que não gostam de mim</string>
+    <string name="idependencia_ext">INDEPENDÊNCIA\n(1 ponto)\nSEM supervisão, orientação ou assistência técnica</string>
+    <string name="dependencia_text">DEPENDÊNCIA\n(0 pontos)\nCOM supervisão, orientação, ou assistência pessoal ou cuidado integral</string>
+    <string name="test_4_0_0">(0 pontos)\nNecessita de ajuda para banhar-se em mais de uma parte do corpo, entrar e sair do chuveiro ou banheira ou requer assistência total no banho</string>
+    <string name="test_4_0_1">(1 ponto)\nBanha-se completamente ou necessita de auxílio somente para lavar uma parte do corpo como as costas, genitais ou uma extremidade incapacitada</string>
+    <string name="test_4_1_0">(0 pontos)\nNecessita de ajuda para vestir-se ou necessita ser completamente vestido</string>
+    <string name="test_4_1_1">(1 ponto)\nPega as roupas do armário e veste as roupas íntimas, externas e cintos. Pode receber ajuda para amarrar os sapatos</string>
+    <string name="teste_4_2_0">(0 pontos)\nNecessita de ajuda para ir ao banheiro, limpar-se ou usa urinol ou comadre</string>
+    <string name="test_4_2_1">(1 ponto)\nDirigi-se ao banheiro, entra e sai do mesmo, arruma suas próprias roupas, limpa a área genital sem ajuda</string>
+    <string name="test_4_3_0">(0 pontos)\nNecessita de ajuda para sentar-se/deitar-se e levantar-se da cama ou cadeira</string>
+    <string name="test_4_3_1">(1 ponto)\nSenta-se/deita-se e levanta-se da cama ou cadeira sem ajuda. Equipamentos mecânicos de ajuda são aceitáveis</string>
+    <string name="test_4_4_0">(0 pontos)\nÉ parcial ou totalmente incontinente do intestino ou bexiga</string>
+    <string name="test_4_4_1">(1 ponto)\nTem completo controle sobre suas eliminações (urinar e evacuar)</string>
+    <string name="test_4_5_0">(0 pontos)\nNecessita de ajuda parcial ou total com a alimentação ou requer alimentação parenteral</string>
+    <string name="test_4_5_1">(1 ponto)\nLeva a comida do prato à boca sem ajuda. Preparação da comida pode ser feita por outra pessoa</string>
 
 </resources>

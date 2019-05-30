@@ -1,8 +1,7 @@
-package br.edu.insper.al.grupo_8.projeto_2.Methods;
+package br.edu.insper.al.grupo_8.projeto_2.methods;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
 

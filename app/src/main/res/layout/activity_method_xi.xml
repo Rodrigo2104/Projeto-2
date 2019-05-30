@@ -9,7 +9,7 @@
     android:layout_marginEnd="8dp"
     android:layout_marginBottom="8dp"
     android:orientation="vertical"
-    tools:context=".Methods.MethodXIActivity">
+    tools:context=".methods.MethodXIActivity">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/Header"
