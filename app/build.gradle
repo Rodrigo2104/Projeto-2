@@ -5,7 +5,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "br.edu.insper.al.grupo_8.projeto_2"
-        minSdkVersion 22
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"

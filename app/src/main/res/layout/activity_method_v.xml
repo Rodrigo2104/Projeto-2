@@ -84,6 +84,8 @@
 
             </GridLayout>
 
+<!-- ===== TESTE B ===== -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -148,6 +150,8 @@
                     android:text="3"/>
 
             </GridLayout>
+
+<!-- ===== TESTE C ===== -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -214,6 +218,8 @@
 
             </GridLayout>
 
+<!-- ===== TESTE D ===== -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -278,6 +284,8 @@
                     android:text="3"/>
 
             </GridLayout>
+
+<!-- ===== TESTE E ===== -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -344,6 +352,8 @@
 
             </GridLayout>
 
+<!-- ===== TESTE F ===== -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -409,6 +419,8 @@
 
             </GridLayout>
 
+<!-- ===== TESTE G ===== -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -421,58 +433,69 @@
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
-            <GridLayout
+            <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:columnCount="2"
                 android:rowCount="3">
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                <TableRow>
 
-                    android:fontFamily="sans-serif"
-                    android:text="Preenche cheques e paga contas sem auxílio."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                    <RadioButton
+                        android:id="@+id/cb_1_testG"
+                        android:layout_marginRight="60dp"
+                        android:text="1"/>
 
-                <CheckBox
-                    android:id="@+id/cb_1_testG"
-                    android:layout_marginRight="60dp"
-                    android:text="1"/>
+                    <RadioButton
+                        android:id="@+id/cb_2_testG"
+                        android:layout_marginRight="60dp"
+                        android:text="2"/>
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                    <RadioButton
+                        android:id="@+id/cb_3_testG"
+                        android:layout_marginRight="60dp"
+                        android:text="3"/>
 
-                    android:fontFamily="sans-serif"
-                    android:text="Necessita de assistência para uso de cheques e contas."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                </TableRow>
 
-                <CheckBox
-                    android:id="@+id/cb_2_testG"
-                    android:layout_marginRight="60dp"
-                    android:text="2"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                    android:fontFamily="sans-serif"
-                    android:text="Não tem o hábito de lidar com o dinheiro ou é incapaz de manusear dinheiro, contas."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                        android:fontFamily="sans-serif"
+                        android:text="Preenche cheques e paga contas sem auxílio."
+                        android:textAlignment="viewStart"
+                        android:textSize="18dp" />
 
-                <CheckBox
-                    android:id="@+id/cb_3_testG"
-                    android:layout_marginRight="60dp"
-                    android:text="3"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-            </GridLayout>
+                        android:fontFamily="sans-serif"
+                        android:text="Necessita de assistência para uso de cheques e contas."
+                        android:textAlignment="viewStart"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
+
+                        android:fontFamily="sans-serif"
+                        android:text="Não tem o hábito de lidar com o dinheiro ou é incapaz de manusear dinheiro, contas."
+                        android:textAlignment="viewStart"
+                        android:textSize="18dp" />
+
+
+                </RadioGroup>
+
+            </TableLayout>
 
             <TextView
                 android:id="@+id/result"
@@ -486,19 +509,6 @@
                 android:textAlignment="viewStart"
                 android:textSize="24dp"
                 android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="start"
-
-                android:fontFamily="sans-serif"
-                android:text="TOTAL :"
-                android:textAlignment="viewStart"
-                android:textSize="24dp"
-                android:textStyle="bold" />
-
 
         </LinearLayout>
 
