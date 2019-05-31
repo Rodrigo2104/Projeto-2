@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Methods.MethodIIIActivity">
+    tools:context=".methods.MethodIIIActivity">
 
     <TextView
         android:id="@+id/textView32"
