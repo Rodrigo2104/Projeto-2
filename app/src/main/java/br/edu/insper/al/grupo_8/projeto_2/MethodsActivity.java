@@ -59,7 +59,6 @@ public class MethodsActivity extends AppCompatActivity {
         buttonGoMethodVIII.setOnClickListener((view) -> startMethodActivity(MethodVIIIActivity.class));
 
         Button buttonGoMethodIX = findViewById(R.id.button_goMethodIX);
-
         buttonGoMethodIX.setOnClickListener((view) -> startMethodActivity(MethodIXActivity.class));
 
         Button buttonGoMethodX = findViewById(R.id.button_goMethodX);

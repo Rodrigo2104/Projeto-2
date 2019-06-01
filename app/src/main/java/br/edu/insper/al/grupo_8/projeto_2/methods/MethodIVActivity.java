@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
 
-public class MethodIVActivity extends AppCompatActivity{
+public class MethodIVActivity extends AppCompatActivity {
     private int soma1, soma2, soma3, soma4, soma5, soma6;
 
 
@@ -34,67 +34,78 @@ public class MethodIVActivity extends AppCompatActivity{
         cb1.setOnClickListener(v -> {
             if (cb1.isChecked()) {
                 soma1 = 0;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb2.setOnClickListener(v -> {
             if (cb2.isChecked()) {
                 soma1 = 1;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb3.setOnClickListener(v -> {
             if (cb3.isChecked()) {
                 soma2 = 0;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb4.setOnClickListener(v -> {
             if (cb4.isChecked()) {
                 soma2 = 1;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb5.setOnClickListener(v -> {
             if (cb5.isChecked()) {
                 soma3 = 0;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb6.setOnClickListener(v -> {
             if (cb6.isChecked()) {
                 soma3 = 1;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb7.setOnClickListener(v -> {
             if (cb7.isChecked()) {
                 soma4 = 0;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb8.setOnClickListener(v -> {
             if (cb8.isChecked()) {
                 soma4 = 1;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb9.setOnClickListener(v -> {
             if (cb9.isChecked()) {
                 soma5 = 0;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb10.setOnClickListener(v -> {
             if (cb10.isChecked()) {
                 soma5 = 1;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb11.setOnClickListener(v -> {
             if (cb11.isChecked()) {
                 soma6 = 0;
-            } resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
+            }
+            resultadoSoma.setText(String.valueOf(soma1 + soma2 + soma3 + soma4 + soma5 + soma6));
         });
 
         cb12.setOnClickListener(v -> {

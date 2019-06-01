@@ -1,7 +1,7 @@
 package br.edu.insper.al.grupo_8.projeto_2.methods;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -60,14 +60,14 @@ public class MethodIIIActivity extends AppCompatActivity {
         boxes.add(cb17);
         boxes.add(cb18);
 
-        for(CheckBox box : boxes) {
+        for (CheckBox box : boxes) {
             box.setOnClickListener(v -> {
                 if (box.isChecked()) {
-                    soma ++;
+                    soma++;
                 }
 
                 if (!box.isChecked()) {
-                    soma --;
+                    soma--;
                 }
                 resultadoSoma.setText(String.valueOf(soma));
             });

@@ -6,6 +6,13 @@
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="" />
+
     <Button
         android:id="@+id/button_goMethods"
         android:layout_width="wrap_content"
@@ -13,4 +20,10 @@
         android:layout_gravity="center_vertical|center_horizontal"
         android:text="Métodos" />
 
+    <Button
+        android:id="@+id/singOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sing Out" />
 </LinearLayout>
