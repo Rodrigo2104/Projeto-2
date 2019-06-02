@@ -62,7 +62,7 @@
                     android:text="RH:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/editText1"
                     android:layout_width="700dp"
                     android:layout_height="wrap_content"
@@ -96,22 +96,22 @@
                         android:text="Procedência:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <RadioButton
-                        android:id="@+id/checkBox52"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Casa" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton4"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Hospital" />
 
-                    <RadioButton
-                        android:id="@+id/checkBox53"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -138,7 +138,7 @@
                     android:text="Diagnóstico médico:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/editText5"
                     android:layout_width="520dp"
                     android:layout_height="wrap_content"
@@ -168,7 +168,7 @@
                     android:text="Principal queixa:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/editText6"
                     android:layout_width="520dp"
                     android:layout_height="wrap_content"
@@ -185,15 +185,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="130dp"
-                    android:layout_height="25dp"
-                    android:layout_weight="1"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    tools:text="Sinais vitais:" />
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/textView25"
@@ -203,7 +195,7 @@
                     android:text="PA:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/editText8"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
@@ -220,7 +212,7 @@
                     android:text="P:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/editText2"
                     android:layout_width="118dp"
                     android:layout_height="match_parent"
@@ -237,7 +229,7 @@
                     android:text="R:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/editText3"
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
@@ -254,7 +246,7 @@
                     android:text="Tmax:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/editText"
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
@@ -271,7 +263,7 @@
                     android:text="Dx:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/editText4"
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
@@ -303,35 +295,35 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <CheckBox
-                    android:id="@+id/checkBox59"
+                    android:id="@+id/checkBox4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="HAS" />
 
                 <CheckBox
-                    android:id="@+id/checkBox60"
+                    android:id="@+id/checkBox5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="DM" />
 
                 <CheckBox
-                    android:id="@+id/checkBox61"
+                    android:id="@+id/checkBox6"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="DPOC" />
 
                 <CheckBox
-                    android:id="@+id/checkBox62"
+                    android:id="@+id/checkBox7"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="Cardiopatia" />
 
                 <CheckBox
-                    android:id="@+id/checkBox105"
+                    android:id="@+id/checkBox8"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -339,7 +331,7 @@
 
 
                 <CheckBox
-                    android:id="@+id/checkBox111"
+                    android:id="@+id/checkBox9"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -351,35 +343,35 @@
                 android:layout_height="match_parent">
 
                 <CheckBox
-                    android:id="@+id/checkBox106"
+                    android:id="@+id/checkBox10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Insuficiência Renal" />
 
                 <CheckBox
-                    android:id="@+id/checkBox107"
+                    android:id="@+id/checkBox11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Insuficiência Renal" />
 
                 <CheckBox
-                    android:id="@+id/checkBox108"
+                    android:id="@+id/checkBox12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Alergias" />
 
                 <CheckBox
-                    android:id="@+id/checkBox109"
+                    android:id="@+id/checkBox13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Sedentarismo" />
 
                 <CheckBox
-                    android:id="@+id/checkBox110"
+                    android:id="@+id/checkBox14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -399,7 +391,7 @@
                     android:text="Outros:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/editText22"
                     android:layout_width="718dp"
                     android:layout_height="wrap_content"
@@ -430,7 +422,7 @@
                     android:text="Medicamentos em uso em casa:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <TextView
+                <EditText android:onClick="checkone"
                     android:id="@+id/textView40"
                     android:layout_width="480dp"
                     android:layout_height="wrap_content"
@@ -454,7 +446,7 @@
                     android:text="Medicamentos em uso no hospital:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <TextView
+                <EditText android:onClick="checkone"
                     android:id="@+id/textView41"
                     android:layout_width="500dp"
                     android:layout_height="wrap_content"
@@ -463,6 +455,46 @@
 
             </LinearLayout>
             /===========================================================
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView17a"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Anti-coagulação"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Sim" />
+
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Não" />
+
+                </RadioGroup>
+            </LinearLayout>
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="22dp" />
@@ -483,36 +515,36 @@
                         android:text="Dor:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <RadioButton
-                        android:id="@+id/checkBox80"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="1" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton81"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="2" />
 
-                    <RadioButton
-                        android:id="@+id/checkBox82"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="3" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton5"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="4" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton6"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -537,7 +569,7 @@
                     android:text="Tratamentos Anteriores:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/textView31"
                     android:layout_width="480dp"
                     android:layout_height="wrap_content"
@@ -560,7 +592,7 @@
                     android:text="Exame Físico:"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                <EditText
+                <EditText android:onClick="checkone"
                     android:id="@+id/textView32"
                     android:layout_width="480dp"
                     android:layout_height="wrap_content"
@@ -575,64 +607,71 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
-                <TextView
-                    android:id="@+id/textView37a"
-                    android:layout_width="120dp"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Nível de Consciência:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <CheckBox
-                    android:id="@+id/checkBox59a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Acordado" />
-
-                <CheckBox
-                    android:id="@+id/checkBox60a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Lúcido" />
-
-                <CheckBox
-                    android:id="@+id/checkBox61a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Comatoso" />
-
-                <CheckBox
-                    android:id="@+id/checkBox62a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Torporoso" />
-
-                <CheckBox
-                    android:id="@+id/checkBox105a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Confuso" />
+                    android:orientation="horizontal">
+                
 
 
-                <CheckBox
-                    android:id="@+id/checkBox111a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Desorientado" />
-
-                <CheckBox
-                    android:id="@+id/checkBox81"
-                    android:layout_width="102dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Com falhas na memória" />
+                    <TextView
+                        android:id="@+id/textView37a"
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Nível de Consciência:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Acordado" />
+    
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Lúcido" />
+    
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Comatoso" />
+    
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Torporoso" />
+    
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Confuso" />
+    
+    
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Desorientado" />
+    
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox26"
+                        android:layout_width="102dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Com falhas na memória" />
+                </RadioGroup>
             </LinearLayout>
             <Space
                 android:layout_width="match_parent"
@@ -656,15 +695,15 @@
                         android:text="Avaliação Pulmonar:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton7a"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox27"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Sem alterações" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton8a"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox28"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -678,7 +717,7 @@
                         android:text="Qual:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/editText16a"
                         android:layout_width="73dp"
                         android:layout_height="wrap_content"
@@ -710,15 +749,15 @@
                         android:text="Avaliação Cardiovascular:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton7b"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox29"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Sem alterações" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton8b"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox30"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -732,7 +771,7 @@
                         android:text="Qual:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/editText16b"
                         android:layout_width="73dp"
                         android:layout_height="wrap_content"
@@ -764,15 +803,15 @@
                         android:text="Avaliação Gastrointestinal: "
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton7c"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox31"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Sem alterações" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton8c"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox32"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -786,7 +825,7 @@
                         android:text="Qual:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/editText16c"
                         android:layout_width="73dp"
                         android:layout_height="wrap_content"
@@ -818,15 +857,15 @@
                         android:text="Avaliação Geniturinário:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton7d"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox33"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Sem alterações" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton8d"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox34"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -840,7 +879,7 @@
                         android:text="Qual:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/editText16d"
                         android:layout_width="73dp"
                         android:layout_height="wrap_content"
@@ -872,15 +911,15 @@
                         android:text="Extremidades:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton7e"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox35"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Sem alterações" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton8e"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox36"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -894,7 +933,7 @@
                         android:text="Qual:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/editText16e"
                         android:layout_width="73dp"
                         android:layout_height="wrap_content"
@@ -926,15 +965,15 @@
                         android:text="Pele e Anexos:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton7"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox37"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Sem alterações" />
 
-                    <RadioButton
-                        android:id="@+id/radioButton8"
+                    <RadioButton android:onClick="checkRad"
+                        android:id="@+id/checkBox38"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -948,7 +987,7 @@
                         android:text="Qual:"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/editText16"
                         android:layout_width="73dp"
                         android:layout_height="wrap_content"
@@ -958,6 +997,7 @@
                         android:text="" />
                 </RadioGroup>
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

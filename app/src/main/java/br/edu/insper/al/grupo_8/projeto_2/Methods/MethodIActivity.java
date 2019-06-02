@@ -7,7 +7,6 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
 
