@@ -1,740 +1,1265 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Methods.MethodIIIActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".methods.MethodIIIActivity">
 
+    <!--Títulos-->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/short_assessement_of_health_literacy_for_portuguese_speaking_adults"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/short_assessement_of_health_literacy_for_portuguese_speaking_adults"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/instructions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/instrucoes_teste_3"
-        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/title"
         android:layout_marginLeft="30sp"
         android:layout_marginRight="30sp"
-        android:textColor='#696969'/>
+        android:layout_marginBottom="20dp"
+        android:text="@string/instrucoes_teste_3"
+        android:textColor='#696969' />
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/totalidade"
+        android:layout_below="@+id/instructions">
 
-        <GridLayout
+        <android.support.v7.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15sp"
             android:layout_marginRight="15sp"
+            android:background="@color/black"
             android:gravity="center">
 
             <!--Cabeçalho-->
-
             <TextView
                 android:id="@+id/palavra_principal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_margin="10sp"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Palavra Principal"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="25sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="0" />
 
             <TextView
                 android:id="@+id/palavra_associacao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:layout_margin="10sp"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Palavras de Associação"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:layout_columnSpan="0"/>
+                android:textSize="25sp"
+                app:layout_column="1"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1"
+                app:layout_row="0" />
 
-            <!--Lista de coisinhas-->
-
-            <TextView android:id="@+id/a01"
-                android:layout_height="wrap_content"
+            <TextView
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text=""
+                android:textSize="25sp"
+                app:layout_column="3"
+                app:layout_columnWeight="1"
+                app:layout_row="0" />
+
+            <!--Lista de Coisinhas-->
+            <TextView
+                android:id="@+id/a01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="1. OSTEOPOROSE"
                 android:textColor="@color/black"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a11"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/a11"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="OSSO"
                 android:textColor="@color/black"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a21"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/a21"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="músculo"
                 android:textColor="@color/black"
-                android:layout_row="1"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a02"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/a02"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="2. PAPANICOLAOU"
                 android:textColor="@color/black"
-                android:layout_row="2"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a12"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/a12"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="TESTE"
                 android:textColor="@color/black"
-                android:layout_row="2"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a22"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/a22"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="vacina"
                 android:textColor="@color/black"
-                android:layout_row="2"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a03"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="2" />
+
+            <TextView
+                android:id="@+id/a03"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="3.	ABORTO"
                 android:textColor="@color/black"
-                android:layout_row="3"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a13"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="3" />
+
+            <TextView
+                android:id="@+id/a13"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="matrimônio"
                 android:textColor="@color/black"
-                android:layout_row="3"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a23"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="3" />
+
+            <TextView
+                android:id="@+id/a23"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="PERDA"
                 android:textColor="@color/black"
-                android:layout_row="3"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a04"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="3" />
+
+            <TextView
+                android:id="@+id/a04"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="4.	HEMORROIDA"
                 android:textColor="@color/black"
-                android:layout_row="4"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a14"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="4" />
+
+            <TextView
+                android:id="@+id/a14"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="VEIAS"
                 android:textColor="@color/black"
-                android:layout_row="4"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a24"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="4" />
+
+            <TextView
+                android:id="@+id/a24"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="coração"
                 android:textColor="@color/black"
-                android:layout_row="4"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a05"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="4" />
+
+            <TextView
+                android:id="@+id/a05"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="5.	ANORMAL"
                 android:textColor="@color/black"
-                android:layout_row="5"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a15"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="5" />
+
+            <TextView
+                android:id="@+id/a15"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="similar"
                 android:textColor="@color/black"
-                android:layout_row="5"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a25"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="5" />
+
+            <TextView
+                android:id="@+id/a25"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="DIFERENTE"
                 android:textColor="@color/black"
-                android:layout_row="5"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a06"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="5" />
+
+            <TextView
+                android:id="@+id/a06"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="6.	MENSTRUAL"
                 android:textColor="@color/black"
-                android:layout_row="6"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a16"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="6" />
+
+            <TextView
+                android:id="@+id/a16"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="MENSAL"
                 android:textColor="@color/black"
-                android:layout_row="6"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a26"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="6" />
+
+            <TextView
+                android:id="@+id/a26"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="diário"
                 android:textColor="@color/black"
-                android:layout_row="6"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a07"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="6" />
+
+            <TextView
+                android:id="@+id/a07"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="7.	COMPORTAMENTO"
                 android:textColor="@color/black"
-                android:layout_row="7"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a17"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="7" />
+
+            <TextView
+                android:id="@+id/a17"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="pensamento"
                 android:textColor="@color/black"
-                android:layout_row="7"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a27"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="7" />
+
+            <TextView
+                android:id="@+id/a27"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="CONDUTA"
                 android:textColor="@color/black"
-                android:layout_row="7"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a08"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="7" />
+
+            <TextView
+                android:id="@+id/a08"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="8.	CONVULSÃO"
                 android:textColor="@color/black"
-                android:layout_row="8"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a18"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="8" />
+
+            <TextView
+                android:id="@+id/a18"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="TONTO"
                 android:textColor="@color/black"
-                android:layout_row="8"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a28"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="8" />
+
+            <TextView
+                android:id="@+id/a28"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="tranquilo"
                 android:textColor="@color/black"
-                android:layout_row="8"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a09"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="8" />
+
+            <TextView
+                android:id="@+id/a09"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="9. RETAL"
                 android:textColor="@color/black"
-                android:layout_row="9"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a19"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="9" />
+
+            <TextView
+                android:id="@+id/a19"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="regador"
                 android:textColor="@color/black"
-                android:layout_row="9"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a29"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="9" />
+
+            <TextView
+                android:id="@+id/a29"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="SUPOSITÓRIO"
                 android:textColor="@color/black"
-                android:layout_row="9"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a010"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="9" />
+
+            <TextView
+                android:id="@+id/a010"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="10. APÊNDICE"
                 android:textColor="@color/black"
-                android:layout_row="10"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a110"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="10" />
+
+            <TextView
+                android:id="@+id/a110"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="coceira"
                 android:textColor="@color/black"
-                android:layout_row="10"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a210"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="10" />
+
+            <TextView
+                android:id="@+id/a210"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="DOR"
                 android:textColor="@color/black"
-                android:layout_row="10"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a011"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="10" />
+
+            <TextView
+                android:id="@+id/a011"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="11. ARTRITE"
                 android:textColor="@color/black"
-                android:layout_row="11"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a111"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="11" />
+
+            <TextView
+                android:id="@+id/a111"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="estômago"
                 android:textColor="@color/black"
-                android:layout_row="11"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a211"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="11" />
+
+            <TextView
+                android:id="@+id/a211"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="ARTICULAÇÃO"
                 android:textColor="@color/black"
-                android:layout_row="11"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a012"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="11" />
+
+            <TextView
+                android:id="@+id/a012"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="12. CAFEÍNA"
                 android:textColor="@color/black"
-                android:layout_row="12"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a112"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="12" />
+
+            <TextView
+                android:id="@+id/a112"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="ENERGIA"
                 android:textColor="@color/black"
-                android:layout_row="12"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a212"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="12" />
+
+            <TextView
+                android:id="@+id/a212"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="água"
                 android:textColor="@color/black"
-                android:layout_row="12"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a013"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="12" />
+
+            <TextView
+                android:id="@+id/a013"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="13. COLITE"
                 android:textColor="@color/black"
-                android:layout_row="13"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a113"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="13" />
+
+            <TextView
+                android:id="@+id/a113"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="INTESTINO"
                 android:textColor="@color/black"
-                android:layout_row="13"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a213"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="13" />
+
+            <TextView
+                android:id="@+id/a213"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="bexiga"
                 android:textColor="@color/black"
-                android:layout_row="13"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a014"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="13" />
+
+            <TextView
+                android:id="@+id/a014"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="14. VESÍCULA BILIAR"
                 android:textColor="@color/black"
-                android:layout_row="14"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a114"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="14" />
+
+            <TextView
+                android:id="@+id/a114"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="artéria"
                 android:textColor="@color/black"
-                android:layout_row="14"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a214"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="14" />
+
+            <TextView
+                android:id="@+id/a214"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="ÓRGÃO"
                 android:textColor="@color/black"
-                android:layout_row="14"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a015"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="14" />
+
+            <TextView
+                android:id="@+id/a015"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="15. ICTERÍCIA"
                 android:textColor="@color/black"
-                android:layout_row="15"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a115"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="15" />
+
+            <TextView
+                android:id="@+id/a115"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="AMARELO"
                 android:textColor="@color/black"
-                android:layout_row="15"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a215"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="15" />
+
+            <TextView
+                android:id="@+id/a215"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="branco"
                 android:textColor="@color/black"
-                android:layout_row="15"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a016"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="15" />
+
+            <TextView
+                android:id="@+id/a016"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="16. PRÓSTATA"
                 android:textColor="@color/black"
-                android:layout_row="16"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a116"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="16" />
+
+            <TextView
+                android:id="@+id/a116"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="circulação"
                 android:textColor="@color/black"
-                android:layout_row="16"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a216"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="16" />
+
+            <TextView
+                android:id="@+id/a216"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="GLÂNDULA"
                 android:textColor="@color/black"
-                android:layout_row="16"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a017"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="16" />
+
+            <TextView
+                android:id="@+id/a017"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="17. INCESTO"
                 android:textColor="@color/black"
-                android:layout_row="17"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a117"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="17" />
+
+            <TextView
+                android:id="@+id/a117"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="FAMÍLIA"
                 android:textColor="@color/black"
-                android:layout_row="17"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a217"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="17" />
+
+            <TextView
+                android:id="@+id/a217"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="vizinhos"
                 android:textColor="@color/black"
-                android:layout_row="17"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a018"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="17" />
+
+            <TextView
+                android:id="@+id/a018"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="18. TESTÍCULO"
                 android:textColor="@color/black"
-                android:layout_row="18"
-                android:layout_column="0"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a118"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_row="18" />
+
+            <TextView
+                android:id="@+id/a118"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="óvulo"
                 android:textColor="@color/black"
-                android:layout_row="18"
-                android:layout_column="1"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
-            <TextView android:id="@+id/a218"
-                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_row="18" />
+
+            <TextView
+                android:id="@+id/a218"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="ESPERMA"
                 android:textColor="@color/black"
-                android:layout_row="18"
-                android:layout_column="2"
-                android:layout_margin="10sp"
-                android:textSize="15sp"/>
+                android:textSize="15sp"
+                app:layout_column="2"
+                app:layout_columnWeight="1"
+                app:layout_row="18" />
 
             <!--Checkbox-->
-
             <CheckBox
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="1" />
 
             <CheckBox
                 android:id="@+id/checkBox1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="2"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="2" />
 
             <CheckBox
                 android:id="@+id/checkBox2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="3"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="3" />
 
             <CheckBox
                 android:id="@+id/checkBox3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="4"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="4" />
 
             <CheckBox
                 android:id="@+id/checkBox4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="5"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="5" />
 
             <CheckBox
                 android:id="@+id/checkBox5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="6"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="6" />
 
             <CheckBox
                 android:id="@+id/checkBox6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="7"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="7" />
 
             <CheckBox
                 android:id="@+id/checkBox7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="8"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="8" />
 
             <CheckBox
                 android:id="@+id/checkBox8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="9"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="9" />
 
             <CheckBox
                 android:id="@+id/checkBox9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="10"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="10" />
 
             <CheckBox
                 android:id="@+id/checkBox10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="11"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="11" />
 
             <CheckBox
                 android:id="@+id/checkBox11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="12"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="12" />
 
             <CheckBox
                 android:id="@+id/checkBox12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="13"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="13" />
 
             <CheckBox
                 android:id="@+id/checkBox13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="14"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="14" />
 
             <CheckBox
                 android:id="@+id/checkBox14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="15"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="15" />
 
             <CheckBox
                 android:id="@+id/checkBox15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="16"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="16" />
 
             <CheckBox
                 android:id="@+id/checkBox16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="17"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="17" />
 
             <CheckBox
                 android:id="@+id/checkBox17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_row="18"
-                android:layout_column="4"
+                android:layout_margin="1sp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
                 android:text="Não Sei"
                 android:textSize="15sp"
-                android:layout_margin="10sp"/>
+                app:layout_column="3"
+                app:layout_columnWeight="0.5"
+                app:layout_row="18" />
 
-        </GridLayout>
+        </android.support.v7.widget.GridLayout>
     </ScrollView>
-</LinearLayout>
+
+    <!--Total-->
+    <RelativeLayout
+        android:id="@+id/totalidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20sp"
+            android:padding="15dp"
+            android:text="Total"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20sp"
+            android:padding="15dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</RelativeLayout>

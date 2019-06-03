@@ -1,4 +1,4 @@
-package br.edu.insper.al.grupo_8.projeto_2.Methods;
+package br.edu.insper.al.grupo_8.projeto_2.methods;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +12,6 @@ public class MethodXIIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_xii);
     }
-
 
 
 }

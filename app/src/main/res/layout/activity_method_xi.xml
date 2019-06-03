@@ -8,8 +8,8 @@
     android:layout_marginTop="8dp"
     android:layout_marginEnd="8dp"
     android:layout_marginBottom="8dp"
-    tools:context=".Methods.MethodXIActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".methods.MethodXIActivity">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/Header"
@@ -43,6 +43,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,6 +52,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:orientation="vertical">
+
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/RelativeLayout0"
                 android:layout_width="match_parent"
