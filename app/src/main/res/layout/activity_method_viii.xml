@@ -1,8 +1,280 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".methods.MethodVIIIActivity">
+    android:orientation="vertical"
+    tools:context="Methods.MethodVIIIActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escala De Risco De Queda Downton"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="25dp"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="11">
+
+            <!--[0:0]-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Quedas anteriores"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,RtlCompat" />
+
+            <!--[2:0]-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Medicamentos em uso"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText, RtlCompat" />
+
+            <!--[4:0]-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Déficits sensoriais"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText, RtlCompat" />
+
+            <!--[6:0]-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Estado mental"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText, RtlCompat" />
+
+            <!--[8:0]-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="8"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Deambulação"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText, RtlCompat" />
+
+            <!--[1:0]-->
+            <LinearLayout
+                android:layout_width="34dp"
+                android:layout_height="37dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                tools:ignore="MissingConstraints">
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!--[3:0]-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tranquilizantes sedativo"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="antiparkinsonianos"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="antidepressivos"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="hipotensores (não diuréticos)"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="outros medicamentos"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!--[5:0]-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:orientation="vertical"
+                android:textAlignment="center"
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <CheckBox
+                    android:id="@+id/cb7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="alteraçes visuais"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="alteraçõs auditivas"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Extremidades"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!--[7:0]-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:textAlignment="center"
+                tools:ignore="MissingConstraints">
+
+                <CheckBox
+                    android:id="@+id/cb10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="confuso"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!--[9:0]-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_row="9"
+                android:layout_column="0"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:textAlignment="center"
+                tools:ignore="MissingConstraints">
+
+                <CheckBox
+                    android:id="@+id/cb11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="segura com ajuda"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="insegura com ou sem ajuda"
+                    tools:ignore="HardcodedText" />
+
+                <CheckBox
+                    android:id="@+id/cb13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="impossível"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_gravity="start"
+                android:textColor="@color/black"
+
+                android:layout_row="10"
+                android:layout_column="0"
+
+                android:fontFamily="sans-serif"
+                android:text="TOTAL: "
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                tools:ignore="HardcodedText"/>
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>
