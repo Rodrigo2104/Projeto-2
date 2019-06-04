@@ -1,8 +1,436 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".methods.MethodVIIActivity">
+    android:orientation="vertical"
 
-</android.support.constraint.ConstraintLayout>
+    tools:context="Methods.MethodVIIActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nutritional Risk Screening (NRS)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="25dp"
+        tools:ignore="HardcodedText, MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="110dp" >
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="IMC menor que 20,5 kg/m²"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Perda de peso nos ltimos 3 meses"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="redução de ingest o na ltima semana"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/cb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="saúde gravemente comprometida"
+            android:textSize="15sp"
+
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+
+            tools:ignore="MissingConstraints">
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="5"
+
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="pontuação"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="estado nutricional"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="gravidade da doença"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1. grave"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="2. moderado"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="3. grave"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    tools:ignore="HardcodedText" />
+
+                <!--[1:1]-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textAlignment="center"
+
+                    tools:ignore="MissingConstraints">
+
+                    <CheckBox
+                        android:id="@+id/cb5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="perda de peso maior que 5% em 3 meses"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="145dp"
+                        android:text="50 a 75% das necessidades energéticas"
+
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!--[1:2]-->
+                <LinearLayout
+                    android:layout_width="321dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:textAlignment="center"
+
+                    tools:ignore="MissingConstraints">
+
+                    <CheckBox
+                        android:id="@+id/cb7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="complicações agudas de_doenças crônicas"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="dpoc"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="hd (hermodiálise)"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="câncer"
+
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!--[2:1]-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:textAlignment="center"
+
+                    tools:ignore="MissingConstraints">
+
+                    <CheckBox
+                        android:id="@+id/cb11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="perda de peso maior que 5% em 2 meses"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="imc entre 18,5 e 20,5 kg/m²"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="82dp"
+                        android:text="25 a 50% das necessidades energéticas"
+
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!--[2:2]-->
+                <LinearLayout
+                    android:layout_width="324dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:textAlignment="center"
+
+                    tools:ignore="MissingConstraints">
+
+                    <CheckBox
+                        android:id="@+id/cb14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="avc"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="BCP Severa"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="cirurgia no TGI ou absominais"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="infecções graves"
+
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!--[3:1]-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:textAlignment="center"
+
+                    tools:ignore="MissingConstraints">
+
+                    <CheckBox
+                        android:id="@+id/cb18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="perda de peso maior que 5% em 2 meses"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="imc entre 18,5 e 20,5 kg/m²"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="25 a 50% das necessidades energéticas"
+
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!--[3:2]-->
+                <LinearLayout
+                    android:layout_width="330dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:textAlignment="center"
+
+                    tools:ignore="MissingConstraints">
+
+                    <CheckBox
+                        android:id="@+id/cb21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Neurocirurgia"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="TMO"
+
+                        tools:ignore="HardcodedText" />
+
+                    <CheckBox
+                        android:id="@+id/cb23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="UTI (apache > 10)"
+
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/result"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_row="4"-->
+                    <!--android:layout_column="0"-->
+                    <!--android:layout_gravity="start"-->
+                    <!--android:layout_marginTop="20dp"-->
+
+                    <!--android:fontFamily="sans-serif"-->
+                    <!--android:gravity="center"-->
+
+                    <!--android:text="TOTAL: "-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="24sp"-->
+                    <!--android:textStyle="bold"-->
+
+                    <!--tools:ignore="HardcodedText" />-->
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
