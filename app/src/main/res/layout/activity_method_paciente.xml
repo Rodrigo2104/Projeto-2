@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/HeadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Questionário com dados sócio demográficos, clínicos, crença religiosas e econômicos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView0"
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="Nome:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/editText0"
+                    android:layout_width="670dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Nome"
+                    android:inputType="textPersonName"
+                    android:onClick="checkone"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:text="RH:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="RH"
+                    android:inputType="textPersonName"
+                    android:onClick="checkone"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Data de internação:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="118dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Data"
+                    android:onClick="checkone"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Idade:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Idade"
+                    android:onClick="checkone"
+                    android:inputType="textPersonName"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:text="Sexo:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Masculino" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Feminino" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            //===============================================
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Diagnóstico médico:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="520dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:onClick="checkone"
+                    android:text="" />
+
+            </LinearLayout>
+
+            //=================================================
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cor da pele autoreferida"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Branco" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Amarelo" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Negro" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Pardo" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Indígena" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            //============================================
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="120dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:text="Estado civil:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Solteiro" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Divorciado" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Casado" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Viúvo" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Escolaridade:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+                    <LinearLayout
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/checkBox12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checRad"
+                            android:text="Nenhum nível de ensino" />
+
+                        <RadioButton
+                            android:id="@+id/checkBox13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checRad"
+                            android:text="Fundamental incompleto " />
+
+                        <RadioButton
+                            android:id="@+id/checkBox14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checRad"
+                            android:text="Médio incompleto " />
+
+                        <RadioButton
+                            android:id="@+id/checkBox15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checRad"
+                            android:text="Superior incompleto " />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/checkBox16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checRad"
+                            android:text="Fundamental completo " />
+
+                        <RadioButton
+                            android:id="@+id/checkBox17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checRad"
+                            android:text="Médio completo" />
+
+                        <RadioButton
+                            android:id="@+id/checkBox18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="checRad"
+                            android:text="Superior completo" />
+                    </LinearLayout>
+                </RadioGroup>
+            </LinearLayout>
+
+            //=======================================
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ocupação:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/checkBox19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="checRad"
+                        android:text="Aposentado/Pensionista " />
+
+                    <RadioButton
+                        android:id="@+id/checkBox20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="checRad"
+                        android:text="Trabalhador autônomo " />
+
+                    <RadioButton
+                        android:id="@+id/checkBox21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="checRad"
+                        android:text="Desempregado" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="checRad"
+                        android:text="Trabalhador formal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/checkBox23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="checRad"
+                        android:text="Trabalhador informal" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="checRad"
+                        android:text="Do lar" />
+
+                </LinearLayout>
+            </LinearLayout>
+            /=======================================
+            //==============================================
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Provedor da casa:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Sim" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Não" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Renda Idoso:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="01 SM " />
+
+                    <RadioButton
+                        android:id="@+id/checkBox28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="04 SM " />
+
+                    <RadioButton
+                        android:id="@+id/checkBox29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="De 01 a 04 SM" />
+                </RadioGroup>
+
+            </LinearLayout>
+            /===========================================================
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Renda Familiar:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="01 SM " />
+
+                    <RadioButton
+                        android:id="@+id/checkBox31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="04 SM " />
+
+                    <RadioButton
+                        android:id="@+id/checkBox32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="De 01 a 04 SM" />
+                </RadioGroup>
+
+            </LinearLayout>
+            /============================================================
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="169dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Quantas pessoas dependem dessa renda:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="01" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="02 a 03" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="04 ou mais" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Religião:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox36"
+                        android:layout_width="151dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Católico" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox37"
+                        android:layout_width="151dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Espírita" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox38"
+                        android:layout_width="151dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Budista" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox39"
+                        android:layout_width="151dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Evangélico" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Hábitos de Vida:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox40"
+                        android:layout_width="151dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Sedentarismo" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox41"
+                        android:layout_width="151dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Prática regular de atividade física" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox42"
+                        android:layout_width="151dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Tabagismo" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox43"
+                        android:layout_width="151dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="checRad"
+                        android:text="Etilismo" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Alta Hospitalar:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="520dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:onClick="checkone"
+                    android:text="" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proximo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

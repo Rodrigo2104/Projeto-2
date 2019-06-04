@@ -104,6 +104,13 @@
             android:layout_gravity="center"
             android:text="SATISFAÇÃO AO CLIENTE" />
 
+        <Button
+            android:id="@+id/button_goMethodXIII"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Paciente"/>
+
     </LinearLayout>
 
 
