@@ -1,8 +1,18 @@
 <resources>
     <string name="app_name">Projeto-2</string>
     <string name="short_assessement_of_health_literacy_for_portuguese_speaking_adults">Short Assessement of Health Literacy for Portuguese Speaking - Adults</string>
+
+    <string name="teste_I">Mini Exame do Estado Mental(MEEM)</string>
+    <string name="teste_II">Edmonton Frailescale</string>
+    <string name="teste_III">Short Assessement Of Health Literacy For Portuguese Speaking-Adults</string>
+    <string name="teste_IV">Escala de Katz</string>
+    <string name="teste_V">Escala de Lawton e Brody</string>
+    <string name="teste_VI">Teste de Morisky e Brief Medical Questionaire</string>
+    <string name="teste_VII">Nutritional Risk Screening(NRS)</string>
+    <string name="teste_VIII">Escala de Risco de Quedas de Downton</string>
     <string name="teste_IX">Escala Hospitalar de Ansiedade e Depressão(HADS)</string>
     <string name="teste_X">Escala de Resiliência(ER)</string>
+
     <string name="instrucoes_teste_3">1 - Antes de iniciar os cartões de estímulo e o formulário de aplicação para anotar as respostas. \n2 - Diga: Agora eu vou te mostrar alguns cartões com 03 palavras. Primeiro eu quero que você leia a palavra de cima em voz alta. .Então eu vou ler as duas palavras de baixo e quero que você me diga qual deles está mais relacionada com a de cima. Se você não souber a resposta diga \'não sei\'- não tente adivinhar. \n3 - Mostre o primeiro cartão. \n4 - Diga: Agora, por favor, leia a palavra de cima em voz alta. \n5 - Em seguida leia as duas palavras de associação e diga: Qual dessas duas palavras está mais relacionada com a de cima? \n6 - Repita as instruções nos itens frequentes até que o paciente esteja confortável com o procedimento. \n7 - O item considerado correto apenas quando o paciente acerta pronúncia e a associação. Cada item correto recebe um ponto e o escore total é obtido pela soma dos itens, variando de 0 a 18. \n8 - Um escore entre 0 e 14 sugere alfabetismo em saúde inadequado.</string>
     <string name="instrucoes_teste_X">Por favor, leia as instruções.
 Encontrará sete números, variando de \"1\" (Discordo Totalmente)

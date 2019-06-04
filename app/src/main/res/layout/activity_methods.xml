@@ -14,99 +14,99 @@
 
         <Button
             android:id="@+id/button_goMethodI"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 1" />
+            android:text="@string/teste_I" />
 
         <Button
             android:id="@+id/button_goMethodII"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 2" />
+            android:text="@string/teste_II" />
 
 
         <Button
             android:id="@+id/button_goMethodIII"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 3" />
+            android:text="@string/teste_III" />
 
 
         <Button
             android:id="@+id/button_goMethodIV"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 4" />
+            android:text="@string/teste_IV" />
 
 
         <Button
             android:id="@+id/button_goMethodV"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 5" />
+            android:text="@string/teste_V" />
 
 
         <Button
             android:id="@+id/button_goMethodVI"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 6" />
+            android:text="@string/teste_VI" />
 
 
         <Button
             android:id="@+id/button_goMethodVII"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 7" />
+            android:text="@string/teste_VII" />
 
 
         <Button
             android:id="@+id/button_goMethodVIII"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 8" />
+            android:text="@string/teste_VIII" />
 
 
         <Button
             android:id="@+id/button_goMethodIX"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 9" />
+            android:text="@string/teste_IX" />
 
 
         <Button
             android:id="@+id/button_goMethodX"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Método 10" />
+            android:text="@string/teste_X" />
 
         <Button
             android:id="@+id/button_goMethodXII"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Metodo 11" />
+            android:text="Instrumento de Classificação de Cuidado de Pacientes de Fugulin" />
 
         <Button
             android:id="@+id/button_goMethodXI"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="SATISFAÇÃO AO CLIENTE" />
 
         <Button
             android:id="@+id/button_goMethodXIII"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Paciente"/>
