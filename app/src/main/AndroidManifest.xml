@@ -4,14 +4,14 @@
     package="br.edu.insper.al.grupo_8.projeto_2">
 
     <application
-        android:name=".Logged"
         android:icon="@drawable/medicine_box"
         android:label="Unifesp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ProfileActivity"/>
+        <activity android:name=".AddActivity"></activity>
+        <activity android:name=".ProfileActivity" />
         <activity android:name=".methods.MethodXActivity" />
         <activity android:name=".methods.MethodIXActivity" />
         <activity android:name=".methods.MethodVIIIActivity" />
@@ -37,7 +37,7 @@
         <activity android:name=".methods.MethodXIIActivity" />
         <activity android:name=".methods.MethodVActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
