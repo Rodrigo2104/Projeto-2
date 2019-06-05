@@ -1,9 +1,11 @@
 package br.edu.insper.al.grupo_8.projeto_2.methods;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -60,11 +62,19 @@ public class MethodIIActivity extends AppCompatActivity {
     private CheckBox checkBox15;
 
 
+    private void startMethodActivity(Class classe) {
+        Intent intent = new Intent(this, classe);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_ii);
+
+        Button buttonGoMethodIII = findViewById(R.id.button_goMethodIII);
+        buttonGoMethodIII.setOnClickListener((view) -> startMethodActivity(MethodIIIActivity.class));
+
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
         radioButton3 = (RadioButton) findViewById(R.id.radioButton3);

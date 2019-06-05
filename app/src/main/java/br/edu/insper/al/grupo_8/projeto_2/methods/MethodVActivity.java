@@ -1,8 +1,10 @@
 package br.edu.insper.al.grupo_8.projeto_2.methods;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -14,11 +16,18 @@ public class MethodVActivity extends AppCompatActivity {
 
     private LinkedList<RadioButton> boxes;
 
+    private void startMethodActivity(Class classe) {
+        Intent intent = new Intent(this, classe);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_v);
+
+        Button buttonGoMethodVI = findViewById(R.id.button_goMethodVI);
+        buttonGoMethodVI.setOnClickListener((view) -> startMethodActivity(MethodVIActivity.class));
 
         boxes = new LinkedList<>();
 

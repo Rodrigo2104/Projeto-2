@@ -10,10 +10,18 @@ import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodPaciente;
+
 public class HomeActivity extends AppCompatActivity {
 
     private void startMethodsActivity() {
         Intent intent = new Intent(this, MethodsActivity.class);
+        startActivity(intent);
+    }
+
+    private void startMethodPaciente() {
+        Intent intent = new Intent(this, MethodPaciente.class);
         startActivity(intent);
     }
 
@@ -31,18 +39,16 @@ public class HomeActivity extends AppCompatActivity {
 
         Button buttonGoMethods = findViewById(R.id.button_goMethods);
         Button singOut = findViewById(R.id.singOut);
-        FirebaseAuth authentication = FirebaseAuth.getInstance();
-        FirebaseUser user = authentication.getCurrentUser();
-
 
         singOut.setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
             logOutMainActivity();
         });
 
-        buttonGoMethods.setOnClickListener((view -> {
-            startMethodsActivity();
-        }));
+        buttonGoMethods.setOnClickListener((view -> startMethodsActivity()));
+
+        Button buttonGoEvaluation = findViewById(R.id.button_goEvaluation);
+        buttonGoEvaluation.setOnClickListener((view -> startMethodPaciente()));
     }
 
 }
