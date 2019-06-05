@@ -53,20 +53,19 @@
             android:layout_marginBottom="8dp"
             android:orientation="vertical">
 
-            <android.support.constraint.ConstraintLayout
-                android:id="@+id/RelativeLayout0"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
 
                 <TextView
                     android:id="@+id/textViewk"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Os profissionais que fazem o atendimento são educados e cordiais? Como o Sr (a) avalia este aspecto?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -74,73 +73,65 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox7"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox8"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox8"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox9"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9" />
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox9"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewk" />
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox20"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox9"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9" />
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox22"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox20"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
-                android:id="@+id/RelativeLayout1"
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
 
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="0dp"
+                    android:id="@+id/textViewkm"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Como o Sr (a) considera a estrutura hospitalar em termos de conforto e privacidade do usuário?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -148,73 +139,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox7a"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox8b"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9c" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox8b"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox9c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9c" />
+                    <RadioButton
+                        android:id="@+id/radioButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox9c"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                    <RadioButton
+                        android:id="@+id/radioButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox20d"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox9c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9c" />
+                    <RadioButton
+                        android:id="@+id/radioButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox22e"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox20d"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9c" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton
+                        android:id="@+id/radioButton10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Como é o estado de conservação do local de atendimento?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -222,73 +203,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox107"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox108"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox108"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox109"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109" />
+                    <RadioButton
+                        android:id="@+id/radioButton11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox109"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                    <RadioButton
+                        android:id="@+id/radioButton12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1020"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox109"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109" />
+                    <RadioButton
+                        android:id="@+id/radioButton13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1022"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1020"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton
+                        android:id="@+id/radioButton15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView4"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -296,73 +267,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox117"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox118"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox119" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox118"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox119"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox119" />
+                    <RadioButton
+                        android:id="@+id/radioButton16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox119"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                    <RadioButton
+                        android:id="@+id/radioButton17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1120"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox119"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox119" />
+                    <RadioButton
+                        android:id="@+id/radioButton18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1122"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1120"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox119" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton
+                        android:id="@+id/radioButton20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -370,73 +331,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox127"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox128"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox129" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox128"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox129"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox129" />
+                    <RadioButton
+                        android:id="@+id/radioButton21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox129"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                    <RadioButton
+                        android:id="@+id/radioButton22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1220"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox129"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox129" />
+                    <RadioButton
+                        android:id="@+id/radioButton23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1222"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1220"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox129" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton
+                        android:id="@+id/radioButton25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView6"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Os profissionais contribuem para que o (a) Sr (a) se sinta confortável e seguro? Como o Sr (a) avalia este aspecto?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -444,73 +395,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox137"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox138"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox139" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox138"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox139"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox139" />
+                    <RadioButton
+                        android:id="@+id/radioButton26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox139"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                    <RadioButton
+                        android:id="@+id/radioButton27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1320"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox139"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox139" />
+                    <RadioButton
+                        android:id="@+id/radioButton28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1322"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1320"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox139" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton
+                        android:id="@+id/radioButton30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView7"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Como o Sr (a) considera a humanização em todas as etapas do atendimento?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -518,73 +459,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox147"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox148"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox149" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox148"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox149"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox149" />
+                    <RadioButton
+                        android:id="@+id/radioButton31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox149"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                    <RadioButton
+                        android:id="@+id/radioButton32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1420"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox149"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox149" />
+                    <RadioButton
+                        android:id="@+id/radioButton33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1422"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1420"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox149" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton
+                        android:id="@+id/radioButton35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView8"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Como o Sr (a) considera as orientações fornecidas pela equipe sobre os procedimentos a serem realizados e seu estado de saúde? (Estas são sempre fornecidas?)"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -592,73 +523,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox157"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox158"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox159" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox158"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox159"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox159" />
+                    <RadioButton
+                        android:id="@+id/radioButton36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox159"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                    <RadioButton
+                        android:id="@+id/radioButton37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1520"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox159"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox159" />
+                    <RadioButton
+                        android:id="@+id/radioButton38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1522"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1520"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox159" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton
+                        android:id="@+id/radioButton40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Como o Sr (a) avalia a qualidade técnica dos cuidados prestados? "
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -666,73 +587,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox167"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox168"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox169" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox168"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox169"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox169" />
+                    <RadioButton
+                        android:id="@+id/radioButton41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox169"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+                    <RadioButton
+                        android:id="@+id/radioButton42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1620"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox169"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox169" />
+                    <RadioButton
+                        android:id="@+id/radioButton43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1622"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1620"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox169" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton
+                        android:id="@+id/radioButton45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView12"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Como o Sr (a) avalia a equipe assistencial em termos de demonstrar segurança durante os procedimentos?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -740,73 +651,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox187"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox188"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox189" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox188"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox189"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox189" />
+                    <RadioButton
+                        android:id="@+id/radioButton46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox189"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                    <RadioButton
+                        android:id="@+id/radioButton47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1820"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox189"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox189" />
+                    <RadioButton
+                        android:id="@+id/radioButton48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1822"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1820"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox189" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton
+                        android:id="@+id/radioButton50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout10"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView11"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Como o Sr (a) considera a resolutividade do atendimento?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -814,59 +715,51 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox177"
-                    android:layout_width="100dp"
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Péssimo"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox178"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox179" />
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox178"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp"
-                    android:text="Ruim"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox179"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox179" />
+                    <RadioButton
+                        android:id="@+id/radioButton51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
 
-                <CheckBox
-                    android:id="@+id/checkBox179"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Regular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                    <RadioButton
+                        android:id="@+id/radioButton52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1720"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
-                    android:text="Bom"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox179"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox179" />
+                    <RadioButton
+                        android:id="@+id/radioButton53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1722"
-                    android:layout_width="100dp"
-                    android:layout_height="31dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Excelente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1720"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox179" />
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton
+                        android:id="@+id/radioButton54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
 
+                    <RadioButton
+                        android:id="@+id/radioButton55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
