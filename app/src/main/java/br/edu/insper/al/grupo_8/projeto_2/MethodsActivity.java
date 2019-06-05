@@ -15,9 +15,8 @@ import br.edu.insper.al.grupo_8.projeto_2.methods.MethodVIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodVIIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodVIIIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXActivity;
-import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIIActivity;
-import br.edu.insper.al.grupo_8.projeto_2.methods.MethodPaciente;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIActivity;
 
 
 public class MethodsActivity extends AppCompatActivity {
@@ -65,13 +64,10 @@ public class MethodsActivity extends AppCompatActivity {
         buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(MethodXActivity.class));
 
         Button buttonGoMethodXI = findViewById(R.id.button_goMethodXI);
-        buttonGoMethodXI.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
+        buttonGoMethodXI.setOnClickListener((view) -> startMethodActivity(MethodXIIActivity.class));
 
         Button buttonGoMethodXII = findViewById(R.id.button_goMethodXII);
-        buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIIActivity.class));
-
-        Button buttonGoMethodXIII = findViewById(R.id.button_goMethodXIII);
-        buttonGoMethodXIII.setOnClickListener((view) -> startMethodActivity(MethodPaciente.class));
+        buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
 
     }
 }

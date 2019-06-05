@@ -22,6 +22,9 @@ public class MethodIVActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_iv);
 
+        Button buttonGoMethodIII = findViewById(R.id.button_goMethodIII);
+        buttonGoMethodIII.setOnClickListener((view) -> startMethodActivity(MethodIIIActivity.class));
+
         Button buttonGoMethodV = findViewById(R.id.button_goMethodV);
         buttonGoMethodV.setOnClickListener((view) -> startMethodActivity(MethodVActivity.class));
 

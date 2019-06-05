@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="8dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".methods.MethodXIIActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -22,6 +24,7 @@
             android:rowCount="1">
 
             <Button
+                android:id="@+id/button_goMethodX"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -42,7 +45,7 @@
                 android:src="@drawable/unifesp_escrito" />
 
             <Button
-                android:id="@+id/button_goHome"
+                android:id="@+id/button_goMethodXII"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -52,7 +55,7 @@
                 android:textAllCaps="true"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:text="Finalizar"/>
+                android:text="Próximo"/>
 
         </GridLayout>
 
@@ -78,7 +81,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:text="INSTRUMENTO DE CLASSIFICAÇÃO DE CUIDADO DE PACIENTES DE FUGULIN"
+            android:text="SATISFAÇÃO AO CLIENTE"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -99,19 +102,22 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:orientation="vertical">
+
             <LinearLayout
-                android:id="@+id/RelativeLayout1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/textViewk"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Estado mental"
+                    android:text="Os profissionais que fazem o atendimento são educados e cordiais? Como o Sr (a) avalia este aspecto?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -126,49 +132,122 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:onClick = "checkone"
+                    <RadioButton
                         android:id="@+id/radioButton1"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Inconsciente" />
+                        android:text="Péssimo" />
 
-                    <RadioButton android:onClick = "checkone"
+                    <RadioButton
                         android:id="@+id/radioButton2"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Períodos de inconsciência" />
+                        android:text="Ruim" />
 
-                    <RadioButton android:onClick = "checkone"
+                    <RadioButton
                         android:id="@+id/radioButton3"
-                        android:layout_width="300dp"
-                        android:layout_height="62dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Períodos de desorientação no tempo e no espaço" />
+                        android:text="Regular" />
 
-                    <RadioButton android:onClick = "checkone"
+                    <RadioButton
                         android:id="@+id/radioButton4"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Períodos de desorientação no tempo e no espaço" />
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textViewkm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como o Sr (a) considera a estrutura hospitalar em termos de conforto e privacidade do usuário?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
                 </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/RelativeLayout2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Oxigenação"
+                    android:text="Como é o estado de conservação do local de atendimento?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -183,33 +262,40 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton1a"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Ventilação mecânica (uso de ventilador a pressão ou volume)" />
+                        android:text="Péssimo" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton2a"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Uso contínuo de máscara ou cateter de oxigênio" />
+                        android:text="Ruim" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton3a"
-                        android:layout_width="300dp"
-                        android:layout_height="62dp"
+                    <RadioButton
+                        android:id="@+id/radioButton13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Uso intermitente de máscara ou cateter de oxigênio" />
+                        android:text="Regular" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton4a"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Não depende de oxigênio" />
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -222,10 +308,10 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sinais vitais"
+                    android:text="Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -240,49 +326,56 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton5"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Controle de intervalos menores a duas horas" />
+                        android:text="Péssimo" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton6"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Controle em intervalos de 4 horas" />
+                        android:text="Ruim" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton7"
-                        android:layout_width="300dp"
-                        android:layout_height="62dp"
+                    <RadioButton
+                        android:id="@+id/radioButton18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Controle em intervalos de 6 horas" />
+                        android:text="Regular" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton8"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Controle de rotinas 8 horas" />
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
                 </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/RelativeLayout4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mobilidade"
+                    android:text="Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -294,52 +387,59 @@
 
                 <RadioGroup
                     android:layout_width="match_parent"
-                    android:layout_height="125dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton9"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Incapaz de movimentar qualquer segmento corporal, dificuldade para movimentar segmentos corporais" />
+                        android:text="Péssimo" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton9a"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Dificuldade para movimentar segmentos corporais. Mudança de decúbitos e movimentação passiva auxiliada pela enfermagem" />
+                        android:text="Ruim" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton10"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Limitação de movimentos.Porém movimenta sem auxílio" />
+                        android:text="Regular" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton11"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Movimenta todos os segmentos corporais" />
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
                 </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/RelativeLayout5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Deambulação"
+                    android:text="Os profissionais contribuem para que o (a) Sr (a) se sinta confortável e seguro? Como o Sr (a) avalia este aspecto?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -354,49 +454,56 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton12"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Restrito no leito" />
+                        android:text="Péssimo" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton13"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Locomoção através de cadeira de rodas" />
+                        android:text="Ruim" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton14"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Necessita de auxílio para deambular" />
+                        android:text="Regular" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton15"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Ambulante" />
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
                 </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/RelativeLayout6"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Alimentação"
+                    android:text="Como o Sr (a) considera a humanização em todas as etapas do atendimento?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -411,49 +518,56 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton16"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Através de cateter central" />
+                        android:text="Péssimo" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton17"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Através de sonda nasogástrica" />
+                        android:text="Ruim" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton18"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Via oral com auxílio" />
+                        android:text="Regular" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton19"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Auto suficiente" />
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
                 </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/RelativeLayout7"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/textView8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cuidado corporal"
+                    android:text="Como o Sr (a) considera as orientações fornecidas pela equipe sobre os procedimentos a serem realizados e seu estado de saúde? (Estas são sempre fornecidas?)"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -468,106 +582,56 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton20"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Banho no leito, higiene oral, realizada pela enfermagem" />
+                        android:text="Péssimo" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton21"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Banho de chuveiro, higiene oral realizada pela enfermagem" />
+                        android:text="Ruim" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton22"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Auxílio no banho de chuveiro e/ou higiene oral" />
+                        android:text="Regular" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton23"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton39"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Auto suficiente" />
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
                 </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/RelativeLayout8"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Eliminação"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton24"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Evacuação no leito e uso de sonda vesical para controle da diurese" />
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton25"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Uso de comadre ou eliminações no leito" />
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton26"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Uso de vaso sanitário com auxílio" />
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton27"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Auto suficiente" />
-                </RadioGroup>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/RelativeLayout9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Terapêutica"
+                    android:text="Como o Sr (a) avalia a qualidade técnica dos cuidados prestados? "
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -582,163 +646,56 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton28"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Uso de drogas vasoativas para manutenção de PA" />
+                        android:text="Péssimo" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton29"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="E.V contínuo ou através de sonda nasogástrica" />
+                        android:text="Ruim" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton30"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="E.V. intermitente" />
+                        android:text="Regular" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton31"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="IM. Ou VO" />
-                </RadioGroup>
-            </LinearLayout>
+                        android:text="Bom" />
 
-            <LinearLayout
-                android:id="@+id/RelativeLayout10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Integridade cutaneomucosa /comprometimento tecidual"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton32"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Presença de solução de continuidade da pele com destruição da derme, epiderme, músculos e comprometimento das demais estruturas de suporte como tendões e cápsulas. Eviscerações" />
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton33"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Presença de solução dle continuidade da pele, envolvendo tecido subcutâneo e músculo. Incisão cirúrgica. Ostomias. Drenos" />
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton34"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Presença de alteração da cor da pele (equimose, hiperemia) e/ou presença de solução de continuidade da pele envolvendo a epiderme a  derme ou ambas" />
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton35"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Pele íntegra" />
+                        android:text="Excelente" />
                 </RadioGroup>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/RelativeLayout11"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="match_parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Curativo"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton36"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Curativo realizado 3 vezes ao dia ou mais, pela equipe de enfermagem" />
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton37"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Curativo realizado 2 vezes ao dia, pela enfermagem" />
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton38"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Curativo realizado 1 vez ao dia, pela enfermagem" />
-
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton39"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Sem curativo ou limpeza da ferida/incisão cirúrgica, realizada pelo paciente durante o banho" />
-                </RadioGroup>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/RelativeLayout12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tempo realizado na realização de curativos"
+                    android:text="Como o Sr (a) avalia a equipe assistencial em termos de demonstrar segurança durante os procedimentos?"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -753,33 +710,104 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton40"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Superior a 30 minutos" />
+                        android:text="Péssimo" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton41"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Entre 15 e 30 minutos" />
+                        android:text="Ruim" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton42"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Entre 5 e15 minutos" />
+                        android:text="Regular" />
 
-                    <RadioButton android:onClick = "checkone"
-                        android:id="@+id/radioButton43"
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
+                    <RadioButton
+                        android:id="@+id/radioButton49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Sem curativo ou limpeza da ferida realizada durante o banho" />
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/RelativeLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Como o Sr (a) considera a resolutividade do atendimento?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Péssimo" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ruim" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton53"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Regular" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton54"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bom" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Excelente" />
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>

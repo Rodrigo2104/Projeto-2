@@ -60,7 +60,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
         Button add = findViewById(R.id.add_pacient);
-        add.setOnClickListener((view -> startAddActivity()));
+        add.setOnClickListener((view -> startMethodPaciente()));
 
 //      =============== Firebase ===============
         listView = findViewById(R.id.pacients);

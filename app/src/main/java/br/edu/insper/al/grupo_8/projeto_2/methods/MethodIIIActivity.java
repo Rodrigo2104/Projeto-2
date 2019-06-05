@@ -30,6 +30,9 @@ public class MethodIIIActivity extends AppCompatActivity {
         boxes = new LinkedList<>();
         TextView resultadoSoma = findViewById(R.id.resultado);
 
+        Button buttonGoMethodII = findViewById(R.id.button_goMethodII);
+        buttonGoMethodII.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
+
         Button buttonGoMethodIV = findViewById(R.id.button_goMethodIV);
         buttonGoMethodIV.setOnClickListener((view) -> startMethodActivity(MethodIVActivity.class));
 
