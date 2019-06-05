@@ -9,11 +9,12 @@ public class Paciente {
 
     private HashMap<String, String> resultados;
     private HashMap <String, String> dados;
+    private String RH;
 
-    public void Paciente(String nome, int num) {
+    public Paciente(String nome, String num, HashMap<String, String> resultados) {
         this.nome = nome;
-
-        this.resultados = new HashMap<String, String>();
+        this.RH = num;
+        this.resultados = resultados;
 
     }
 

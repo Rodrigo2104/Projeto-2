@@ -18,7 +18,6 @@ import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodPaciente;
-import br.edu.insper.al.grupo_8.projeto_2.methods.MethodPaciente2;
 
 
 public class MethodsActivity extends AppCompatActivity {
