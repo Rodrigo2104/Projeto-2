@@ -1,5 +1,9 @@
 package br.edu.insper.al.grupo_8.projeto_2.methods;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,9 +15,16 @@ import android.widget.TextView;
 
 import java.util.HashMap;
 
+
+import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 
 public class MethodXIIActivity extends AppCompatActivity {
+
+    private void startMethodActivity(Class classe) {
+        Intent intent = new Intent(this, classe);
+        startActivity(intent);
+    }
 
     private HashMap<RadioButton, Integer> testes = new HashMap<RadioButton, Integer>();
     private HashMap<CheckBox, Integer> testes_checkBox = new HashMap<CheckBox, Integer>();
@@ -77,10 +88,15 @@ public class MethodXIIActivity extends AppCompatActivity {
     private RadioButton radioButton44;
     private RadioGroup rg;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_xii);
+
+
+        Button buttonGoHome = findViewById(R.id.button_goHome);
+        buttonGoHome.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
 
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
@@ -485,7 +501,6 @@ public class MethodXIIActivity extends AppCompatActivity {
 
             this.Resultados += e;
         }
-
     }
 
 
