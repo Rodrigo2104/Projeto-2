@@ -12,15 +12,15 @@ public class Department {
         this.pacientes = new HashMap<>();
     }
 
-    public void addPaciente(Paciente paciente) {
-        this.pacientes.put(paciente.getNum(), paciente);
-    }
+//    public void addPaciente(Paciente paciente) {
+//        this.pacientes.put(paciente.getNum(), paciente);
+//    }
 
     public HashMap<Integer, Paciente> getPacientes() {
         return this.pacientes;
     }
 
-    public void delPaciente(Paciente paciente) {
-        this.pacientes.remove(paciente.getNum());
-    }
+//    public void delPaciente(Paciente paciente) {
+//        this.pacientes.remove(paciente.getNum());
+//    }
 }
