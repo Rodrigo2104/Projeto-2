@@ -6,35 +6,33 @@ import java.util.LinkedList;
 
 public class Paciente {
     private String nome;
-    private int num;
-    private Date dataDeEntrada;
-    private HashMap<String, LinkedList<String>> resultados;
 
-    public void Paciente(String nome, int num) {
+    private HashMap<String, String> resultados;
+    private HashMap <String, String> dados;
+    private String RH;
+
+    public Paciente(String nome, String num, HashMap<String, String> resultados) {
         this.nome = nome;
-        this.num = num;
-        this.resultados = new HashMap<String, LinkedList<String>>();
-        dataDeEntrada = new Date();
+        this.RH = num;
+        this.resultados = resultados;
+
     }
 
     public String getNome() {
         return nome;
     }
 
-    public int getNum() {
-        return num;
-    }
-
-    public Date getDataDeEntrada() {
-        return dataDeEntrada;
-    }
 
     public HashMap getResultados() {
         return resultados;
     }
 
-    public void addToResultados(String teste, LinkedList<String> resultado) {
+    public void addToResultados(String teste, String resultado) {
         resultados.put(teste, resultado);
+    }
+
+    public void addToDados(HashMap<String, String> DADOS){
+        this.dados = DADOS;
     }
 
 }

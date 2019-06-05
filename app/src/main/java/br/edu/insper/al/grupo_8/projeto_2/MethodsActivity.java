@@ -17,6 +17,7 @@ import br.edu.insper.al.grupo_8.projeto_2.methods.MethodVIIIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodPaciente;
 
 
 public class MethodsActivity extends AppCompatActivity {
@@ -69,6 +70,9 @@ public class MethodsActivity extends AppCompatActivity {
 
         Button buttonGoMethodXII = findViewById(R.id.button_goMethodXII);
         buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIIActivity.class));
+
+        Button buttonGoMethodXIII = findViewById(R.id.button_goMethodXIII);
+        buttonGoMethodXIII.setOnClickListener((view) -> startMethodActivity(MethodPaciente.class));
 
     }
 }
