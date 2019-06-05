@@ -140,6 +140,10 @@ public class MethodPaciente extends AppCompatActivity {
         loadData();
 
         setContentView(R.layout.activity_method_paciente);
+
+        Button buttonGoMethodI = findViewById(R.id.button_goMethodI);
+        buttonGoMethodI.setOnClickListener((view) -> startMethodActivity(MethodIActivity.class));
+
         Button Proximo = findViewById(R.id.button2);
         RH_in = (EditText) findViewById(R.id.rh);
         Data_in = (EditText) findViewById(R.id.editText2);

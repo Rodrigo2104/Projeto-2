@@ -3,11 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="8dp"
     android:layout_marginBottom="8dp"
     android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_unifesp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:columnCount="3"
+            android:rowCount="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+
+                android:background="@drawable/custom_buttom"
+
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Voltar"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="210dp"
+                android:contentDescription="unifesp_escrito"
+                android:src="@drawable/unifesp_escrito" />
+
+            <Button
+                android:id="@+id/button_goHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+
+                android:background="@drawable/custom_buttom"
+
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Finalizar"/>
+
+        </GridLayout>
+
+    </android.support.v7.widget.Toolbar>
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/Header"
@@ -50,21 +99,17 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:orientation="vertical">
-
-            <android.support.constraint.ConstraintLayout
-                android:id="@+id/RelativeLayout0"
+            <LinearLayout
+                android:id="@+id/RelativeLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textViewk"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Estado mental"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -72,72 +117,56 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox7"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Inconsciente"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox8"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox8"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Períodos de inconsciência"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9" />
-
-                <CheckBox
-                    android:id="@+id/checkBox9"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Períodos de desorientação no tempo e no espaço"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox20"
-                    app:layout_constraintTop_toBottomOf="@+id/textViewk" />
-
-                <CheckBox
-                    android:id="@+id/checkBox20"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Períodos de desorientação no tempo e no espaço"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline3"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline3"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
+                    android:orientation="horizontal">
 
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton1"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Inconsciente" />
 
-            <android.support.constraint.ConstraintLayout
-                android:id="@+id/RelativeLayout1"
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton2"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Períodos de inconsciência" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton3"
+                        android:layout_width="300dp"
+                        android:layout_height="62dp"
+                        android:layout_weight="1"
+                        android:text="Períodos de desorientação no tempo e no espaço" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton4"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Períodos de desorientação no tempo e no espaço" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/RelativeLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Oxigenação"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -145,76 +174,56 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox7a"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="28dp"
-                    android:text="Ventilação mecânica (uso de ventilador a pressão ou volume)"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox8b"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9c" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox8b"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Uso contínuo de máscara ou cateter de oxigênio"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9c" />
-
-                <CheckBox
-                    android:id="@+id/checkBox9c"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Uso intermitente de máscara ou cateter de oxigênio"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-                <CheckBox
-                    android:id="@+id/checkBox20d"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Não depende de oxigênio"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox9c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox9c" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline2"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
+                    android:orientation="horizontal">
 
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton1a"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Ventilação mecânica (uso de ventilador a pressão ou volume)" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton2a"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Uso contínuo de máscara ou cateter de oxigênio" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton3a"
+                        android:layout_width="300dp"
+                        android:layout_height="62dp"
+                        android:layout_weight="1"
+                        android:text="Uso intermitente de máscara ou cateter de oxigênio" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton4a"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Não depende de oxigênio" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sinais vitais"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -222,148 +231,113 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1017a"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="28dp"
-                    android:text="Controle de intervalos menores a duas horas"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox1018b"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1019c" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1018b"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Controle em intervalos de 4 horas"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline103a"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1019c" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1019c"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Controle em intervalos de 6 horas"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline103a"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-                <CheckBox
-                    android:id="@+id/checkBox10120d"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Controle de rotinas    8 horas"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1019c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1019c" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline103a"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
-            </android.support.constraint.ConstraintLayout>
+                    android:orientation="horizontal">
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton5"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Controle de intervalos menores a duas horas" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton6"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Controle em intervalos de 4 horas" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton7"
+                        android:layout_width="300dp"
+                        android:layout_height="62dp"
+                        android:layout_weight="1"
+                        android:text="Controle em intervalos de 6 horas" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton8"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Controle de rotinas 8 horas" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Motilidade"
+                    android:text="Mobilidade"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox107"
-                    android:layout_width="169dp"
-                    android:layout_height="143dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Incapaz de movimentar qualquer segmento corporal, dificuldade para movimentar segmentos corporais"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox108"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox108"
-                    android:layout_width="169dp"
-                    android:layout_height="143dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Dificuldade para movimentar segmentos corporais. Mudança de decúbitos e movimentação passiva auxiliada pela enfermagem"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline103"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox109"
-                    android:layout_width="169dp"
-                    android:layout_height="143dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Movimenta todos os segmentos corporais"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1020"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton9"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Incapaz de movimentar qualquer segmento corporal, dificuldade para movimentar segmentos corporais" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1020"
-                    android:layout_width="169dp"
-                    android:layout_height="143dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Limitação de movimentos. Porém movimenta sem auxílio"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline103"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109" />
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton9a"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Dificuldade para movimentar segmentos corporais. Mudança de decúbitos e movimentação passiva auxiliada pela enfermagem" />
 
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline103"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton10"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Limitação de movimentos.Porém movimenta sem auxílio" />
 
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton11"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Movimenta todos os segmentos corporais" />
+                </RadioGroup>
+            </LinearLayout>
 
-            <android.support.constraint.ConstraintLayout
+            <LinearLayout
                 android:id="@+id/RelativeLayout5"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Deambulação"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -371,76 +345,56 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox107a"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="28dp"
-                    android:text="Restrito no leito"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox108b"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109c" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox108b"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Locomoção através de cadeira de rodas"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline102"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109c" />
-
-                <CheckBox
-                    android:id="@+id/checkBox109c"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Necessita de auxílio para deambular"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline102"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1020d"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Ambulante"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox109c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox109c" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline102"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
+                    android:orientation="horizontal">
 
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton12"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Restrito no leito" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton13"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Locomoção através de cadeira de rodas" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton14"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Necessita de auxílio para deambular" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton15"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Ambulante" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout6"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Alimentação"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -448,76 +402,56 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1117a"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="28dp"
-                    android:text="Controle de intervalos menores a duas horas"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox1118b"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1119c" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1118b"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Através de sonda nasogástrica"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline113a"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1119c" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1119c"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Via oral com auxílio"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline113a"
-                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-                <CheckBox
-                    android:id="@+id/checkBox11120d"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Autossuficiente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1119c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1119c" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline113a"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
-            </android.support.constraint.ConstraintLayout>
-            //=============================================
+                    android:orientation="horizontal">
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton16"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Através de cateter central" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton17"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Através de sonda nasogástrica" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton18"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Via oral com auxílio" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton19"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Auto suficiente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout7"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Cuidado corporal"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -525,72 +459,56 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox127"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Banho no leito, higiene oral, realizada pela enfermagem"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox128"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox129" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox128"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Banho de chuveiro, higiene oral realizada pela enfermagem"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline123"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox129" />
-
-                <CheckBox
-                    android:id="@+id/checkBox129"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Autossuficiente"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1220"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1220"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Auxílio no banho de chuveiro e/ou higiene oral"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline123"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox129" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline123"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
+                    android:orientation="horizontal">
 
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton20"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Banho no leito, higiene oral, realizada pela enfermagem" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton21"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Banho de chuveiro, higiene oral realizada pela enfermagem" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton22"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Auxílio no banho de chuveiro e/ou higiene oral" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton23"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Auto suficiente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout8"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Eliminação"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -598,76 +516,56 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox137a"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="28dp"
-                    android:text="Evacuação no leito e uso de sonda vesical para controle da diurese"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox138b"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox139c" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox138b"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Uso de comadre ou eliminações no leito"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline132"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox139c" />
-
-                <CheckBox
-                    android:id="@+id/checkBox139c"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Uso de vaso sanitário com auxílio"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline132"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1320d"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Autossuficiente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox139c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox139c" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline132"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
+                    android:orientation="horizontal">
 
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton24"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Evacuação no leito e uso de sonda vesical para controle da diurese" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton25"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Uso de comadre ou eliminações no leito" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton26"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Uso de vaso sanitário com auxílio" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton27"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Auto suficiente" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout9"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Terapêutica"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -675,75 +573,56 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1417a"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="28dp"
-                    android:text="Uso de drogas vasoativas para manutenção de PA"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox1418b"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1419c" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1418b"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="E.V contínuo ou através de sonda nasogástrica"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline143a"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1419c" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1419c"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="E.V. intermitente"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline143a"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-                <CheckBox
-                    android:id="@+id/checkBox14120d"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="IM. Ou VO"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1419c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1419c" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline143a"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
-            </android.support.constraint.ConstraintLayout>
+                    android:orientation="horizontal">
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton28"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Uso de drogas vasoativas para manutenção de PA" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton29"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="E.V contínuo ou através de sonda nasogástrica" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton30"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="E.V. intermitente" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton31"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="IM. Ou VO" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout10"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Integridade cutaneomucosa /comprometimento tecidual"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -751,72 +630,56 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox157"
-                    android:layout_width="175dp"
-                    android:layout_height="192dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Presença de solução de continuidade da pele com destruição da derme, epiderme, músculos e comprometimento das demais estruturas de suporte como tendões e cápsulas. Eviscerações"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox158"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox159" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox158"
-                    android:layout_width="169dp"
-                    android:layout_height="192dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Presença de solução dle continuidade da pele, envolvendo tecido subcutâneo e músculo. Incisão cirúrgica. Ostomias. Drenos"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline153"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox159" />
-
-                <CheckBox
-                    android:id="@+id/checkBox159"
-                    android:layout_width="169dp"
-                    android:layout_height="192dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Presença de alteração da cor da pele (equimose, hiperemia) e/ou presença de solução de continuidade da pele envolvendo a epiderme a derme ou ambas"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1520"
-                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1520"
-                    android:layout_width="169dp"
-                    android:layout_height="143dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Limitação de movimentos. Porém movimenta sem auxílio"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline153"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox159" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline153"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
+                    android:orientation="horizontal">
 
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton32"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Presença de solução de continuidade da pele com destruição da derme, epiderme, músculos e comprometimento das demais estruturas de suporte como tendões e cápsulas. Eviscerações" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton33"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Presença de solução dle continuidade da pele, envolvendo tecido subcutâneo e músculo. Incisão cirúrgica. Ostomias. Drenos" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton34"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Presença de alteração da cor da pele (equimose, hiperemia) e/ou presença de solução de continuidade da pele envolvendo a epiderme a  derme ou ambas" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton35"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Pele íntegra" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout11"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Curativo"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -824,76 +687,56 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox167a"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="28dp"
-                    android:text="Curativo realizado 3 vezes ao dia ou mais, pela equipe de enfermagem"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox168b"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox169c" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox168b"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Curativo realizado 2 vezes ao dia, pela enfermagem"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline162"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox169c" />
-
-                <CheckBox
-                    android:id="@+id/checkBox169c"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Curativo realizado 1 vez ao dia, pela enfermagem"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline162"
-                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1620d"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Sem curativo ou limpeza da ferida/incisão cirúrgica, "
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox169c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox169c" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline162"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
+                    android:orientation="horizontal">
 
-            </android.support.constraint.ConstraintLayout>
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton36"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Curativo realizado 3 vezes ao dia ou mais, pela equipe de enfermagem" />
 
-            <android.support.constraint.ConstraintLayout
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton37"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Curativo realizado 2 vezes ao dia, pela enfermagem" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton38"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Curativo realizado 1 vez ao dia, pela enfermagem" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton39"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Sem curativo ou limpeza da ferida/incisão cirúrgica, realizada pelo paciente durante o banho" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/RelativeLayout12"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingTop="16dp"
-                android:paddingRight="16dp"
-                android:paddingBottom="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="0dp"
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Tempo realizado na realização de curativos"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -901,61 +744,44 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1717a"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="28dp"
-                    android:text="Superior a 30 minutos"
-                    app:layout_constraintEnd_toStartOf="@+id/checkBox1718b"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1719c" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox1718b"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Entre 15 e 30 minutos"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline173a"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1719c" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1719c"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Entre 5 e15 minutos"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/guideline173a"
-                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-                <CheckBox
-                    android:id="@+id/checkBox17120d"
-                    android:layout_width="169dp"
-                    android:layout_height="88dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Sem curativo ou limpeza da ferida realizada durante o banho"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/checkBox1719c"
-                    app:layout_constraintTop_toTopOf="@+id/checkBox1719c" />
-
-                <android.support.constraint.Guideline
-                    android:id="@+id/guideline173a"
-                    android:layout_width="wrap_content"
+                <RadioGroup
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
-            </android.support.constraint.ConstraintLayout>
+                    android:orientation="horizontal">
 
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton40"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Superior a 30 minutos" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton41"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Entre 15 e 30 minutos" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton42"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Entre 5 e15 minutos" />
+
+                    <RadioButton android:onClick = "checkone"
+                        android:id="@+id/radioButton43"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Sem curativo ou limpeza da ferida realizada durante o banho" />
+                </RadioGroup>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

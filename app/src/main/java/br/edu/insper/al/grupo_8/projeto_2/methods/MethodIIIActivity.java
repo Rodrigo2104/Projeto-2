@@ -1,7 +1,9 @@
 package br.edu.insper.al.grupo_8.projeto_2.methods;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -15,6 +17,11 @@ public class MethodIIIActivity extends AppCompatActivity {
 
     private LinkedList<CheckBox> boxes;
 
+    private void startMethodActivity(Class classe) {
+        Intent intent = new Intent(this, classe);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +29,9 @@ public class MethodIIIActivity extends AppCompatActivity {
 
         boxes = new LinkedList<>();
         TextView resultadoSoma = findViewById(R.id.resultado);
+
+        Button buttonGoMethodIV = findViewById(R.id.button_goMethodIV);
+        buttonGoMethodIV.setOnClickListener((view) -> startMethodActivity(MethodIVActivity.class));
 
         CheckBox cb1 = findViewById(R.id.checkBox);
         CheckBox cb2 = findViewById(R.id.checkBox1);

@@ -1,8 +1,10 @@
 package br.edu.insper.al.grupo_8.projeto_2.methods;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
@@ -44,10 +46,18 @@ public class MethodIActivity extends AppCompatActivity {
     private CheckBox checkBox24;
     private CheckBox checkBox25;
 
+    private void startMethodActivity(Class classe) {
+        Intent intent = new Intent(this, classe);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_i);
+
+        Button buttonGoMethodII = findViewById(R.id.button_goMethodII);
+        buttonGoMethodII.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
 
 
         //=============================

@@ -1,7 +1,9 @@
 package br.edu.insper.al.grupo_8.projeto_2.methods;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -10,11 +12,19 @@ import br.edu.insper.al.grupo_8.projeto_2.R;
 public class MethodIXActivity extends AppCompatActivity {
     private int s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14;
 
+    private void startMethodActivity(Class classe) {
+        Intent intent = new Intent(this, classe);
+        startActivity(intent);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_ix);
+
+        Button buttonGoMethodX = findViewById(R.id.button_goMethodX);
+        buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(MethodXActivity.class));
 
         TextView resultadoSoma = findViewById(R.id.resultadoix);
 

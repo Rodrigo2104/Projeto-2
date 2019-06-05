@@ -29,12 +29,20 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodIActivity;
+import br.edu.insper.al.grupo_8.projeto_2.methods.MethodPaciente;
+
 public class HomeActivity extends AppCompatActivity {
 
     private ListView listView;
 
     private void startAddActivity() {
         Intent intent = new Intent(this, AddActivity.class);
+        startActivity(intent);
+    }
+
+    private void startMethodPaciente() {
+        Intent intent = new Intent(this, MethodPaciente.class);
         startActivity(intent);
     }
 
@@ -49,6 +57,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
 
         Button add = findViewById(R.id.add_pacient);
         add.setOnClickListener((view -> startAddActivity()));
@@ -67,9 +76,9 @@ public class HomeActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
             }
         });
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
