@@ -34,8 +34,6 @@ public class MethodVIIActivity extends AppCompatActivity {
         Button buttonGoMethodVIII = findViewById(R.id.button_goMethodVIII);
         buttonGoMethodVIII.setOnClickListener((view) -> startMethodActivity(MethodVIIIActivity.class));
 
-        checked = new LinkedList<>();
-
         checkedAusente = new LinkedList<>();
         checkedLeve = new LinkedList<>();
         checkedModerado = new LinkedList<>();

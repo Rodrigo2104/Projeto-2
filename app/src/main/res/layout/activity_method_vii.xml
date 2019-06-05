@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context="methods.MethodVIIActivity" >
+    tools:context=".methods.MethodVIIActivity" >
 
 
     <android.support.v7.widget.Toolbar
