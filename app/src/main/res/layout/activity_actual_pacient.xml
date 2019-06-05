@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".ActualPacientActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_unifesp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/unifesp_escrito"
+            android:contentDescription="unifesp_escrito" />
+    </android.support.v7.widget.Toolbar>
+
 </android.support.constraint.ConstraintLayout>

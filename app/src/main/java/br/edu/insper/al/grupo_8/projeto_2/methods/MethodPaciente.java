@@ -338,9 +338,6 @@ public class MethodPaciente extends AppCompatActivity {
         Dx = Dx_in.getText().toString();
         resultados.put("Dx",Dx);
 
-        paciente = new Paciente(Nome, RH, resultados);
-        lista.add(paciente);
-
         saveData();
 
     }

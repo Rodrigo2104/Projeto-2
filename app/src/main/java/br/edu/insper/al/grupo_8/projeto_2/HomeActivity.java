@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -32,6 +33,11 @@ public class HomeActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String userID;
     ListView listView;
+
+    private void startActualPacientActivity() {
+        Intent intent = new Intent(this, ActualPacientActivity.class);
+        startActivity(intent);
+    }
 
     private void startAddActivity() {
         Intent intent = new Intent(this, AddActivity.class);
@@ -69,6 +75,10 @@ public class HomeActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
+        });
+
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            startActualPacientActivity();
         });
     }
 
