@@ -30,60 +30,52 @@
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
-            <GridLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="3">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    android:fontFamily="sans-serif"
-                    android:text="Recebe e faz ligações sem assistência."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                    <RadioButton
+                        android:id="@+id/cb_1_testA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                <CheckBox
-                    android:id="@+id/cb_1_testA"
-                    android:layout_marginRight="60dp"
-                    android:text="1" />
+                        android:fontFamily="sans-serif"
+                        android:text="1 - Recebe e faz ligações sem assistência."
+                        android:textSize="18dp" />
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                    <RadioButton
+                        android:id="@+id/cb_2_testA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                    android:fontFamily="sans-serif"
-                    android:text="Necessita de assistência para realizar ligações telefônicas."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                        android:fontFamily="sans-serif"
+                        android:text="2 - Necessita de assistência para realizar ligações telefônicas."
+                        android:textSize="18dp"/>
 
-                <CheckBox
-                    android:id="@+id/cb_2_testA"
-                    android:layout_marginRight="60dp"
-                    android:text="2" />
+                    <RadioButton
+                        android:id="@+id/cb_3_testA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="3 - Não tem o hábito ou é incapaz de usar o telefone."
+                        android:textSize="18dp" />
 
-                    android:fontFamily="sans-serif"
-                    android:text="Não tem o hábito ou é incapaz de usar o telefone."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                </RadioGroup>
 
-                <CheckBox
-                    android:id="@+id/cb_3_testA"
-                    android:layout_marginRight="60dp"
-                    android:text="3" />
+            </LinearLayout>
 
-            </GridLayout>
-
-<!-- ===== TESTE B ===== -->
+            <!-- ===== TESTE B ===== -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -97,60 +89,53 @@
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
-            <GridLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="3">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    android:fontFamily="sans-serif"
-                    android:text="Realiza viagem sozinho."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                    <RadioButton
+                        android:id="@+id/cb_1_testB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                <CheckBox
-                    android:id="@+id/cb_1_testB"
-                    android:layout_marginRight="60dp"
-                    android:text="1" />
+                        android:fontFamily="sans-serif"
+                        android:text="1 - Realiza viagem sozinho."
+                        android:textSize="18dp" />
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                    <RadioButton
+                        android:id="@+id/cb_2_testB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                    android:fontFamily="sans-serif"
-                    android:text="Somente viaja quando tem companhia."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                        android:fontFamily="sans-serif"
+                        android:text="2 - Somente viaja quando tem companhia."
+                        android:textSize="18dp"/>
 
-                <CheckBox
-                    android:id="@+id/cb_2_testB"
-                    android:layout_marginRight="60dp"
-                    android:text="2" />
+                    <RadioButton
+                        android:id="@+id/cb_3_testB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="3 - Não tem o hábito ou é incapaz de viajar."
+                        android:textSize="18dp" />
 
-                    android:fontFamily="sans-serif"
-                    android:text="Não tem o hábito ou é incapaz de viajar."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                </RadioGroup>
 
-                <CheckBox
-                    android:id="@+id/cb_3_testB"
-                    android:layout_marginRight="60dp"
-                    android:text="3" />
+            </LinearLayout>
 
-            </GridLayout>
 
-<!-- ===== TESTE C ===== -->
+            <!-- ===== TESTE C ===== -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -164,60 +149,52 @@
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
-            <GridLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="3">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    android:fontFamily="sans-serif"
-                    android:text="Realiza compras, quando é fornecido transporte."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                    <RadioButton
+                        android:id="@+id/cb_1_testC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                <CheckBox
-                    android:id="@+id/cb_1_testC"
-                    android:layout_marginRight="60dp"
-                    android:text="1" />
+                        android:fontFamily="sans-serif"
+                        android:text="1 - Realiza compras, quando é fornecido transporte."
+                        android:textSize="18dp" />
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                    <RadioButton
+                        android:id="@+id/cb_2_testC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                    android:fontFamily="sans-serif"
-                    android:text="Somente faz compras quando tem companhia."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                        android:fontFamily="sans-serif"
+                        android:text="2 - Somente faz compras quando tem companhia."
+                        android:textSize="18dp"/>
 
-                <CheckBox
-                    android:id="@+id/cb_2_testC"
-                    android:layout_marginRight="60dp"
-                    android:text="2" />
+                    <RadioButton
+                        android:id="@+id/cb_3_testC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="3 - Não tem o hábito ou é incapaz de realizar compras."
+                        android:textSize="18dp" />
 
-                    android:fontFamily="sans-serif"
-                    android:text="Não tem o hábito ou é incapaz de realizar compras."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                </RadioGroup>
 
-                <CheckBox
-                    android:id="@+id/cb_3_testC"
-                    android:layout_marginRight="60dp"
-                    android:text="3" />
+            </LinearLayout>
 
-            </GridLayout>
-
-<!-- ===== TESTE D ===== -->
+            <!-- ===== TESTE D ===== -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -231,60 +208,52 @@
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
-            <GridLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="3">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    android:fontFamily="sans-serif"
-                    android:text="Planeja e cozinha as refeições completas."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                    <RadioButton
+                        android:id="@+id/cb_1_testD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                <CheckBox
-                    android:id="@+id/cb_1_testD"
-                    android:layout_marginRight="60dp"
-                    android:text="1" />
+                        android:fontFamily="sans-serif"
+                        android:text="1 - Planeja e cozinha as refeições completas."
+                        android:textSize="18dp" />
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                    <RadioButton
+                        android:id="@+id/cb_2_testD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                    android:fontFamily="sans-serif"
-                    android:text="Prepara somente refeições pequenas ou quando recebe ajuda."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                        android:fontFamily="sans-serif"
+                        android:text="2 - Prepara somente refeições pequenas ou quando recebe ajuda."
+                        android:textSize="18dp"/>
 
-                <CheckBox
-                    android:id="@+id/cb_2_testD"
-                    android:layout_marginRight="60dp"
-                    android:text="2" />
+                    <RadioButton
+                        android:id="@+id/cb_3_testD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="3 - Não tem o hábito ou é incapaz de preparar as próprias refeições."
+                        android:textSize="18dp" />
 
-                    android:fontFamily="sans-serif"
-                    android:text="Não tem o hábito ou é incapaz de preparar as próprias refeições."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                </RadioGroup>
 
-                <CheckBox
-                    android:id="@+id/cb_3_testD"
-                    android:layout_marginRight="60dp"
-                    android:text="3" />
+            </LinearLayout>
 
-            </GridLayout>
-
-<!-- ===== TESTE E ===== -->
+            <!-- ===== TESTE E ===== -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -298,60 +267,52 @@
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
-            <GridLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="3">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    android:fontFamily="sans-serif"
-                    android:text="Realiza tarefas pesadas."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                    <RadioButton
+                        android:id="@+id/cb_1_testE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                <CheckBox
-                    android:id="@+id/cb_1_testE"
-                    android:layout_marginRight="60dp"
-                    android:text="1" />
+                        android:fontFamily="sans-serif"
+                        android:text="1 - Realiza tarefas pesadas."
+                        android:textSize="18dp" />
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                    <RadioButton
+                        android:id="@+id/cb_2_testE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                    android:fontFamily="sans-serif"
-                    android:text="Realiza tarefas leves, necessitando de ajuda nas pesadas."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                        android:fontFamily="sans-serif"
+                        android:text="2 - Realiza tarefas leves, necessitando de ajuda nas pesadas."
+                        android:textSize="18dp"/>
 
-                <CheckBox
-                    android:id="@+id/cb_2_testE"
-                    android:layout_marginRight="60dp"
-                    android:text="2" />
+                    <RadioButton
+                        android:id="@+id/cb_3_testE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="3 - Não tem o hábito ou é incapaz de realizar trabalhos domésticos."
+                        android:textSize="18dp" />
 
-                    android:fontFamily="sans-serif"
-                    android:text="Não tem o hábito ou é incapaz de realizar trabalhos domésticos."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                </RadioGroup>
 
-                <CheckBox
-                    android:id="@+id/cb_3_testE"
-                    android:layout_marginRight="60dp"
-                    android:text="3" />
+            </LinearLayout>
 
-            </GridLayout>
-
-<!-- ===== TESTE F ===== -->
+            <!-- ===== TESTE F ===== -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -365,60 +326,52 @@
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
-            <GridLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="3">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    android:fontFamily="sans-serif"
-                    android:text="Faz uso de medicamentos sem assistência."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                    <RadioButton
+                        android:id="@+id/cb_1_testF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                <CheckBox
-                    android:id="@+id/cb_1_testF"
-                    android:layout_marginRight="60dp"
-                    android:text="1" />
+                        android:fontFamily="sans-serif"
+                        android:text="1 - Faz uso de medicamentos sem assistência."
+                        android:textSize="18dp" />
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                    <RadioButton
+                        android:id="@+id/cb_2_testF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="20dp"
 
-                    android:fontFamily="sans-serif"
-                    android:text="Necessita de lembretes ou de assistência."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                        android:fontFamily="sans-serif"
+                        android:text="2 - Necessita de lembretes ou de assistência."
+                        android:textSize="18dp"/>
 
-                <CheckBox
-                    android:id="@+id/cb_2_testF"
-                    android:layout_marginRight="60dp"
-                    android:text="2" />
+                    <RadioButton
+                        android:id="@+id/cb_3_testF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
 
-                <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_marginLeft="20dp"
+                        android:fontFamily="sans-serif"
+                        android:text="3 - É incapaz de controlar sozinho o uso dos medicamentos."
+                        android:textSize="18dp" />
 
-                    android:fontFamily="sans-serif"
-                    android:text="É incapaz de controlar sozinho o uso dos medicamentos."
-                    android:textAlignment="viewStart"
-                    android:textSize="18dp" />
+                </RadioGroup>
 
-                <CheckBox
-                    android:id="@+id/cb_3_testF"
-                    android:layout_marginRight="60dp"
-                    android:text="3" />
+            </LinearLayout>
 
-            </GridLayout>
-
-<!-- ===== TESTE G ===== -->
+            <!-- ===== TESTE G ===== -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -432,71 +385,52 @@
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
-            <TableLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="3">
-
-                <TableRow>
-
-                    <RadioButton
-                        android:id="@+id/cb_1_testG"
-                        android:layout_marginRight="60dp"
-                        android:text="1"/>
-
-                    <RadioButton
-                        android:id="@+id/cb_2_testG"
-                        android:layout_marginRight="60dp"
-                        android:text="2"/>
-
-
-                    <RadioButton
-                        android:id="@+id/cb_3_testG"
-                        android:layout_marginRight="60dp"
-                        android:text="3"/>
-
-                </TableRow>
+                android:orientation="vertical">
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="match_parent"
+                    <RadioButton
+                        android:id="@+id/cb_1_testG"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginLeft="20dp"
 
                         android:fontFamily="sans-serif"
-                        android:text="Preenche cheques e paga contas sem auxílio."
-                        android:textAlignment="viewStart"
+                        android:text="1 - Preenche cheques e paga contas sem auxílio."
                         android:textSize="18dp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
+                    <RadioButton
+                        android:id="@+id/cb_2_testG"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginLeft="20dp"
-                        android:fontFamily="sans-serif"
-                        android:text="Necessita de assistência para uso de cheques e contas."
-                        android:textAlignment="viewStart"
-                        android:textSize="18dp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
+                        android:fontFamily="sans-serif"
+                        android:text="2 - Necessita de assistência para uso de cheques e contas."
+                        android:textSize="18dp"/>
+
+                    <RadioButton
+                        android:id="@+id/cb_3_testG"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="start"
                         android:layout_marginLeft="20dp"
+
                         android:fontFamily="sans-serif"
-                        android:text="Não tem o hábito de lidar com o dinheiro ou é incapaz de manusear dinheiro, contas."
-                        android:textAlignment="viewStart"
+                        android:text="3 - Não tem o hábito de lidar "
                         android:textSize="18dp" />
 
+               </RadioGroup>
 
-                </RadioGroup>
+            </LinearLayout>
 
-            </TableLayout>
+            <!-- ===== TOTAL ===== -->
 
             <TextView
                 android:id="@+id/result"
