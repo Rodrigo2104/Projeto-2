@@ -36,8 +36,8 @@ public class HomeActivity extends AppCompatActivity {
 
     private ListView listView;
 
-    private void startAddActivity() {
-        Intent intent = new Intent(this, AddActivity.class);
+    private void startMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -58,6 +58,8 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Button buttonGoOut = findViewById(R.id.button_goOut);
+        buttonGoOut.setOnClickListener((view -> startMainActivity()));
 
         Button add = findViewById(R.id.add_pacient);
         add.setOnClickListener((view -> startMethodPaciente()));
