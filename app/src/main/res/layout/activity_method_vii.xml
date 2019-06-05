@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context="Methods.MethodVIIActivity" >
+    tools:context="methods.MethodVIIActivity" >
 
     <TextView
         android:layout_width="match_parent"
@@ -70,6 +70,8 @@
             android:textSize="15sp"
 
             tools:ignore="HardcodedText" />
+
+
     </LinearLayout>
 
     <ScrollView
@@ -90,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:columnCount="3"
-                android:rowCount="5"
+                android:rowCount="6"
 
                 tools:ignore="UselessParent">
 
@@ -145,7 +147,7 @@
                     android:layout_column="0"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="1. grave"
+                    android:text="1. leve"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -195,7 +197,7 @@
 
                     <CheckBox
                         android:id="@+id/cb5"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="perda de peso maior que 5% em 3 meses"
 
@@ -203,8 +205,8 @@
 
                     <CheckBox
                         android:id="@+id/cb6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="145dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:text="50 a 75% das necessidades energéticas"
 
                         tools:ignore="HardcodedText" />
@@ -224,23 +226,23 @@
 
                     <CheckBox
                         android:id="@+id/cb7"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="complicações agudas de_doenças crônicas"
+                        android:text="complicações agudas de doenças crônicas"
 
                         tools:ignore="HardcodedText" />
 
                     <CheckBox
                         android:id="@+id/cb8"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="dpoc"
+                        android:text="DPOC"
 
                         tools:ignore="HardcodedText" />
 
                     <CheckBox
                         android:id="@+id/cb9"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="hd (hermodiálise)"
 
@@ -248,7 +250,7 @@
 
                     <CheckBox
                         android:id="@+id/cb10"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="câncer"
 
@@ -269,7 +271,7 @@
 
                     <CheckBox
                         android:id="@+id/cb11"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="perda de peso maior que 5% em 2 meses"
 
@@ -277,7 +279,7 @@
 
                     <CheckBox
                         android:id="@+id/cb12"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="imc entre 18,5 e 20,5 kg/m²"
 
@@ -285,8 +287,8 @@
 
                     <CheckBox
                         android:id="@+id/cb13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="82dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:text="25 a 50% das necessidades energéticas"
 
                         tools:ignore="HardcodedText" />
@@ -306,7 +308,7 @@
 
                     <CheckBox
                         android:id="@+id/cb14"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="avc"
 
@@ -314,7 +316,7 @@
 
                     <CheckBox
                         android:id="@+id/cb15"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="BCP Severa"
 
@@ -322,7 +324,7 @@
 
                     <CheckBox
                         android:id="@+id/cb16"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="cirurgia no TGI ou absominais"
 
@@ -330,7 +332,7 @@
 
                     <CheckBox
                         android:id="@+id/cb17"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="infecções graves"
 
@@ -351,25 +353,25 @@
 
                     <CheckBox
                         android:id="@+id/cb18"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="perda de peso maior que 5% em 2 meses"
+                        android:text="perda de peso maior que 5% em 1 meses"
 
                         tools:ignore="HardcodedText" />
 
                     <CheckBox
                         android:id="@+id/cb19"
-                        android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:text="imc entre 18,5 e 20,5 kg/m²"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="imc menor que 18,5 kg/m²"
 
                         tools:ignore="HardcodedText" />
 
                     <CheckBox
                         android:id="@+id/cb20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:text="25 a 50% das necessidades energéticas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="0 a 25% das necessidades energéticas"
 
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
@@ -388,7 +390,7 @@
 
                     <CheckBox
                         android:id="@+id/cb21"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Neurocirurgia"
 
@@ -396,7 +398,7 @@
 
                     <CheckBox
                         android:id="@+id/cb22"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="TMO"
 
@@ -404,32 +406,84 @@
 
                     <CheckBox
                         android:id="@+id/cb23"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="UTI (apache > 10)"
 
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
-                <!--<TextView-->
-                    <!--android:id="@+id/result"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_row="4"-->
-                    <!--android:layout_column="0"-->
-                    <!--android:layout_gravity="start"-->
-                    <!--android:layout_marginTop="20dp"-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="20dp"
 
-                    <!--android:fontFamily="sans-serif"-->
-                    <!--android:gravity="center"-->
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
 
-                    <!--android:text="TOTAL: "-->
-                    <!--android:textColor="@color/black"-->
-                    <!--android:textSize="24sp"-->
-                    <!--android:textStyle="bold"-->
+                    android:text="TOTAL : "
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
 
-                    <!--tools:ignore="HardcodedText" />-->
+                    tools:ignore="HardcodedText" />
 
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="2"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+
+                    android:text="RESULTADO : "
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="2"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+
+                    tools:ignore="HardcodedText" />
             </GridLayout>
         </LinearLayout>
     </ScrollView>

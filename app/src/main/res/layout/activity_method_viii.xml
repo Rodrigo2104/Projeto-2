@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="Methods.MethodVIIIActivity">
+    
+    tools:context="methods.MethodVIIIActivity" >
 
     <TextView
         android:layout_width="match_parent"
@@ -24,7 +25,7 @@
 
         <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:columnCount="1"
             android:rowCount="11">
 
@@ -258,19 +259,35 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/result"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:layout_gravity="start"
                 android:textColor="@color/black"
 
-                android:layout_row="10"
+                android:layout_row="11"
                 android:layout_column="0"
 
                 android:fontFamily="sans-serif"
                 android:text="TOTAL: "
                 android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                tools:ignore="HardcodedText"/>
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_gravity="end"
+                android:textColor="@color/black"
+
+                android:layout_row="10"
+                android:layout_column="0"
+
+                android:fontFamily="sans-serif"
+                android:textAlignment="viewEnd"
                 android:textSize="24sp"
                 android:textStyle="bold"
 
