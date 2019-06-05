@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.LinkedList;
 
 public class Paciente {
-    private String nome;
 
+    private String nome;
     private HashMap<String, String> resultados;
     private HashMap <String, String> dados;
 

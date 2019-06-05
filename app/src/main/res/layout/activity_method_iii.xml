@@ -7,6 +7,8 @@
     android:orientation="vertical"
     tools:context=".methods.MethodIIIActivity">
 
+
+
     <!--Títulos-->
     <TextView
         android:id="@+id/title"

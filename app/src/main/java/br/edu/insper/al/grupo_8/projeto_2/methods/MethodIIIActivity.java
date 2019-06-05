@@ -1,12 +1,16 @@
 package br.edu.insper.al.grupo_8.projeto_2.methods;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.LinkedList;
 
+import br.edu.insper.al.grupo_8.projeto_2.MethodsActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 
 public class MethodIIIActivity extends AppCompatActivity {
@@ -15,10 +19,16 @@ public class MethodIIIActivity extends AppCompatActivity {
 
     private LinkedList<CheckBox> boxes;
 
+    private void startHomeActivity() {
+        Intent intent = new Intent(this, MethodsActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_iii);
+
 
         boxes = new LinkedList<>();
         TextView resultadoSoma = findViewById(R.id.resultado);
