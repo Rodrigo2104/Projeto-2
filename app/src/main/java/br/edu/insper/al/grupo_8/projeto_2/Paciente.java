@@ -5,7 +5,7 @@ public class Paciente {
     private String nome;
     private String rh;
     private String data_internacao;
-
+    
     public Paciente() {
     }
 
