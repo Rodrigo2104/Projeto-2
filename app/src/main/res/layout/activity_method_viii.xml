@@ -60,10 +60,6 @@
 
     </android.support.v7.widget.Toolbar>
 
-    
-    tools:context="methods.MethodVIIIActivity" >
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:columnCount="1"
-            android:rowCount="11">
+            android:rowCount="12">
 
             <!--[0:0]-->
             <TextView
