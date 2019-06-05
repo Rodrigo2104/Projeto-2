@@ -1,9 +1,11 @@
 package br.edu.insper.al.grupo_8.projeto_2;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -19,10 +21,18 @@ import java.util.ArrayList;
 public class ActualPacientActivity extends AppCompatActivity {
     TextView nome;
 
+    private void startMethodActivity(Class classe) {
+        Intent intent = new Intent(this, classe);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actual_pacient);
+
+        Button buttonGoHome = findViewById(R.id.button_goHome);
+        buttonGoHome.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference pacientesReference = database.getReference("Pacientes");

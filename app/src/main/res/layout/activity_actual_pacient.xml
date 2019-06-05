@@ -14,11 +14,51 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme">
 
-        <ImageView
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="unifesp_escrito"
-            android:src="@drawable/unifesp_escrito" />
+            android:orientation="vertical"
+            android:columnCount="3"
+            android:rowCount="1">
+
+            <Button
+                android:id="@+id/button_goHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+
+                android:background="@drawable/custom_buttom"
+
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Voltar"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="210dp"
+                android:contentDescription="unifesp_escrito"
+                android:src="@drawable/unifesp_escrito" />
+
+            <Button
+                android:id="@+id/button_goMethodVIII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+
+                android:visibility="invisible"
+
+                android:background="@drawable/custom_buttom"
+
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Próximo"/>
+
+        </GridLayout>
+
     </android.support.v7.widget.Toolbar>
 
 
