@@ -63,7 +63,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <EditText
-                    android:id="@+id/editText0"
+                    android:id="@+id/nome_txt"
                     android:layout_width="670dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -87,7 +87,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <EditText
-                    android:id="@+id/editText1"
+                    android:id="@+id/rh"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

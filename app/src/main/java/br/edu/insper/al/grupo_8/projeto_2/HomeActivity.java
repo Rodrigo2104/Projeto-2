@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -30,14 +31,7 @@ import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private FirebaseAuth mAuth;
-    private String userID;
-    ListView listView;
-
-    private void startActualPacientActivity() {
-        Intent intent = new Intent(this, ActualPacientActivity.class);
-        startActivity(intent);
-    }
+    private ListView listView;
 
     private void startAddActivity() {
         Intent intent = new Intent(this, AddActivity.class);
@@ -77,8 +71,13 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        listView.setOnItemClickListener((parent, view, position, id) -> {
-            startActualPacientActivity();
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(HomeActivity.this, ActualPacientActivity.class);
+                intent.putExtra("rh", parent.getItemAtPosition(position).toString());
+                startActivity(intent);
+            }
         });
     }
 
@@ -86,11 +85,13 @@ public class HomeActivity extends AppCompatActivity {
         ArrayList<String> listaPacientes = new ArrayList<>();
         for (DataSnapshot ds : dataSnapshot.getChildren()){
             ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listaPacientes);
+
             Paciente pac = new Paciente();
             pac.setNome(ds.child("Info").getValue(Paciente.class).getNome());
             pac.setRh(ds.child("Info").getValue(Paciente.class).getRh());
             pac.setData_internacao(ds.child("Info").getValue(Paciente.class).getData_internacao());
-            listaPacientes.add(pac.getNome());
+
+            listaPacientes.add(pac.getRh());
             listView.setAdapter(arrayAdapter);
 
         }

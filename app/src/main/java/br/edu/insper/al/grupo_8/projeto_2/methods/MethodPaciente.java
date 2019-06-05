@@ -16,9 +16,6 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-import com.google.gson.Gson;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import br.edu.insper.al.grupo_8.projeto_2.Paciente;
@@ -144,12 +141,12 @@ public class MethodPaciente extends AppCompatActivity {
 
         setContentView(R.layout.activity_method_paciente);
         Button Proximo = findViewById(R.id.button2);
-        RH_in = (EditText) findViewById(R.id.editText1);
+        RH_in = (EditText) findViewById(R.id.rh);
         Data_in = (EditText) findViewById(R.id.editText2);
         Idade_in = (EditText) findViewById(R.id.editText3);
         Diagnostico_in = (EditText) findViewById(R.id.editText5);
         Alta_in = (EditText) findViewById(R.id.editText16);
-        Nome_in = (EditText) findViewById(R.id.editText0);
+        Nome_in = (EditText) findViewById(R.id.nome_txt);
 
         checkBox1 = (RadioButton) findViewById(R.id.checkBox1);
         checkBox2 = (RadioButton) findViewById(R.id.checkBox2);
