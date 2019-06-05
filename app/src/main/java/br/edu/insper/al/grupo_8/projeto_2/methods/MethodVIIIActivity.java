@@ -1,4 +1,4 @@
-package br.edu.insper.al.grupo_8.projeto_2.Methods;
+package br.edu.insper.al.grupo_8.projeto_2.methods;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -74,7 +74,7 @@ public class MethodVIIIActivity extends AppCompatActivity {
                     if (!box.isChecked()){
                         total --;
                     }
-                    resultado.setText("TOTAL : " + String.valueOf(total));
+                    resultado.setText(String.valueOf(total));
                 }
             });
         }
