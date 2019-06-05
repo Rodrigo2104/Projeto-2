@@ -84,7 +84,7 @@ public class MethodVIIIActivity extends AppCompatActivity {
                     if (!box.isChecked()){
                         total --;
                     }
-                    resultado.setText("TOTAL : " + String.valueOf(total));
+                    resultado.setText(String.valueOf(total));
                 }
             });
         }
