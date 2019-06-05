@@ -1,38 +1,41 @@
 package br.edu.insper.al.grupo_8.projeto_2;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.LinkedList;
 
 public class Paciente {
     private String nome;
+    private String rh;
+    private String data_internacao;
+    
+    public Paciente() {
+    }
 
-    private HashMap<String, String> resultados;
-    private HashMap <String, String> dados;
-    private String RH;
-
-    public Paciente(String nome, String num, HashMap<String, String> resultados) {
+    public Paciente(String nome, String rh, String data) {
         this.nome = nome;
-        this.RH = num;
-        this.resultados = resultados;
-
+        this.rh = rh;
+        this.data_internacao = data;
     }
 
     public String getNome() {
         return nome;
     }
 
-
-    public HashMap getResultados() {
-        return resultados;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void addToResultados(String teste, String resultado) {
-        resultados.put(teste, resultado);
+    public String getRh() {
+        return rh;
     }
 
-    public void addToDados(HashMap<String, String> DADOS){
-        this.dados = DADOS;
+    public void setRh(String rh) {
+        this.rh = rh;
     }
 
+    public String getData_internacao() {
+        return data_internacao;
+    }
+
+    public void setData_internacao(String data_internacao) {
+        this.data_internacao = data_internacao;
+    }
 }
