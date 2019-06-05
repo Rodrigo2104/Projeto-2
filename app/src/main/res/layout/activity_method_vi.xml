@@ -1,8 +1,724 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="25dp"
     tools:context=".methods.MethodVIActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- === Tarefa A === -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1) Quais medicações que você usou na ÚLTIMA SEMANA? Entrevistador: Para cada medicação anote as respostas no quadro abaixo: Se o entrevistado não souber responder ou se recusar a responder coloque NR."
+                android:textSize="18dp" />
+
+            <TableLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="NA ÚLTIMA SEMANA"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="a) Nome da medicação e dosagem"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="b) Quantos dias você tomou esse remédio"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="c) Quantas vezes por dia você tomou esse remédio"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="d) Quantos comprimidos você tomou em cada vez"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="150dp"
+                        android:text="e) Quantas vezes você esqueceu de tomar algum comprimido"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:text="f) Como essa medicação funciona para você:1 = Funciona Bem; 2 = Funciona Regular; 3 = Não funciona bem"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="100dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <!-- === Tarefa B === -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2) Alguma das suas medicações causa problemas para você? (0) Não (1) Sim a) Se o entrevistado respondeu SIM, por favor, liste os nomes das medicações e quanto elas o incomodam."
+                android:layout_marginTop="50dp"
+                android:textSize="18dp" />
+
+            <TableLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp">
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="QUANTO ESSA MEDICAÇÃO INCOMODOU VOCÊ?"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="16dp" />
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="150dp"
+                        android:text="Medicação"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="75dp"
+                        android:text="Muito"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="75dp"
+                        android:text="Um pouco"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="75dp"
+                        android:text="Muito pouco"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="75dp"
+                        android:text="Nunca"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="300dp"
+                        android:text="De que forma você é incomodado por ela?"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="150dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="300dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="150dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="300dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="150dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="300dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="150dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="300dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <!-- === Tarefa C === -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3) Agora, citarei uma lista de problemas que as pessoas, às vezes, têm com seus medicamentos."
+                android:layout_marginTop="50dp"
+                android:textSize="18dp" />
+
+            <TableLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:text="Quanto é difícil para você:"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:text="Muito difícil"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:text="Um pouco difícil"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:text="Não muito difícil"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="310dp"
+                        android:text="Comentário (Qual medicamento)"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:text="Abrir ou fechar a embalagem"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="310dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:text="Ler o que está escrito na embalagem"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="310dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:text="Lembrar de tomar todo remédio"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="310dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:text="Conseguir o medicamento"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="310dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="200dp"
+                        android:text="Tomar tantos comprimidos ao mesmo tempo"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="80dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="310dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -31,12 +31,9 @@ public class HomeActivity extends AppCompatActivity {
 
         Button buttonGoMethods = findViewById(R.id.button_goMethods);
         Button singOut = findViewById(R.id.singOut);
-        TextView email = findViewById(R.id.email);
         FirebaseAuth authentication = FirebaseAuth.getInstance();
         FirebaseUser user = authentication.getCurrentUser();
 
-        assert user != null;
-        email.setText(user.getEmail());
 
         singOut.setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
