@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 
 public class MethodXActivity extends AppCompatActivity {
@@ -31,7 +32,7 @@ public class MethodXActivity extends AppCompatActivity {
         buttonGoMethodIX.setOnClickListener((view) -> startMethodActivity(MethodIXActivity.class));
 
         Button buttonGoMethodXI = findViewById(R.id.button_goMethodXI);
-        buttonGoMethodXI.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
+        buttonGoMethodXI.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
 
         TextView resultadoSoma = findViewById(R.id.resultadox);
 
