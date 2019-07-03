@@ -23,6 +23,7 @@
             android:rowCount="1">
 
             <Button
+                android:id="@+id/add_pacient"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"

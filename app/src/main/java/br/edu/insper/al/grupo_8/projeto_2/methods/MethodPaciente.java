@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 import java.util.HashMap;
 
+import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
 import br.edu.insper.al.grupo_8.projeto_2.Paciente;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 
@@ -127,7 +128,7 @@ public class MethodPaciente extends AppCompatActivity {
 
     private String Data, Idade, Alta, Nome;
 
-    private void startMethodActivity(Class classe){
+    private void startGoTo(Class classe){
         Intent intent = new Intent(this, classe);
         startActivity(intent);
     }
@@ -142,7 +143,10 @@ public class MethodPaciente extends AppCompatActivity {
         setContentView(R.layout.activity_method_paciente);
 
         Button buttonGoMethodI = findViewById(R.id.button_goMethodI);
-        buttonGoMethodI.setOnClickListener((view) -> startMethodActivity(MethodIActivity.class));
+        buttonGoMethodI.setOnClickListener((view) -> startGoTo(MethodIActivity.class));
+
+        Button buttonGoHome = findViewById(R.id.button_goHome);
+        buttonGoHome.setOnClickListener((view) -> startGoTo(HomeActivity.class));
 
         Button Proximo = findViewById(R.id.button2);
         RH_in = (EditText) findViewById(R.id.rh);
@@ -197,7 +201,7 @@ public class MethodPaciente extends AppCompatActivity {
         checkBox42 =  (RadioButton) findViewById(R.id.checkBox42);
         checkBox43 =  (RadioButton) findViewById(R.id.checkBox43);
 
-        Proximo.setOnClickListener((view) -> startMethodActivity(MethodIActivity.class));
+        Proximo.setOnClickListener((view) -> startGoTo(MethodIActivity.class));
 
         //========================================================
         //RH_in = (EditText) findViewById(R.id.editText1);

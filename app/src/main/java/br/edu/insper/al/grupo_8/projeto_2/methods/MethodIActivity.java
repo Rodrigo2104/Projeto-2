@@ -56,9 +56,11 @@ public class MethodIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_i);
 
+        Button buttonGoAddPacient = findViewById(R.id.add_pacient);
+        buttonGoAddPacient.setOnClickListener((view) -> startMethodActivity(MethodPaciente.class));
+
         Button buttonGoMethodII = findViewById(R.id.button_goMethodII);
         buttonGoMethodII.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
-
 
         //=============================
 

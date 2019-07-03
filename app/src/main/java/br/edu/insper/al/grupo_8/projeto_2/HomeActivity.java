@@ -36,8 +36,8 @@ public class HomeActivity extends AppCompatActivity {
 
     private ListView listView;
 
-    private void startAddActivity() {
-        Intent intent = new Intent(this, AddActivity.class);
+    private void startMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -58,9 +58,11 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        Button buttonGoOut = findViewById(R.id.button_goOut);
+        buttonGoOut.setOnClickListener((view -> startMainActivity()));
 
         Button add = findViewById(R.id.add_pacient);
-        add.setOnClickListener((view -> startAddActivity()));
+        add.setOnClickListener((view -> startMethodPaciente()));
 
 //      =============== Firebase ===============
         listView = findViewById(R.id.pacients);
@@ -83,7 +85,7 @@ public class HomeActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(HomeActivity.this, ActualPacientActivity.class);
+                Intent intent = new Intent(HomeActivity.this, pacient_functional.class);
                 intent.putExtra("rh", parent.getItemAtPosition(position).toString());
                 startActivity(intent);
             }

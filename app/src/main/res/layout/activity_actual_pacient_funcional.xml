@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -22,7 +22,7 @@
             android:rowCount="1">
 
             <Button
-                android:id="@+id/button_goOut"
+                android:id="@+id/button_goHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -32,7 +32,7 @@
                 android:textAllCaps="true"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:text="Sair"/>
+                android:text="Voltar"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -61,33 +61,48 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        tools:ignore="UselessParent">
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp">
 
-        <Button
-            android:id="@+id/add_pacient"
-            android:layout_width="200dp"
-            android:layout_height="140dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/custom_buttom"
-            android:textColor="@color/green_unifesp"
-            android:textSize="18dp"
-            android:textAllCaps="true"
-            android:textStyle="bold"
-            android:text="Adicionar Paciente" />
-
-
-        <ListView
-            android:id="@+id/pacients"
-            android:layout_width="250dp"
+        <TextView
+            android:id="@+id/Nome"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:choiceMode="singleChoice" />
-    </LinearLayout>
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="PACIENTE"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="388dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:text="RESULATADOS" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:text="TESTES" />
+</LinearLayout>
