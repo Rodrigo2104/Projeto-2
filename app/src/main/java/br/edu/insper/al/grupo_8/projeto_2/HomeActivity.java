@@ -85,7 +85,7 @@ public class HomeActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(HomeActivity.this, ActualPacientActivity.class);
+                Intent intent = new Intent(HomeActivity.this, pacient_functional.class);
                 intent.putExtra("rh", parent.getItemAtPosition(position).toString());
                 startActivity(intent);
             }

@@ -12,6 +12,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".ActualPacientActivity"></activity>
         <activity android:name=".AddActivity" />
+        <activity android:name=".pacient_functional" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".methods.MethodXActivity" />
         <activity android:name=".methods.MethodIXActivity" />
