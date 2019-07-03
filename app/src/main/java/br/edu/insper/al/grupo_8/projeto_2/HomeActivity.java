@@ -1,35 +1,24 @@
 package br.edu.insper.al.grupo_8.projeto_2;
 
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 
-import br.edu.insper.al.grupo_8.projeto_2.methods.MethodIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodPaciente;
 
 public class HomeActivity extends AppCompatActivity {
@@ -85,7 +74,7 @@ public class HomeActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(HomeActivity.this, pacient_functional.class);
+                Intent intent = new Intent(HomeActivity.this, PacientLog.class);
                 intent.putExtra("rh", parent.getItemAtPosition(position).toString());
                 startActivity(intent);
             }
@@ -102,7 +91,7 @@ public class HomeActivity extends AppCompatActivity {
             pac.setRh(ds.child("Info").getValue(Paciente.class).getRh());
             pac.setData_internacao(ds.child("Info").getValue(Paciente.class).getData_internacao());
 
-            listaPacientes.add(pac.getRh());
+            listaPacientes.add("RH: " + pac.getRh());
             listView.setAdapter(arrayAdapter);
 
         }

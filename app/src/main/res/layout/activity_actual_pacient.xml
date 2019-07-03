@@ -156,7 +156,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <TextView
-                    android:id="@+id/editText2"
+                    android:id="@+id/data"
                     android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -171,7 +171,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <TextView
-                    android:id="@+id/editText3"
+                    android:id="@+id/idade"
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -198,7 +198,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <TextView
-                    android:id="@+id/editText4"
+                    android:id="@+id/sexo"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
