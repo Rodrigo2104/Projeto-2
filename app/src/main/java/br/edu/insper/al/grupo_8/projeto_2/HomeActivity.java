@@ -100,7 +100,7 @@ public class HomeActivity extends AppCompatActivity {
             pac.setRh(ds.child("Info").getValue(Paciente.class).getRh());
             pac.setData_internacao(ds.child("Info").getValue(Paciente.class).getData_internacao());
 
-            listaPacientes.add(pac.getRh());
+            listaPacientes.add("RH: " + pac.getRh());
             listView.setAdapter(arrayAdapter);
 
         }

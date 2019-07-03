@@ -146,8 +146,8 @@ public class MethodPaciente extends AppCompatActivity {
 
         Button Proximo = findViewById(R.id.button2);
         RH_in = (EditText) findViewById(R.id.rh);
-        Data_in = (EditText) findViewById(R.id.editText2);
-        Idade_in = (EditText) findViewById(R.id.editText3);
+        Data_in = (EditText) findViewById(R.id.data);
+        Idade_in = (EditText) findViewById(R.id.idade);
         Diagnostico_in = (EditText) findViewById(R.id.editText5);
         Alta_in = (EditText) findViewById(R.id.editText16);
         Nome_in = (EditText) findViewById(R.id.nome_txt);
@@ -210,7 +210,7 @@ public class MethodPaciente extends AppCompatActivity {
         Exame_Fisico_in = (EditText) findViewById(R.id.textView32);
         PA_in = (EditText) findViewById(R.id.editText8);
         P_in = (EditText) findViewById(R.id.editText2a);
-        Dx_in = (EditText) findViewById(R.id.editText4);
+        Dx_in = (EditText) findViewById(R.id.sexo);
         Tmax_in = (EditText) findViewById(R.id.editText);
         Ri_in = (EditText) findViewById(R.id.editText3a);
 
