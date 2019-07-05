@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "34762155482-645anbjrgh2b5esrmranrrklfb2q158o.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "br.edu.insper.al.grupo_8.projeto_2",
-            "certificate_hash": "ae74ed42dd600f6d15b4a0cc2e868124549ca0d7"
-          }
-        },
-        {
           "client_id": "34762155482-usaa09rgoud6sh5fnibh9oec74mpnflc.apps.googleusercontent.com",
           "client_type": 3
         }

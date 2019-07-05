@@ -1,27 +1,44 @@
 package br.edu.insper.al.grupo_8.projeto_2;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Objects;
+
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodIActivity;
 
 public class MethodPaciente extends AppCompatActivity {
 
     private ArrayList<Paciente> lista;
     private HashMap<String, String> resultados = new HashMap<>();
+    private DatePickerDialog.OnDateSetListener mDateSetListener;
 
-    private EditText RH_in, Data_in, Idade_in, Diagnostico_in, Alta_in, Nome_in, Queixa_in, Outros_in, Medicamentos_casa_in,
+    private TextView Data_in;
+
+    private EditText RH_in, Idade_in, Diagnostico_in, Alta_in, Nome_in, Queixa_in, Outros_in, Medicamentos_casa_in,
             Medicamentos_hospital_in,Tratamentos_Anteriores_in, PA_in, P_in,Dx_in,Tmax_in,Ri_in;
 
     private RadioButton checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6, checkBox7, checkBox8, checkBox9,
@@ -46,12 +63,8 @@ public class MethodPaciente extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         loadData();
-
         setContentView(R.layout.activity_method_paciente);
-
         Button buttonGoMethodI = findViewById(R.id.button_goMethodI);
-        buttonGoMethodI.setOnClickListener((view) -> startGoTo(MethodIActivity.class));
-
         Button buttonGoHome = findViewById(R.id.button_goHome);
         buttonGoHome.setOnClickListener((view) -> startGoTo(HomeActivity.class));
 
@@ -155,6 +168,45 @@ public class MethodPaciente extends AppCompatActivity {
         checkBox38a = findViewById(R.id.checkBox38a);
         checkBox39a = findViewById(R.id.checkBox39a);
         checkBox40a = findViewById(R.id.checkBox40a);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("Pacientes");
+
+        Data_in.setOnClickListener(v -> {
+            Calendar cal = Calendar.getInstance();
+            int dia = cal.get(Calendar.DAY_OF_MONTH);
+            int mes = cal.get(Calendar.MONTH);
+            int ano = cal.get(Calendar.YEAR);
+
+            DatePickerDialog dialog = new DatePickerDialog(
+                    this,
+                    android.R.style.Theme_Holo_Light_Dialog_MinWidth,
+                    mDateSetListener,
+                    ano, mes, dia);
+
+            Objects.requireNonNull(dialog.getWindow()).setBackgroundDrawable((new ColorDrawable(Color.TRANSPARENT)));
+            dialog.show();
+        });
+
+        mDateSetListener = (view, year, month, dayOfMonth) -> {
+            month = month + 1;
+            String data = dayOfMonth + "/" + month + "/" + year;
+            Data_in.setText(data);
+        };
+
+        buttonGoMethodI.setOnClickListener(v -> {
+            if (Nome_in.getText().toString().isEmpty() || RH_in.getText().toString().isEmpty() || Data_in.getText().toString().isEmpty()
+            || Idade_in.getText().toString().isEmpty()){
+                Toast.makeText(getApplicationContext(), "Dados Inválidos", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                ref.child(RH_in.getText().toString()).child("Info").child("nome").setValue(Nome_in.getText().toString());
+                ref.child(RH_in.getText().toString()).child("Info").child("rh").setValue(RH_in.getText().toString());
+                ref.child(RH_in.getText().toString()).child("Info").child("data_internacao").setValue(Data_in.getText().toString());
+                ref.child(RH_in.getText().toString()).child("Info").child("idade").setValue(Idade_in.getText().toString());
+                startGoTo(MethodIActivity.class);
+            }
+        });
     }
 
     @Override

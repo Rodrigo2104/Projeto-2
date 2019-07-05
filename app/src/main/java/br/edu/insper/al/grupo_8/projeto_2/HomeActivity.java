@@ -76,9 +76,7 @@ public class HomeActivity extends AppCompatActivity {
             ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listaPacientes);
 
             Paciente pac = new Paciente();
-            pac.setNome(Objects.requireNonNull(ds.child("Info").getValue(Paciente.class)).getNome());
             pac.setRh(Objects.requireNonNull(ds.child("Info").getValue(Paciente.class)).getRh());
-            pac.setData_internacao(Objects.requireNonNull(ds.child("Info").getValue(Paciente.class)).getData_internacao());
 
             listaPacientes.add("RH: " + pac.getRh());
             listView.setAdapter(arrayAdapter);

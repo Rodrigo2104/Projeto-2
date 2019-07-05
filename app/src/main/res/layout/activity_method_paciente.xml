@@ -130,13 +130,13 @@
                     android:id="@+id/rh"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="RH"
-                    android:minEms="7"
-                    app:backgroundTint="@color/black"
-                    android:inputType="textPersonName"
                     android:layout_toEndOf="@+id/textView1"
+                    android:hint="RH"
+                    android:inputType="number"
+                    android:minEms="7"
                     android:onClick="checRad"
-                    android:text="" />
+                    android:text=""
+                    app:backgroundTint="@color/black" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -149,17 +149,17 @@
                     android:layout_toEndOf="@+id/rh"
                     android:paddingEnd="10dp" />
 
-                <android.support.v7.widget.AppCompatEditText
+                <TextView
                     android:id="@+id/data"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_toEndOf="@+id/textView2"
-                    android:hint="Data"
-                    android:minEms="7"
-                    app:backgroundTint="@color/black"
-                    android:onClick="checRad"
-                    android:inputType="textPersonName"
-                    android:text="" />
+                    android:hint="Selecione a Data"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="2dp"
+                    android:layout_centerVertical="true" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -175,13 +175,13 @@
                     android:id="@+id/idade"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:hint="Idade"
-                    app:backgroundTint="@color/black"
-                    android:onClick="checRad"
-                    android:inputType="textPersonName"
-                    android:text=""
+                    android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@+id/textView3"
-                    android:layout_alignParentEnd="true"/>
+                    android:hint="Idade"
+                    android:inputType="number"
+                    android:onClick="checRad"
+                    android:text=""
+                    app:backgroundTint="@color/black" />
             </RelativeLayout>
 
 
