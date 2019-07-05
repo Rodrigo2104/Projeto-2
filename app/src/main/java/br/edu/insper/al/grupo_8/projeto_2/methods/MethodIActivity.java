@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import java.util.HashMap;
 
+import br.edu.insper.al.grupo_8.projeto_2.MethodPaciente;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 
 public class MethodIActivity extends AppCompatActivity {

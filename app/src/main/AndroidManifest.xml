@@ -22,7 +22,7 @@
         <activity android:name=".methods.MethodIIActivity" />
         <activity android:name=".methods.MethodIActivity" />
         <activity android:name=".methods.MethodIIIActivity" />
-        <activity android:name=".methods.MethodPaciente" />
+        <activity android:name=".MethodPaciente" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppCompat.TelaCheia">

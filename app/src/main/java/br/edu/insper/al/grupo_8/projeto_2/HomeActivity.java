@@ -17,21 +17,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-
-
-import br.edu.insper.al.grupo_8.projeto_2.methods.MethodPaciente;
+import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
 
     private ListView listView;
 
-    private void startMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    private void startMethodPaciente() {
-        Intent intent = new Intent(this, MethodPaciente.class);
+    private void startGoTo(Class classe){
+        Intent intent = new Intent(this, classe);
         startActivity(intent);
     }
 
@@ -48,10 +41,10 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         Button buttonGoOut = findViewById(R.id.button_goOut);
-        buttonGoOut.setOnClickListener((view -> startMainActivity()));
+        buttonGoOut.setOnClickListener(view -> logOutMainActivity());
 
         Button add = findViewById(R.id.add_pacient);
-        add.setOnClickListener((view -> startMethodPaciente()));
+        add.setOnClickListener(view -> startGoTo(MethodPaciente.class));
 
 //      =============== Firebase ===============
         listView = findViewById(R.id.pacients);
@@ -70,14 +63,10 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(HomeActivity.this, PacientLog.class);
-                intent.putExtra("rh", parent.getItemAtPosition(position).toString());
-                startActivity(intent);
-            }
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            Intent intent = new Intent(HomeActivity.this, PacientLog.class);
+            intent.putExtra("rh", parent.getItemAtPosition(position).toString());
+            startActivity(intent);
         });
     }
 
@@ -87,9 +76,9 @@ public class HomeActivity extends AppCompatActivity {
             ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listaPacientes);
 
             Paciente pac = new Paciente();
-            pac.setNome(ds.child("Info").getValue(Paciente.class).getNome());
-            pac.setRh(ds.child("Info").getValue(Paciente.class).getRh());
-            pac.setData_internacao(ds.child("Info").getValue(Paciente.class).getData_internacao());
+            pac.setNome(Objects.requireNonNull(ds.child("Info").getValue(Paciente.class)).getNome());
+            pac.setRh(Objects.requireNonNull(ds.child("Info").getValue(Paciente.class)).getRh());
+            pac.setData_internacao(Objects.requireNonNull(ds.child("Info").getValue(Paciente.class)).getData_internacao());
 
             listaPacientes.add("RH: " + pac.getRh());
             listView.setAdapter(arrayAdapter);

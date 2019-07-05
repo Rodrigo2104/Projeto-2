@@ -52,10 +52,10 @@
 
                 android:background="@drawable/custom_buttom"
 
+                android:text="Terminar"
                 android:textAllCaps="true"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:text="Próximo"/>
+                android:textStyle="bold" />
 
         </GridLayout>
 
