@@ -5,14 +5,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -196,8 +193,11 @@ public class MethodPaciente extends AppCompatActivity {
 
         buttonGoMethodI.setOnClickListener(v -> {
             if (Nome_in.getText().toString().isEmpty() || RH_in.getText().toString().isEmpty() || Data_in.getText().toString().isEmpty()
-            || Idade_in.getText().toString().isEmpty()){
-                Toast.makeText(getApplicationContext(), "Dados Inválidos", Toast.LENGTH_SHORT).show();
+                    || Idade_in.getText().toString().isEmpty() || Idade_in.getText().toString().isEmpty() || Idade_in.getText().toString().isEmpty()
+                    || Idade_in.getText().toString().isEmpty()|| Idade_in.getText().toString().isEmpty()|| Idade_in.getText().toString().isEmpty()
+                    || Idade_in.getText().toString().isEmpty()|| Idade_in.getText().toString().isEmpty()|| Idade_in.getText().toString().isEmpty()
+                    || Idade_in.getText().toString().isEmpty()){
+                Toast.makeText(getApplicationContext(), "Faltam Dados", Toast.LENGTH_SHORT).show();
             }
             else {
                 ref.child(RH_in.getText().toString()).child("Info").child("nome").setValue(Nome_in.getText().toString());
