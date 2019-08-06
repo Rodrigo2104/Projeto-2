@@ -16,21 +16,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import org.w3c.dom.Text;
 
+import java.lang.reflect.Executable;
 import java.util.ArrayList;
 
 public class ActualPacientActivity extends AppCompatActivity {
-    TextView nome;
-    TextView data;
-    TextView idade;
-    TextView resultTeste_I;
-    TextView resultTeste_II;
-    TextView resultTeste_III;
-    TextView resultTeste_IV;
-    TextView resultTeste_V;
-    TextView resultTeste_VIII;
-    TextView resultTeste_IX;
-    TextView resultTeste_X;
-
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
@@ -51,6 +40,7 @@ public class ActualPacientActivity extends AppCompatActivity {
         TextView rh_text = findViewById(R.id.rh);
 
         Bundle extras = getIntent().getExtras();
+        assert extras != null;
         String rh = extras.getString("rh");
         rh_text.setText(rh);
 
@@ -86,6 +76,10 @@ public class ActualPacientActivity extends AppCompatActivity {
                     pac.setT09(ds.child("Info").getValue(Paciente.class).getT09());
                     pac.setT10(ds.child("Info").getValue(Paciente.class).getT10());
 
+                    idade.setText(pac.getIdade());
+                    nome.setText(pac.getNome());
+                    data.setText(pac.getData_internacao());
+                    sexo.setText(pac.getSexo());
                     resultTeste_I.setText(pac.getT01());
                     resultTeste_II.setText(pac.getT01());
                     resultTeste_III.setText(pac.getT01());
@@ -94,12 +88,7 @@ public class ActualPacientActivity extends AppCompatActivity {
                     resultTeste_VIII.setText(pac.getT01());
                     resultTeste_IX.setText(pac.getT01());
                     resultTeste_X.setText(pac.getT01());
-
-                    idade.setText(pac.getIdade());
-                    nome.setText(pac.getNome());
-                    data.setText(pac.getData_internacao());
-                    sexo.setText(pac.getSexo());
-                    }
+                }
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {

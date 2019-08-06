@@ -32,7 +32,7 @@ public class Paciente {
         return t01;
     }
 
-    public void setT01(int t01) {
+    public void setT01(Integer t01) {
         this.t01 = t01;
     }
 
@@ -40,7 +40,7 @@ public class Paciente {
         return t02;
     }
 
-    public void setT02(int t02) {
+    public void setT02(Integer t02) {
         this.t02 = t02;
     }
 
@@ -48,7 +48,7 @@ public class Paciente {
         return t03;
     }
 
-    public void setT03(int t03) {
+    public void setT03(Integer t03) {
         this.t03 = t03;
     }
 
@@ -56,7 +56,7 @@ public class Paciente {
         return t04;
     }
 
-    public void setT04(int t04) {
+    public void setT04(Integer t04) {
         this.t04 = t04;
     }
 
@@ -64,7 +64,7 @@ public class Paciente {
         return t05;
     }
 
-    public void setT05(int t05) {
+    public void setT05(Integer t05) {
         this.t05 = t05;
     }
 
@@ -72,7 +72,7 @@ public class Paciente {
         return t08;
     }
 
-    public void setT08(int t08) {
+    public void setT08(Integer t08) {
         this.t08 = t08;
     }
 
@@ -80,7 +80,7 @@ public class Paciente {
         return t09;
     }
 
-    public void setT09(int t09) {
+    public void setT09(Integer t09) {
         this.t09 = t09;
     }
 
@@ -88,7 +88,7 @@ public class Paciente {
         return t10;
     }
 
-    public void setT10(int t10) {
+    public void setT10(Integer t10) {
         this.t10 = t10;
     }
 
@@ -104,7 +104,7 @@ public class Paciente {
         return idade;
     }
 
-    public void setIdade(int idade) {
+    public void setIdade(Integer idade) {
         this.idade = idade;
     }
 
