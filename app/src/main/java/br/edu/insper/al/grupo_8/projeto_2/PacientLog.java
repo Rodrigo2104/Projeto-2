@@ -10,10 +10,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class PacientLog extends AppCompatActivity {
-    TextView nome;
+
 
     private void startMethodActivity(Class classe) {
-        Intent intent = new Intent(this, ActualPacientActivity.class);
+        Intent intent = new Intent(this, classe);
         startActivity(intent);
     }
 
@@ -25,15 +25,23 @@ public class PacientLog extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference pacientesReference = database.getReference("Pacientes");
 
-        Button buttonGoHome = findViewById(R.id.button_goHome);
+        Button buttonGoHome = findViewById(R.id.button_goPacientLog);
         buttonGoHome.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
 
-        Button buttonGoActualPacientActivity = findViewById(R.id.button);
-        buttonGoActualPacientActivity.setOnClickListener((view) -> startMethodActivity(ActualPacientActivity.class));
+        TextView getPacient = findViewById(R.id.nome_paciente);
 
         Bundle extras = getIntent().getExtras();
         String rh = extras.getString("rh");
 
+        Button buttonGoActualPacientActivity = findViewById(R.id.button3);
+        buttonGoActualPacientActivity.setOnClickListener((view) -> {
+            Intent intent = new Intent(PacientLog.this, MethodsActivity.class);
+            intent.putExtra("rh", rh);
+            startActivity(intent);
+        });
+
+
+        getPacient.setText("PACIENTE "+ rh);
     }
 
 }

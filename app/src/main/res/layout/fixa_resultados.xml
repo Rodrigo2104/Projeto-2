@@ -14,7 +14,7 @@
         android:layout_height="30dp" />
 
     <TextView
-        android:id="@+id/Nome"
+        android:id="@+id/nome_paciente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"

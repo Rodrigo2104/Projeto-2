@@ -30,6 +30,15 @@ public class MethodsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_methods);
+        Bundle extras = getIntent().getExtras();
+        String rh = extras.getString("rh");
+
+        Button buttonGoPacientLog = findViewById(R.id.button_goPacientLog);
+        buttonGoPacientLog.setOnClickListener((view) -> {
+            Intent intent = new Intent(MethodsActivity.this, PacientLog.class);
+            intent.putExtra("rh", rh);
+            startActivity(intent);
+        });
 
         // LEMBRE-SE DE CRIAR UM ATRIBUTO DO TIPO CLASS PARA A ACTIVITY DO SEU MÉTODO
 
@@ -68,6 +77,5 @@ public class MethodsActivity extends AppCompatActivity {
 
         Button buttonGoMethodXII = findViewById(R.id.button_goMethodXII);
         buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
-
     }
 }

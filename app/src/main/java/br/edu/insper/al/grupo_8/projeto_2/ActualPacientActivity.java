@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -13,11 +12,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import org.w3c.dom.Text;
-
-import java.lang.reflect.Executable;
-import java.util.ArrayList;
 
 public class ActualPacientActivity extends AppCompatActivity {
 
@@ -31,7 +25,7 @@ public class ActualPacientActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_actual_pacient);
 
-        Button buttonGoHome = findViewById(R.id.button_goHome);
+        Button buttonGoHome = findViewById(R.id.button_goPacientLog);
         buttonGoHome.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();

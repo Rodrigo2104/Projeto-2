@@ -62,7 +62,7 @@ public class MethodPaciente extends AppCompatActivity {
         loadData();
         setContentView(R.layout.activity_method_paciente);
         Button buttonGoMethodI = findViewById(R.id.button_goMethodI);
-        Button buttonGoHome = findViewById(R.id.button_goHome);
+        Button buttonGoHome = findViewById(R.id.button_goPacientLog);
         buttonGoHome.setOnClickListener((view) -> startGoTo(HomeActivity.class));
 
         RH_in = findViewById(R.id.rh);
@@ -81,6 +81,7 @@ public class MethodPaciente extends AppCompatActivity {
         Dx_in = findViewById(R.id.sexo);
         Tmax_in = findViewById(R.id.editText);
         Ri_in = findViewById(R.id.editText3a);
+
 
         checkBox1 = findViewById(R.id.checkBox1);
         checkBox2 = findViewById(R.id.checkBox2);
