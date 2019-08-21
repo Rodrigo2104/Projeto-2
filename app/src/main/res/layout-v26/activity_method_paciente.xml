@@ -22,16 +22,7 @@
             android:columnCount="3"
             android:rowCount="1">
 
-            <Button
-                android:id="@+id/button_goHome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:background="@drawable/custom_buttom"
-                android:textAllCaps="true"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:text="Voltar"/>
+
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -42,7 +33,7 @@
                 android:src="@drawable/unifesp_escrito" />
 
             <Button
-                android:id="@+id/button_goMethodI"
+                android:id="@+id/button_goTests"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -64,7 +55,7 @@
         android:paddingBottom="16dp">
 
         <TextView
-            android:id="@+id/Nome"
+            android:id="@+id/nome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -1233,7 +1224,7 @@
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox39a"
+                        android:id="@+id/checkBox46"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

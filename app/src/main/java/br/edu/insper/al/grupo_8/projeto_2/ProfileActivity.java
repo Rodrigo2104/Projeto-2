@@ -1,6 +1,5 @@
 package br.edu.insper.al.grupo_8.projeto_2;
 
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,12 +7,9 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.Objects;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -30,14 +26,14 @@ public class ProfileActivity extends AppCompatActivity {
 
         button_add.setOnClickListener(v -> {
             progress.setVisibility(View.VISIBLE);
-           newauth.createUserWithEmailAndPassword(userNewLogin.getText().toString(), userNewPass.getText().toString()).addOnCompleteListener(task -> {
+            newauth.createUserWithEmailAndPassword(userNewLogin.getText().toString(), userNewPass.getText().toString()).addOnCompleteListener(task -> {
                progress.setVisibility(View.GONE);
                if(task.isSuccessful()){
                    Toast.makeText(this, "Registrado com Sucesso", Toast.LENGTH_LONG).show();
                    userNewLogin.setText("");
                    userNewPass.setText("");
                } else {
-                   Toast.makeText(this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                   Toast.makeText(this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_LONG).show();
                }
            });
         });

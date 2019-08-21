@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ActualPacientActivity" />
+        <activity android:name=".ResultsActivity" />
         <activity android:name=".PacientLog" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".methods.MethodXActivity" />
@@ -22,7 +22,7 @@
         <activity android:name=".methods.MethodIIActivity" />
         <activity android:name=".methods.MethodIActivity" />
         <activity android:name=".methods.MethodIIIActivity" />
-        <activity android:name=".MethodPaciente" />
+        <activity android:name=".MethodPacienteActivity" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppCompat.TelaCheia">
@@ -32,12 +32,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MethodsActivity" />
+        <activity android:name=".TestsActivity" />
         <activity android:name=".methods.MethodXIIActivity" />
         <activity android:name=".methods.MethodXIActivity" />
         <activity android:name=".methods.MethodVActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".LogInActivity" />
     </application>
 
 </manifest>

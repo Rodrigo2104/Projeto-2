@@ -9,18 +9,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import java.util.ArrayList;
 import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
-
     private ListView listView;
 
     private void startGoTo(Class classe){
@@ -29,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void logOutMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, LogInActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
@@ -41,14 +38,13 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         Button buttonGoOut = findViewById(R.id.button_goOut);
-        buttonGoOut.setOnClickListener(view -> logOutMainActivity());
-
         Button add = findViewById(R.id.add_pacient);
-        add.setOnClickListener(view -> startGoTo(MethodPaciente.class));
-
-//      =============== Firebase ===============
         listView = findViewById(R.id.pacients);
 
+        buttonGoOut.setOnClickListener(view -> logOutMainActivity());
+        add.setOnClickListener(view -> startGoTo(MethodPacienteActivity.class));
+
+//      =============== Firebase ===============
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference pacientesReference = database.getReference("Pacientes");
 
@@ -63,10 +59,13 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        listView.setOnItemClickListener((parent, view, position, id) -> {
-            Intent intent = new Intent(HomeActivity.this, PacientLog.class);
-            intent.putExtra("rh", parent.getItemAtPosition(position).toString());
-            startActivity(intent);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(HomeActivity.this, PacientLog.class);
+                intent.putExtra("rh", parent.getItemAtPosition(position).toString());
+                startActivity(intent);
+            }
         });
     }
 
@@ -78,9 +77,8 @@ public class HomeActivity extends AppCompatActivity {
             Paciente pac = new Paciente();
             pac.setRh(Objects.requireNonNull(ds.child("Info").getValue(Paciente.class)).getRh());
 
-            listaPacientes.add("RH: " + pac.getRh());
+            listaPacientes.add(pac.getRh());
             listView.setAdapter(arrayAdapter);
-
         }
     }
 }
