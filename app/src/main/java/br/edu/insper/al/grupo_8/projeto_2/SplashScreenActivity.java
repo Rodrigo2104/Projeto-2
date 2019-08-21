@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 public class SplashScreenActivity extends AppCompatActivity {
 
     private void startMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, LogInActivity.class);
         startActivity(intent);
     }
 
@@ -18,6 +18,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
         Handler handle = new Handler();
 
-        handle.postDelayed(() -> startMainActivity(), 2000);
+        handle.postDelayed(this::startMainActivity, 2000);
     }
 }

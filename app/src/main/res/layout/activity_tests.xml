@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MethodsActivity">
+    tools:context=".TestsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button_goMethodI"
+            android:id="@+id/button_goTests"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

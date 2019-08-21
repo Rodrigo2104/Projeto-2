@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.HashMap;
 
-import br.edu.insper.al.grupo_8.projeto_2.MethodPaciente;
+import br.edu.insper.al.grupo_8.projeto_2.MethodPacienteActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 
 public class MethodIActivity extends AppCompatActivity {
@@ -57,11 +57,7 @@ public class MethodIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_i);
 
-        Button buttonGoAddPacient = findViewById(R.id.add_pacient);
-        buttonGoAddPacient.setOnClickListener((view) -> startMethodActivity(MethodPaciente.class));
 
-        Button buttonGoMethodII = findViewById(R.id.button_goMethodII);
-        buttonGoMethodII.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
 
         //=============================
 
@@ -283,8 +279,6 @@ public class MethodIActivity extends AppCompatActivity {
 
         resultados();
         System.out.print(Resultados);
-
-
     }
 
     public void resultados(){

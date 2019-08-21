@@ -18,8 +18,7 @@ import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIIActivity;
 import br.edu.insper.al.grupo_8.projeto_2.methods.MethodXIActivity;
 
-
-public class MethodsActivity extends AppCompatActivity {
+public class TestsActivity extends AppCompatActivity {
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
@@ -29,11 +28,11 @@ public class MethodsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_methods);
+        setContentView(R.layout.activity_tests);
 
         // LEMBRE-SE DE CRIAR UM ATRIBUTO DO TIPO CLASS PARA A ACTIVITY DO SEU MÉTODO
 
-        Button buttonGoMethodI = findViewById(R.id.button_goMethodI);
+        Button buttonGoMethodI = findViewById(R.id.button_goTests);
         buttonGoMethodI.setOnClickListener((view) -> startMethodActivity(MethodIActivity.class));
 
         Button buttonGoMethodII = findViewById(R.id.button_goMethodII);

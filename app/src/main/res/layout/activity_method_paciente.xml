@@ -31,7 +31,7 @@
                 android:textAllCaps="true"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:text="Voltar"/>
+                android:text="Sair"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -42,20 +42,20 @@
                 android:src="@drawable/unifesp_escrito" />
 
             <Button
-                android:id="@+id/button_goMethodI"
+                android:id="@+id/button_goTests"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:background="@drawable/custom_buttom"
+                android:text="Salvar e Continuar"
                 android:textAllCaps="true"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:text="Próximo"/>
+                android:textStyle="bold" />
         </GridLayout>
     </android.support.v7.widget.Toolbar>
 
     <TextView
-        android:id="@+id/Nome"
+        android:id="@+id/quest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -84,6 +84,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -93,8 +94,6 @@
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:layout_centerVertical="true"
-                    android:paddingEnd="10dp"
-                    android:layout_alignParentStart="true"
                     android:text="Nome:"/>
 
                 <android.support.v7.widget.AppCompatEditText
@@ -104,8 +103,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@+id/textView0"
                     android:hint="Nome"
-                    android:inputType="textPersonName"
-                    android:onClick="checRad"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
                     app:backgroundTint="@color/black"
                     android:text="" />
             </RelativeLayout>
@@ -113,6 +111,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -122,19 +121,17 @@
                     android:text="RH:"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:layout_centerVertical="true"
-                    android:paddingEnd="10dp"
-                    android:layout_alignParentStart="true" />
+                    android:layout_centerVertical="true" />
 
                 <android.support.v7.widget.AppCompatEditText
-                    android:id="@+id/rh"
+                    android:id="@+id/rh_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView1"
                     android:hint="RH"
                     android:inputType="number"
                     android:minEms="7"
-                    android:onClick="checRad"
+                    android:layout_marginEnd="10dp"
                     android:text=""
                     app:backgroundTint="@color/black" />
 
@@ -142,23 +139,22 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/rh_txt"
                     android:text="Data de internação:"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:layout_centerVertical="true"
-                    android:layout_toEndOf="@+id/rh"
-                    android:paddingEnd="10dp" />
+                    android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/data"
+                    android:id="@+id/data_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_toEndOf="@+id/textView2"
                     android:hint="Selecione a Data"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:paddingEnd="20dp"
-                    android:paddingStart="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_centerVertical="true" />
 
                 <TextView
@@ -169,135 +165,126 @@
                     android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:text="Idade:"
-                    android:layout_toEndOf="@+id/data" />
+                    android:layout_toEndOf="@+id/data_txt" />
 
                 <android.support.v7.widget.AppCompatEditText
-                    android:id="@+id/idade"
+                    android:id="@+id/idade_txt"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@+id/textView3"
                     android:hint="Idade"
                     android:inputType="number"
-                    android:onClick="checRad"
                     android:text=""
                     app:backgroundTint="@color/black" />
             </RelativeLayout>
 
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="Sexo:" />
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:layout_toEndOf="@+id/textView4"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="20dp"
-                        android:layout_height="25dp"
-                        android:layout_weight="1"
-                        android:text="Sexo:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton
                         android:id="@+id/checkBox1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:layout_marginEnd="15dp"
+                        android:textSize="18sp"
                         android:text="Masculino" />
 
                     <RadioButton
                         android:id="@+id/checkBox2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Feminino" />
                 </RadioGroup>
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            //===============================================
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="103dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Diagnóstico médico:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Diagnóstico Médico:" />
 
-                <EditText
-                    android:id="@+id/editText5"
-                    android:layout_width="520dp"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/diagnostico_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView5"
+                    android:hint="Diagnóstico Médico"
+                    android:inputType="text"
+                    android:text=""
+                    app:backgroundTint="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:onClick="checRad"
-                    android:text="" />
-
-            </LinearLayout>
-
-            //=================================================
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="Cor de pele autorreferida:" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView6"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="120dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Cor da pele autoreferida"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton
                         android:id="@+id/checkBox3"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
-                        android:onClick="checRad"
                         android:text="Branco" />
 
                     <RadioButton
                         android:id="@+id/checkBox4"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
-                        android:onClick="checRad"
                         android:text="Amarelo" />
 
                     <RadioButton
                         android:id="@+id/checkBox5"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
                         android:text="Negro" />
 
@@ -305,50 +292,47 @@
                         android:id="@+id/checkBox6"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
-                        android:onClick="checRad"
                         android:text="Pardo" />
 
                     <RadioButton
                         android:id="@+id/checkBox7"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
-                        android:onClick="checRad"
                         android:text="Indígena" />
                 </RadioGroup>
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            //============================================
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="Estado Civil:" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView7"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView37"
-                        android:layout_width="120dp"
-                        android:layout_height="32dp"
-                        android:layout_weight="1"
-                        android:text="Estado civil:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton
                         android:id="@+id/checkBox8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Solteiro" />
 
                     <RadioButton
@@ -356,7 +340,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Divorciado" />
 
                     <RadioButton
@@ -364,7 +348,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Casado" />
 
                     <RadioButton
@@ -372,244 +356,229 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Viúvo" />
                 </RadioGroup>
-            </LinearLayout>
+            </RelativeLayout>
 
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Escolaridade:" />
 
                 <RadioGroup
-                    android:layout_width="match_parent"
+                    android:id="@+id/radioGroup0"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toEndOf="@+id/textView8">
 
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="120dp"
+                    <RadioButton
+                        android:id="@+id/checkBox12"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Escolaridade:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        android:textSize="18sp"
+                        android:text="Nenhum nível de ensino" />
 
-
-                    <LinearLayout
-                        android:layout_width="175dp"
+                    <RadioButton
+                        android:id="@+id/checkBox13"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:textSize="18sp"
+                        android:text="Fundamental incompleto " />
 
-                        <RadioButton
-                            android:id="@+id/checkBox12"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="checRad"
-                            android:text="Nenhum nível de ensino" />
+                    <RadioButton
+                        android:id="@+id/checkBox14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Médio incompleto " />
 
-                        <RadioButton
-                            android:id="@+id/checkBox13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="checRad"
-                            android:text="Fundamental incompleto " />
-
-                        <RadioButton
-                            android:id="@+id/checkBox14"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="checRad"
-                            android:text="Médio incompleto " />
-
-                        <RadioButton
-                            android:id="@+id/checkBox15"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="checRad"
-                            android:text="Superior incompleto " />
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="175dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <RadioButton
-                            android:id="@+id/checkBox16"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="checRad"
-                            android:text="Fundamental completo " />
-
-                        <RadioButton
-                            android:id="@+id/checkBox17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="checRad"
-                            android:text="Médio completo" />
-
-                        <RadioButton
-                            android:id="@+id/checkBox18"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:onClick="checRad"
-                            android:text="Superior completo" />
-                    </LinearLayout>
+                    <RadioButton
+                        android:id="@+id/checkBox15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Superior incompleto " />
                 </RadioGroup>
-            </LinearLayout>
 
-            //=======================================
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/radioGroup0">
 
-            <Space
+                    <RadioButton
+                        android:id="@+id/checkBox16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Fundamental completo " />
+
+                    <RadioButton
+                        android:id="@+id/checkBox17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Médio completo" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Superior completo" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="120dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Ocupação:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Ocupação:" />
 
-
-                <LinearLayout
-                    android:layout_width="175dp"
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_marginEnd="15dp"
+                    android:layout_toEndOf="@+id/textView9">
 
                     <RadioButton
                         android:id="@+id/checkBox19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Aposentado/Pensionista " />
 
                     <RadioButton
                         android:id="@+id/checkBox20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Trabalhador autônomo " />
 
                     <RadioButton
                         android:id="@+id/checkBox21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Desempregado" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/radioGroup2">
 
                     <RadioButton
                         android:id="@+id/checkBox22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Trabalhador formal" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="175dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
 
                     <RadioButton
                         android:id="@+id/checkBox23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Trabalhador informal" />
 
                     <RadioButton
                         android:id="@+id/checkBox24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Do lar" />
+                </RadioGroup>
+            </RelativeLayout>
 
-                </LinearLayout>
-            </LinearLayout>
-            /=======================================
-            //==============================================
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Provedor da casa:" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView10"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="1dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Provedor da casa:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton
                         android:id="@+id/checkBox25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:layout_marginEnd="20dp"
+                        android:textSize="18sp"
                         android:text="Sim" />
 
                     <RadioButton
                         android:id="@+id/checkBox26"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Não" />
                 </RadioGroup>
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Renda Idoso:" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView11"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="1dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Renda Idoso:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton
                         android:id="@+id/checkBox27"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="01 SM " />
 
                     <RadioButton
@@ -617,7 +586,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="04 SM " />
 
                     <RadioButton
@@ -625,38 +594,38 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="De 01 a 04 SM" />
                 </RadioGroup>
+            </RelativeLayout>
 
-            </LinearLayout>
-            /===========================================================
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Renda Familiar:" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView12"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="1dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Renda Familiar:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton
                         android:id="@+id/checkBox30"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="01 SM " />
 
                     <RadioButton
@@ -664,7 +633,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="04 SM " />
 
                     <RadioButton
@@ -672,38 +641,39 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="De 01 a 04 SM" />
                 </RadioGroup>
+            </RelativeLayout>
 
-            </LinearLayout>
-            /============================================================
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Quantas pessoas\ndependem dessa renda:" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView13"
+                    android:layout_centerVertical="true"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView33"
-                        android:layout_width="169dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Quantas pessoas dependem dessa renda:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton
                         android:id="@+id/checkBox33"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="01" />
 
                     <RadioButton
@@ -711,7 +681,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="02 a 03" />
 
                     <RadioButton
@@ -719,1044 +689,1145 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="04 ou mais" />
                 </RadioGroup>
+            </RelativeLayout>
 
-            </LinearLayout>
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Religião:" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView14"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="89dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Religião:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton
                         android:id="@+id/checkBox36"
-                        android:layout_width="151dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Católico" />
 
                     <RadioButton
                         android:id="@+id/checkBox37"
-                        android:layout_width="151dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Espírita" />
 
                     <RadioButton
                         android:id="@+id/checkBox38"
-                        android:layout_width="151dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Budista" />
 
                     <RadioButton
                         android:id="@+id/checkBox39"
-                        android:layout_width="151dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Evangélico" />
 
                 </RadioGroup>
-            </LinearLayout>
-            <Space
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Hábitos de Vida:" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView15"
                     android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="89dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Hábitos de Vida:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                     <RadioButton
                         android:id="@+id/checkBox40"
-                        android:layout_width="151dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Sedentarismo" />
 
                     <RadioButton
                         android:id="@+id/checkBox41"
-                        android:layout_width="151dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
-                        android:text="Prática regular de atividade física" />
+                        android:text="Prática regular\nde atividade física"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox42"
-                        android:layout_width="151dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Tabagismo" />
 
                     <RadioButton
                         android:id="@+id/checkBox43"
-                        android:layout_width="151dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:onClick="checRad"
+                        android:textSize="18sp"
                         android:text="Etilismo" />
-
                 </RadioGroup>
-            </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView16"
-                    android:layout_width="103dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Alta Hospitalar:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Alta Hospitalar:" />
 
-                <EditText
-                    android:id="@+id/editText16"
-                    android:layout_width="520dp"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/alta_txt"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:onClick="checRad"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView16"
+                    android:hint="Alta Hospitalar"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
                     android:text="" />
-            </LinearLayout>
+            </RelativeLayout>
 
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-//==============================================================
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Procedência:" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView17"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView4a"
-                        android:layout_width="20dp"
-                        android:layout_height="25dp"
-                        android:layout_weight="1"
-                        android:text="Procedência:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox1a"
+                    <RadioButton
+                        android:id="@+id/checkBox44"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textSize="18sp"
                         android:text="Casa" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox2a"
+                    <RadioButton
+                        android:id="@+id/checkBox45"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textSize="18sp"
                         android:text="Hospital" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox3a"
+                    <RadioButton
+                        android:id="@+id/checkBox46"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textSize="18sp"
                         android:text="Outro" />
                 </RadioGroup>
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            //===============================================
-
-            //=================================================
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
                 <TextView
-                    android:id="@+id/textView6a"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Principal queixa:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Principal queixa:"/>
 
-                <EditText android:onClick="checRad"
-                    android:id="@+id/editText6"
-                    android:layout_width="520dp"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/queixa_txt"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView18"
+                    android:hint="Principal Queixa"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
                     android:text="" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
 
                 <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="80dp"
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="PA:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="PA:"/>
 
-                <EditText android:onClick="checRad"
-                    android:id="@+id/editText8"
-                    android:layout_width="100dp"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/PA_txt"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
+                    android:layout_toEndOf="@+id/textView19"
+                    android:hint="PA"
+                    android:layout_marginEnd="10dp"
+                    android:minEms="5"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
                     android:text="" />
 
                 <TextView
-                    android:id="@+id/textView2a"
-                    android:layout_width="80dp"
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="P:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/PA_txt"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="P:"/>
 
-                <EditText android:onClick="checRad"
-                    android:id="@+id/editText2a"
-                    android:layout_width="118dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/P_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView20"
+                    android:hint="P"
+                    android:layout_marginEnd="10dp"
+                    android:minEms="5"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
                     android:text="" />
 
                 <TextView
-                    android:id="@+id/textView3a"
-                    android:layout_width="80dp"
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="R:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/P_txt"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="R:"/>
 
-                <EditText android:onClick="checRad"
-                    android:id="@+id/editText3a"
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/R_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView21"
+                    android:hint="R"
+                    android:layout_marginEnd="10dp"
+                    android:minEms="5"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
                     android:text="" />
 
                 <TextView
-                    android:id="@+id/textView36"
-                    android:layout_width="80dp"
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Tmax:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/R_txt"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Tmax:"/>
 
-                <EditText android:onClick="checRad"
-                    android:id="@+id/editText"
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/tmax_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView22"
+                    android:hint="Tmax"
+                    android:layout_marginEnd="10dp"
+                    android:minEms="5"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
                     android:text="" />
 
                 <TextView
-                    android:id="@+id/textView38"
-                    android:layout_width="80dp"
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Dx:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/tmax_txt"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Dx:"/>
 
-                <EditText android:onClick="checRad"
-                    android:id="@+id/sexo"
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/DX_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView23"
+                    android:hint="Dx"
+                    android:minEms="5"
+                    android:layout_marginEnd="10dp"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
                     android:text="" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-
-            //============================================
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp">
 
                 <TextView
-                    android:id="@+id/textView37aa"
-                    android:layout_width="172dp"
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Antecedentes Pessoais:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Antecedentes Pessoais:"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/textView24"
+                    android:text="HAS" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/checkBox1a"
+                    android:text="DM" />
+
+                <CheckBox
+                    android:id="@+id/checkBox3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/checkBox2a"
+                    android:text="DPOC" />
 
                 <CheckBox
                     android:id="@+id/checkBox4a"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="HAS" />
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/checkBox3a"
+                    android:text="Cardiopatia" />
 
                 <CheckBox
                     android:id="@+id/checkBox5a"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="DM" />
-
-                <CheckBox
-                    android:id="@+id/checkBox6a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="DPOC" />
-
-                <CheckBox
-                    android:id="@+id/checkBox7a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Cardiopatia" />
-
-                <CheckBox
-                    android:id="@+id/checkBox8a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/checkBox4a"
                     android:text="Câncer" />
 
 
                 <CheckBox
+                    android:id="@+id/checkBox6a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_below="@+id/checkBox5a"
+                    android:layout_alignStart="@+id/checkBox1a"
+                    android:text="Etilismo" />
+
+                <CheckBox
+                    android:id="@+id/checkBox7a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/checkBox6a"
+                    android:layout_below="@+id/checkBox5a"
+                    android:text="Insuficiência Renal" />
+
+                <CheckBox
+                    android:id="@+id/checkBox8a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/checkBox7a"
+                    android:layout_below="@+id/checkBox5a"
+                    android:text="Alergias" />
+
+                <CheckBox
                     android:id="@+id/checkBox9a"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Etilismo" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/checkBox8a"
+                    android:layout_below="@+id/checkBox5a"
+                    android:text="Sedentarismo" />
 
                 <CheckBox
                     android:id="@+id/checkBox10a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Insuficiência Renal" />
-
-                <CheckBox
-                    android:id="@+id/checkBox11a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Insuficiência Renal" />
-
-                <CheckBox
-                    android:id="@+id/checkBox12a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Alergias" />
-
-                <CheckBox
-                    android:id="@+id/checkBox13a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Sedentarismo" />
-
-                <CheckBox
-                    android:id="@+id/checkBox14a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/checkBox6a"
+                    android:layout_alignStart="@+id/checkBox6a"
                     android:text="Tabagismo" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
 
                 <TextView
-                    android:id="@+id/textView39"
+                    android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Outros:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Outros:" />
 
-                <EditText android:onClick="checRad"
-                    android:id="@+id/editText22"
-                    android:layout_width="718dp"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/outros_txt"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:inputType="textPersonName"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView25"
+                    android:hint="Outros"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
                     android:text="" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/textView10a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Medicamentos em uso em casa:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <EditText android:onClick="checRad"
-                    android:id="@+id/textView40"
-                    android:layout_width="480dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-
-            </LinearLayout>
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/textView11a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Medicamentos em uso no hospital:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <EditText android:onClick="checRad"
-                    android:id="@+id/textView41"
-                    android:layout_width="500dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-
-            </LinearLayout>
-            /===========================================================
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Medicamentos sendo usados em casa:"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/med_casa_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView26"
+                    android:hint="Medicamentos sendo usados em casa:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Medicamentos em uso no hospital:"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/med_hosp_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView27"
+                    android:hint="Medicamentos em uso no hospital:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="Anti-coagulação"/>
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/textView28"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView17a"
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Anti-coagulação"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox39a"
+                    <RadioButton
+                        android:id="@+id/checkBox47"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="15dp"
                         android:text="Sim" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox40a"
+                    <RadioButton
+                        android:id="@+id/checkBox48"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:textSize="18sp"
                         android:text="Não" />
-
                 </RadioGroup>
-            </LinearLayout>
+            </RelativeLayout>
 
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="Dor:"/>
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView29"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView12a"
-                        android:layout_width="1dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Dor:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox15a"
+                    <RadioButton
+                        android:id="@+id/checkBox49"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="1" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox16a"
+                    <RadioButton
+                        android:id="@+id/checkBox50"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="2" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox17a"
+                    <RadioButton
+                        android:id="@+id/checkBox51"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="3" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox18a"
+                    <RadioButton
+                        android:id="@+id/checkBox52"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="4" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox19a"
+                    <RadioButton
+                        android:id="@+id/checkBox53"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="5" />
                 </RadioGroup>
+            </RelativeLayout>
 
-            </LinearLayout>
-            /============================================================
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="38dp">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
                 <TextView
-                    android:id="@+id/textView19"
-                    android:layout_width="205dp"
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Tratamentos Anteriores:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Tratamentos Anteriores:"/>
 
-                <EditText android:onClick="checRad"
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/trat_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView30"
+                    android:hint="Tratamentos Anteriores:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
                     android:id="@+id/textView31"
-                    android:layout_width="480dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Exame Físico:"/>
 
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/fisico_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView31"
+                    android:hint="Exame Físico:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
 
-            </LinearLayout>
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="38dp">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
 
                 <TextView
-                    android:id="@+id/textView20"
-                    android:layout_width="205dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Exame Físico:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <EditText android:onClick="checRad"
                     android:id="@+id/textView32"
-                    android:layout_width="480dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-
-            </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Nível de\nConsciência:"/>
 
                 <RadioGroup
+                    android:id="@+id/radioGroup4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView32"
                     android:orientation="horizontal">
 
-
-
-                    <TextView
-                        android:id="@+id/textView37a"
-                        android:layout_width="105dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Nível de Consciência:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox20a"
+                    <RadioButton
+                        android:id="@+id/checkBox54"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
                         android:text="Acordado" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox21a"
+                    <RadioButton
+                        android:id="@+id/checkBox55"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
                         android:text="Lúcido" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox22a"
+                    <RadioButton
+                        android:id="@+id/checkBox56"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
                         android:text="Comatoso" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox23a"
+                    <RadioButton
+                        android:id="@+id/checkBox57"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
                         android:text="Torporoso" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox24a"
+                    <RadioButton
+                        android:id="@+id/checkBox58"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:textSize="18sp"
                         android:layout_weight="1"
                         android:text="Confuso" />
+                </RadioGroup>
 
+                <RadioGroup
+                    android:id="@+id/radioGroup5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/radioGroup4"
+                    android:layout_alignStart="@id/radioGroup4"
+                    android:orientation="horizontal">
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox25a"
+                    <RadioButton
+                        android:id="@+id/checkBox59"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="10dp"
                         android:text="Desorientado" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox26a"
-                        android:layout_width="102dp"
+                    <RadioButton
+                        android:id="@+id/checkBox60"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:textSize="18sp"
                         android:text="Com falhas na memória" />
                 </RadioGroup>
-            </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Avaliação\nPulmonar:"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView33"
+                    android:layout_marginEnd="50dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/checkBox61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Sem alterações" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Alterações" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/radioGroup6"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Qual:"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/qual01_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView34"
+                    android:hint="Qual:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Avaliação\nCardiovascular:"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView35"
+                    android:layout_marginEnd="50dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/checkBox63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Sem alterações" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Alterações" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/radioGroup7"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Qual:"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/qual02_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView36"
+                    android:hint="Qual:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Avaliação\nGastrointestinal:"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView37"
+                    android:layout_marginEnd="50dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/checkBox65"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Sem alterações" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Alterações" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/radioGroup8"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Qual:"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/qual03_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView38"
+                    android:hint="Qual:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Avaliação\nGeniturinário:"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView39"
+                    android:layout_marginEnd="50dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/checkBox67"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Sem alterações" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox68"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Alterações" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/radioGroup9"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Qual:"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/qual04_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView40"
+                    android:hint="Qual:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Extremidades:"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView41"
+                    android:layout_marginEnd="50dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/checkBox69"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Sem alterações" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox70"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Alterações" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/radioGroup10"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Qual:"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/qual05_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView42"
+                    android:hint="Qual:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView16aa"
-                        android:layout_width="93dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Avaliação Pulmonar:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox27a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Sem alterações" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox28a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Alterações" />
-
-                    <TextView
-                        android:id="@+id/textView42a"
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Qual:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <EditText android:onClick="checRad"
-                        android:id="@+id/editText16a"
-                        android:layout_width="73dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="" />
-                </RadioGroup>
-            </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:text="Pele e Anexos:"/>
 
                 <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:id="@+id/radioGroup11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/textView43"
+                    android:layout_marginEnd="50dp"
+                    android:layout_centerVertical="true"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView16b"
-                        android:layout_width="93dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Avaliação Cardiovascular:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox29a"
+                    <RadioButton
+                        android:id="@+id/checkBox71"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginEnd="5dp"
                         android:text="Sem alterações" />
 
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox30a"
+                    <RadioButton
+                        android:id="@+id/checkBox72"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
                         android:text="Alterações" />
-
-                    <TextView
-                        android:id="@+id/textView42b"
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Qual:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <EditText android:onClick="checRad"
-                        android:id="@+id/editText16b"
-                        android:layout_width="73dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="" />
                 </RadioGroup>
-            </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/radioGroup11"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:text="Qual:"/>
 
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView16c"
-                        android:layout_width="93dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Avaliação Gastrointestinal: "
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox31a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Sem alterações" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox32a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Alterações" />
-
-                    <TextView
-                        android:id="@+id/textView42c"
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Qual:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <EditText android:onClick="checRad"
-                        android:id="@+id/editText16c"
-                        android:layout_width="73dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="" />
-                </RadioGroup>
-            </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView16d"
-                        android:layout_width="93dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Avaliação Geniturinário:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox33a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Sem alterações" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox34a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Alterações" />
-
-                    <TextView
-                        android:id="@+id/textView42d"
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Qual:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <EditText android:onClick="checRad"
-                        android:id="@+id/editText16d"
-                        android:layout_width="73dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="" />
-                </RadioGroup>
-            </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView16e"
-                        android:layout_width="93dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Extremidades:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox35a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Sem alterações" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox36a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Alterações" />
-
-                    <TextView
-                        android:id="@+id/textView42e"
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Qual:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <EditText android:onClick="checRad"
-                        android:id="@+id/editText16e"
-                        android:layout_width="73dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="" />
-                </RadioGroup>
-            </LinearLayout>
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView16a"
-                        android:layout_width="93dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Pele e Anexos:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox37a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Sem alterações" />
-
-                    <RadioButton android:onClick="checRad"
-                        android:id="@+id/checkBox38a"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Alterações" />
-
-                    <TextView
-                        android:id="@+id/textView42"
-                        android:layout_width="5dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Qual:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                    <EditText android:onClick="checRad"
-                        android:id="@+id/editText16aa"
-                        android:layout_width="73dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName"
-                        android:text="" />
-                </RadioGroup>
-            </LinearLayout>
-
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/qual06_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/textView44"
+                    android:hint="Qual:"
+                    android:inputType="textCapWords|textCapSentences|textPersonName"
+                    app:backgroundTint="@color/black"
+                    android:text="" />
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
 
