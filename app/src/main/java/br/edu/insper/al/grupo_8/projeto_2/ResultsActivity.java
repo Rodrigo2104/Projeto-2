@@ -1,22 +1,20 @@
 package br.edu.insper.al.grupo_8.projeto_2;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class ResultsActivity extends AppCompatActivity {
+    private String rh;
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
+        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
@@ -25,16 +23,16 @@ public class ResultsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
 
-        Button buttonGoHome = findViewById(R.id.button_goHome);
+        Button buttonGoLog = findViewById(R.id.button_goLog);
         TextView rh_text = findViewById(R.id.rh);
 
-        buttonGoHome.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
+        buttonGoLog.setOnClickListener((view) -> startMethodActivity(PacientLog.class));
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference pacientesReference = database.getReference("Pacientes");
 
         Bundle extras = getIntent().getExtras();
         assert extras != null;
-        String rh = extras.getString("rh");
+        rh = extras.getString("rh");
         rh_text.setText(rh);
 
 //        PARTE REFERENTE A ADIÇÃO DE NOVAS INFORMAÇÕES AOS RESULTADOS

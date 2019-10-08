@@ -7,9 +7,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
@@ -32,7 +30,7 @@ public class MethodPacienteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_method_paciente);
 
         Button buttonTests = findViewById(R.id.button_goTests);
-        Button buttonGoHome = findViewById(R.id.button_goHome);
+        Button buttonGoHome = findViewById(R.id.button_goLog);
 
         TextView Data_in = findViewById(R.id.data_txt);
 
