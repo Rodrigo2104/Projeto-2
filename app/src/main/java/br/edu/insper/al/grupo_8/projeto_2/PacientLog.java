@@ -43,7 +43,7 @@ public class PacientLog extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         assert extras != null;
         rh = extras.getString("rh");
-        nome.setText("Paciente Rh: "+rh);
+        nome.setText("Paciente Rh: " + rh);
 
         buttonGoHome.setOnClickListener((view) -> startGoTo(HomeActivity.class));
         buttonGoTests.setOnClickListener((view) -> startGoToIntent(TestsActivity.class));
