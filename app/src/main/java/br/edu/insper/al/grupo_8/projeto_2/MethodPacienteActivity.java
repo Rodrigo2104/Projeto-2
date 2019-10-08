@@ -16,11 +16,12 @@ import java.util.Calendar;
 import java.util.Objects;
 
 public class MethodPacienteActivity extends AppCompatActivity {
-
+    private EditText RH_in;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
 
     private void startGoTo(Class classe){
         Intent intent = new Intent(this, classe);
+        intent.putExtra("rh", RH_in.getText().toString());
         startActivity(intent);
     }
 
@@ -33,9 +34,8 @@ public class MethodPacienteActivity extends AppCompatActivity {
         Button buttonGoHome = findViewById(R.id.button_goLog);
 
         TextView Data_in = findViewById(R.id.data_txt);
-
         EditText Nome_in = findViewById(R.id.nome_txt);
-        EditText RH_in = findViewById(R.id.rh_txt);
+        RH_in = findViewById(R.id.rh_txt);
         EditText Idade_in = findViewById(R.id.idade_txt);
         EditText Diagnostico_in = findViewById(R.id.diagnostico_txt);
         EditText Alta_in = findViewById(R.id.alta_txt);
@@ -58,12 +58,13 @@ public class MethodPacienteActivity extends AppCompatActivity {
         buttonGoHome.setOnClickListener((view) -> startGoTo(HomeActivity.class));
 
         buttonTests.setOnClickListener(v -> {
-            if (RH_in.getText().toString().isEmpty()){
+            if (RH_in.getText().toString().isEmpty() || Nome_in.getText().toString().isEmpty()){
                 Toast.makeText(getApplicationContext(), "Faltam Dados", Toast.LENGTH_SHORT).show();
             }
             else {
+                ref.child(RH_in.getText().toString()).child("Info").child("nome").setValue(Nome_in.getText().toString());
                 ref.child(RH_in.getText().toString()).child("Info").child("rh").setValue(RH_in.getText().toString());
-                startGoTo(TestsActivity.class);
+                startGoTo(PacientLog.class);
             }
         });
 

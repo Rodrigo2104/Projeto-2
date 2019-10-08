@@ -1,13 +1,19 @@
 package br.edu.insper.al.grupo_8.projeto_2;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Objects;
 
 public class ResultsActivity extends AppCompatActivity {
     private String rh;
@@ -37,11 +43,11 @@ public class ResultsActivity extends AppCompatActivity {
 
 //        PARTE REFERENTE A ADIÇÃO DE NOVAS INFORMAÇÕES AOS RESULTADOS
 
-//        pacientesReference.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-//                for (DataSnapshot ds : dataSnapshot.getChildren()){
-//                    TextView nome = findViewById(R.id.nome_txt);
+        pacientesReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot ds : dataSnapshot.getChildren()){
+                    TextView nome = findViewById(R.id.nome_txt);
 //                    TextView data = findViewById(R.id.data);
 //                    TextView idade = findViewById(R.id.idade);
 //                    TextView sexo = findViewById(R.id.sexo);
@@ -53,9 +59,9 @@ public class ResultsActivity extends AppCompatActivity {
 //                    TextView resultTeste_VIII = findViewById(R.id.resultTeste_VII);
 //                    TextView resultTeste_IX = findViewById(R.id.resultTeste_IX);
 //                    TextView resultTeste_X = findViewById(R.id.resultTeste_X);
-//                    Paciente pac = new Paciente();
-//
-//                    pac.setNome(ds.child("Info").getValue(Paciente.class).getNome());
+                    Paciente pac = new Paciente();
+
+                    pac.setNome(Objects.requireNonNull(ds.child("Info").getValue(Paciente.class)).getNome());
 //                    pac.setRh(ds.child("Info").getValue(Paciente.class).getRh());
 //                    pac.setData_internacao(ds.child("Info").getValue(Paciente.class).getData_internacao());
 //                    pac.setIdade(ds.child("Info").getValue(Paciente.class).getIdade());
@@ -70,7 +76,7 @@ public class ResultsActivity extends AppCompatActivity {
 //                    pac.setT10(ds.child("Info").getValue(Paciente.class).getT10());
 //
 //                    idade.setText(pac.getIdade());
-//                    nome.setText(pac.getNome());
+                    nome.setText(pac.getNome());
 //                    data.setText(pac.getData_internacao());
 //                    sexo.setText(pac.getSexo());
 //                    resultTeste_I.setText(pac.getT01());
@@ -81,12 +87,12 @@ public class ResultsActivity extends AppCompatActivity {
 //                    resultTeste_VIII.setText(pac.getT01());
 //                    resultTeste_IX.setText(pac.getT01());
 //                    resultTeste_X.setText(pac.getT01());
-//                }
-//            }
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//            }
-//        });
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
 }
