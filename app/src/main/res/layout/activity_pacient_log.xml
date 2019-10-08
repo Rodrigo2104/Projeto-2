@@ -22,7 +22,7 @@
             android:rowCount="1">
 
             <Button
-                android:id="@+id/button_goHome"
+                android:id="@+id/button_goLog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -69,7 +69,7 @@
             android:textColor="@color/green_unifesp"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="RESULATADOS" />
+            android:text="RESULTADOS" />
 
         <Button
             android:id="@+id/button_tests"

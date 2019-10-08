@@ -97,7 +97,7 @@ public class MethodXIActivity extends AppCompatActivity {
         Button buttonGoMethodXII = findViewById(R.id.button_goMethodXII);
         buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIIActivity.class));
 
-        Button buttonGoHome = findViewById(R.id.button_goHome);
+        Button buttonGoHome = findViewById(R.id.button_goLog);
         buttonGoHome.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
 
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);

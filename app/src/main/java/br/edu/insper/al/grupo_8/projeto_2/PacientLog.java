@@ -3,7 +3,6 @@ package br.edu.insper.al.grupo_8.projeto_2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import com.google.firebase.database.DatabaseReference;
@@ -29,7 +28,7 @@ public class PacientLog extends AppCompatActivity {
         setContentView(R.layout.activity_pacient_log);
 
         TextView nome = findViewById(R.id.nome);
-        Button buttonGoHome = findViewById(R.id.button_goHome);
+        Button buttonGoHome = findViewById(R.id.button_goLog);
         Button buttonGoActualPacient = findViewById(R.id.button_results);
         Button buttonGoTests = findViewById(R.id.button_tests);
         Button buttonDelete = findViewById(R.id.button_delete);
