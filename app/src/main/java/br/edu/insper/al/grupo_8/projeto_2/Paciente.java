@@ -2,22 +2,25 @@ package br.edu.insper.al.grupo_8.projeto_2;
 
 
 public class Paciente {
-    private String nome;
-    private String rh;
-    private String data_internacao;
-    private int idade;
-    private String sexo;
+    private String nome, rh, data_internacao, idade, sexo, diagnostico, cor, estado_civil, escolaridade, ocupacao;
+
     private int t01, t02, t03, t04, t05, t08, t09, t10;
     
     public Paciente() {
     }
 
-    public Paciente(String nome, String rh, String data, int idade, String sexo, int t01, int t02, int t03, int t04, int t05, int t08, int t09, int t10) {
+    public Paciente(String nome, String rh, String data_internacao, String idade, String sexo, String diagnostico, String cor,
+                    String estado_civil, String escolaridade, String ocupacao, int t01, int t02, int t03, int t04, int t05, int t08, int t09, int t10) {
         this.nome = nome;
         this.rh = rh;
-        this.data_internacao = data;
+        this.data_internacao = data_internacao;
         this.idade = idade;
         this.sexo = sexo;
+        this.diagnostico = diagnostico;
+        this.estado_civil = estado_civil;
+        this.escolaridade = escolaridade;
+        this.ocupacao = ocupacao;
+        this.cor = cor;
         this.t01 = t01;
         this.t02 = t02;
         this.t03 = t03;
@@ -92,6 +95,46 @@ public class Paciente {
         this.t10 = t10;
     }
 
+    public String getOcupacao() {
+        return ocupacao;
+    }
+
+    public void setOcupacao(String ocupacao) {
+        this.ocupacao = ocupacao;
+    }
+
+    public String getEscolaridade() {
+        return escolaridade;
+    }
+
+    public void setEscolaridade(String escolaridade) {
+        this.escolaridade = escolaridade;
+    }
+
+    public String getEstado_civil() {
+        return estado_civil;
+    }
+
+    public void setEstado_civil(String estado_civil) {
+        this.estado_civil = estado_civil;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getDiagnostico() {
+        return diagnostico;
+    }
+
+    public void setDiagnostico(String diagnostico) {
+        this.diagnostico = diagnostico;
+    }
+
     public String getSexo() {
         return sexo;
     }
@@ -100,11 +143,11 @@ public class Paciente {
         this.sexo = sexo;
     }
 
-    public int getIdade() {
+    public String getIdade() {
         return idade;
     }
 
-    public void setIdade(Integer idade) {
+    public void setIdade(String idade) {
         this.idade = idade;
     }
 

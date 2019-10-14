@@ -58,11 +58,11 @@
         android:id="@+id/quest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_margin="8dp"
         android:gravity="center"
-        android:layout_gravity="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:text="Questionário com dados sócio demográficos, clínicos, crença religiosas e econômicos" />
+        android:text="Questionário com dados sócio demográficos, clínicos, crença religiosas e econômicos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <View
         android:id="@+id/divider"
@@ -195,6 +195,7 @@
                     android:text="Sexo:" />
 
                 <RadioGroup
+                    android:id="@+id/radioS"
                     android:layout_toEndOf="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -259,6 +260,7 @@
                     android:text="Cor de pele autorreferida:" />
 
                 <RadioGroup
+                    android:id="@+id/radioC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView6"
@@ -268,41 +270,41 @@
                         android:id="@+id/checkBox3"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textSize="18sp"
                         android:layout_weight="1"
-                        android:text="Branco" />
+                        android:text="Branco"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox4"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textSize="18sp"
                         android:layout_weight="1"
-                        android:text="Amarelo" />
+                        android:text="Amarelo"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox5"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textSize="18sp"
                         android:layout_weight="1"
-                        android:text="Negro" />
+                        android:text="Negro"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox6"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textSize="18sp"
                         android:layout_weight="1"
-                        android:text="Pardo" />
+                        android:text="Pardo"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox7"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:textSize="18sp"
                         android:layout_weight="1"
-                        android:text="Indígena" />
+                        android:text="Indígena"
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
@@ -322,9 +324,10 @@
                     android:text="Estado Civil:" />
 
                 <RadioGroup
+                    android:id="@+id/radioEC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/textView7"
+                    android:layout_toEndOf="@id/textView7"
                     android:orientation="horizontal">
 
                     <RadioButton
@@ -332,32 +335,32 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="18sp"
-                        android:text="Solteiro" />
+                        android:text="Solteiro"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="18sp"
-                        android:text="Divorciado" />
+                        android:text="Divorciado"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="18sp"
-                        android:text="Casado" />
+                        android:text="Casado"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="18sp"
-                        android:text="Viúvo" />
+                        android:text="Viúvo"
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
@@ -379,139 +382,123 @@
                     android:id="@+id/radioGroup0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginEnd="15dp"
-                    android:layout_toEndOf="@+id/textView8">
+                    android:layout_below="@id/textView8"
+                    android:layout_alignStart="@id/textView8"
+                    android:layout_marginEnd="25dp"
+                    android:layout_toEndOf="@+id/textView8"
+                    android:orientation="vertical">
 
                     <RadioButton
                         android:id="@+id/checkBox12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Nenhum nível de ensino" />
+                        android:text="Nenhum nível de ensino"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Fundamental incompleto " />
+                        android:text="Fundamental incompleto "
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Médio incompleto " />
+                        android:text="Médio incompleto "
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Superior incompleto " />
-                </RadioGroup>
-
-                <RadioGroup
-                    android:id="@+id/radioGroup1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_toEndOf="@+id/radioGroup0">
+                        android:text="Superior incompleto "
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Fundamental completo " />
+                        android:text="Fundamental completo "
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Médio completo" />
+                        android:text="Médio completo"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Superior completo" />
+                        android:text="Superior completo"
+                        android:textSize="18sp" />
                 </RadioGroup>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:layout_alignStart="@id/radioGroup1"
                     android:layout_marginEnd="20dp"
-                    android:text="Ocupação:" />
+                    android:text="Ocupação:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <RadioGroup
-                    android:id="@+id/radioGroup2"
+                    android:id="@+id/radioGroup1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/textView9"
                     android:layout_marginEnd="15dp"
-                    android:layout_toEndOf="@+id/textView9">
+                    android:layout_toEndOf="@id/radioGroup0">
 
                     <RadioButton
                         android:id="@+id/checkBox19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Aposentado/Pensionista " />
+                        android:text="Aposentado/Pensionista "
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Trabalhador autônomo " />
+                        android:text="Trabalhador autônomo "
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Desempregado" />
-                </RadioGroup>
-
-                <RadioGroup
-                    android:id="@+id/radioGroup3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/radioGroup2">
-
-                    <RadioButton
-                        android:id="@+id/checkBox22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Trabalhador formal" />
+                        android:text="Desempregado"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Trabalhador informal" />
+                        android:text="Trabalhador informal"
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:text="Do lar" />
+                        android:text="Do lar"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trabalhador formal"
+                        android:textSize="18sp" />
                 </RadioGroup>
+
             </RelativeLayout>
 
             <RelativeLayout

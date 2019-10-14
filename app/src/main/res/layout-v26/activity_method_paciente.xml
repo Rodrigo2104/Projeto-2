@@ -141,7 +141,7 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                 <EditText
-                    android:id="@+id/data"
+                    android:id="@+id/rh"
                     android:layout_width="118dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
