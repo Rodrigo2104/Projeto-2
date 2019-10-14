@@ -55,416 +55,1022 @@
     </android.support.v7.widget.Toolbar>
 
 
-    <RelativeLayout
-        android:id="@+id/Header"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp"
-        android:gravity="center">
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="Dados do Paciente e Resultado nos testes"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30dp" />
 
-        <TextView
-            android:id="@+id/nome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_margin="8dp"
-            android:text="Dados do Paciente e Resultado nos testes"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </RelativeLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView0"
-                    android:layout_width="1dp"
-                    android:layout_height="25dp"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
                     android:text="Nome:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/nome_txt"
-                    android:layout_width="670dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-            </LinearLayout>
+                    android:layout_toEndOf="@+id/textView0"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView1"
-                    android:layout_width="20dp"
-                    android:layout_height="25dp"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
                     android:text="RH:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/rh"
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
+                    android:layout_toEndOf="@+id/textView1"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView2"
-                    android:layout_width="130dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
                     android:text="Data de internação:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/data"
-                    android:layout_width="118dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="50dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
                     android:text="Idade:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/idade"
-                    android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView3"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView4"
-                    android:layout_width="20dp"
-                    android:layout_height="25dp"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
                     android:text="Sexo:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/sexo"
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
+                    android:layout_toEndOf="@+id/textView4"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="103dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Diagnóstico médico:"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Diagnóstico Médico:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/editText5"
-                    android:layout_width="520dp"
+                    android:id="@+id/diagnostico"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
+                    android:layout_toEndOf="@+id/textView5"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Cor de pele autorreferida:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/pele"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView6"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_I"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_I"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Estado Civil:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_I"
-                    android:layout_width="520dp"
+                    android:id="@+id/estado_civil"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
+                    android:layout_toEndOf="@+id/textView7"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Escolaridade:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/escolaridade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView8"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_II"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_II"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Ocupação:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_II"
-                    android:layout_width="520dp"
+                    android:id="@+id/ocupacao"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
+                    android:layout_toEndOf="@+id/textView9"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Renda do Idoso:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/renda_idoso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView10"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_III"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_III"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Provedor da Casa:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_III"
-                    android:layout_width="520dp"
+                    android:id="@+id/provedor"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
+                    android:layout_toEndOf="@+id/textView11"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Renda Familia:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/renda_familiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView12"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_IV"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_IV"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Quantas pessoas dependem dessa renda:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_IV"
-                    android:layout_width="520dp"
+                    android:id="@+id/nPessoas"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
+                    android:layout_toEndOf="@+id/textView13"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            </LinearLayout>
-
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Religião:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/religiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView14"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_V"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_V"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Hábitos de Vida:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_V"
-                    android:layout_width="520dp"
+                    android:id="@+id/habitos"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-            </LinearLayout>
+                    android:layout_toEndOf="@+id/textView15"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Alta Hospitalar:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/alta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView16"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_VI"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_VI"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Procedência:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_VI"
-                    android:layout_width="520dp"
+                    android:id="@+id/procedencia"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-            </LinearLayout>
+                    android:layout_toEndOf="@+id/textView17"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Principal queixa:PA:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/queixa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView18"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_VII"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_VII"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="P:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_VII"
-                    android:layout_width="520dp"
+                    android:id="@+id/pa"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-            </LinearLayout>
+                    android:layout_toEndOf="@+id/textView19"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="R:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView20"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_VIII"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_VIII"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Tmax:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_VIII"
-                    android:layout_width="520dp"
+                    android:id="@+id/r"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-            </LinearLayout>
+                    android:layout_toEndOf="@+id/textView21"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Dx:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tmax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView22"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_IX"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_IX"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Antecedentes Pessoais:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_IX"
-                    android:layout_width="520dp"
+                    android:id="@+id/dx"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-            </LinearLayout>
+                    android:layout_toEndOf="@+id/textView23"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
 
-            <Space
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="22dp" />
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
-            <LinearLayout
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Outros:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/antecedentes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView24"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/Teste_X"
-                    android:layout_width="103dp"
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/teste_X"
-
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:layout_marginEnd="5dp"
+                    android:text="Medicamentos sendo usados em casa:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/resultTeste_X"
-                    android:layout_width="520dp"
+                    android:id="@+id/outros"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="" />
-            </LinearLayout>
+                    android:layout_toEndOf="@+id/textView25"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Medicamentos em uso no hospital:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/medicamentos_casa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView26"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Anti-coagulação:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/medicamentos_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView27"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Dor:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/anti_coagulação"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView28"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Tratamentos Anteriores:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/dor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView29"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Exame Físico:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tratamentos_anteriores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView30"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Nível de Consciência:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/exame_físico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView31"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Avaliação Pulmonar:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/consciência"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView32"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Avaliação Cardiovascular:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/pulmonar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView33"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Avaliação Gastrointestinal:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/cardiovascular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView34"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Avaliação Geniturinário:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/gastrointestinal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView35"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Extremidades:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/geniturinário"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView36"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:text="Pele e Anexos:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/extremidades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView37"
+                    android:textStyle = "italic|bold"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
