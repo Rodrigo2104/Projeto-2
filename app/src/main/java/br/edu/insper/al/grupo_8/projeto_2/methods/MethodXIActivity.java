@@ -27,7 +27,6 @@ public class MethodXIActivity extends AppCompatActivity {
     private HashMap<CheckBox, Integer> testes_checkBox = new HashMap<CheckBox, Integer>();
     private HashMap<CheckBox, Integer> testes_meio = new HashMap<CheckBox, Integer>();
 
-
     private int Resultados;
 
     private TextView resultado;
@@ -91,14 +90,14 @@ public class MethodXIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_xi);
 
-        Button buttonGoMethodX = findViewById(R.id.button_goMethodX);
-        buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(MethodXActivity.class));
+        //Button buttonGoMethodX = findViewById(R.id.button_goMethodX);
+        //buttonGoMethodX.setOnClickListener((view) -> startMethodActivity(MethodXActivity.class));
 
-        Button buttonGoMethodXII = findViewById(R.id.button_goMethodXII);
-        buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIIActivity.class));
+        //Button buttonGoMethodXII = findViewById(R.id.button_goMethodXII);
+        //buttonGoMethodXII.setOnClickListener((view) -> startMethodActivity(MethodXIIActivity.class));
 
-        Button buttonGoHome = findViewById(R.id.button_goLog);
-        buttonGoHome.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
+        //Button buttonGoHome = findViewById(R.id.button_goLog);
+        //buttonGoHome.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
 
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         radioButton2 = (RadioButton) findViewById(R.id.radioButton2);

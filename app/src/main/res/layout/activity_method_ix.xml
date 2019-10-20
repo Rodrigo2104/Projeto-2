@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:columnCount="3"
+            android:columnCount="10"
             android:rowCount="1">
 
             <Button
@@ -54,7 +54,21 @@
                 android:textAllCaps="true"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:text="Próximo"/>
+                android:text="Menu"
+                android:layout_column="8"/>
+
+            <Button
+                android:id="@+id/button_goMethodXA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/custom_buttom"
+
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Próximo"
+                android:layout_column="9"/>
 
         </GridLayout>
 
@@ -76,735 +90,735 @@
 
 
 
-        <ScrollView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/totalidade"
+        android:layout_below="@+id/title">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/totalidade"
-            android:layout_below="@+id/title">
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <TextView
+                android:id="@+id/textoAnsiedade1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="1.Eu me sinto tenso ou contraido"
+                android:layout_margin="10sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
                 android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textoAnsiedade1"
+                <RadioButton
+                    android:id="@+id/radioButton20"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    android:text="1.Eu me sinto tenso ou contraido"
                     android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
                     android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp" />
-                <RadioGroup
+                    android:layout_weight="1"
+                    android:text="Nunca[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton21"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton20"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="Nunca[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton21"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="De vez em quando[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="Boa parte do tempo[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton23"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="A maior parte do tempo[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoDepressão2"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="De vez em quando[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Boa parte do tempo[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="A maior parte do tempo[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoDepressão2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="2. Eu ainda sinto que gosto das mesmas coisas de antes"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="2. Eu ainda sinto que gosto das mesmas coisas de antes"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton40"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton40"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="sim, do mesmo jeito que antes [0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton41"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="não tanto quanto antes [1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton42"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="só um pouco [2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton43"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="já não consigo ter prazer em nada [3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoAnsiedade3"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="sim, do mesmo jeito que antes [0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="não tanto quanto antes [1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="só um pouco [2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="já não consigo ter prazer em nada [3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoAnsiedade3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="3. Eu sinto uma espécie de medo, como se alguma coisa ruim fosse acontecer"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="3. Eu sinto uma espécie de medo, como se alguma coisa ruim fosse acontecer"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton60"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton60"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="não sinto nada disso[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton61"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="um pouco, mas isso não me preocupa [1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton62"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="sim, mas não tão forte [2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton63"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="sim, de um jeito muito forte [3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoDepressão4"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="não sinto nada disso[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="um pouco, mas isso não me preocupa [1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="sim, mas não tão forte [2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="sim, de um jeito muito forte [3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoDepressão4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="4. Dou risada e me divirto quando vejo coisas engraçadas"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="4. Dou risada e me divirto quando vejo coisas engraçadas"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton80"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton80"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="do mesmo jeito que antes[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton81"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="atualmente um pouco menos[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton82"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="atualmente bem menos[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton83"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="não consigo mais[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoAnsiedade5"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="do mesmo jeito que antes[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton81"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="atualmente um pouco menos[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton82"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="atualmente bem menos[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton83"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="não consigo mais[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoAnsiedade5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="5. Estou com a cabeça cheia de preocupações "
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="5. Estou com a cabeça cheia de preocupações "
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton100"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton100"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="raramente[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton101"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="de vez em quando[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton102"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="boa parte do tempo[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton103"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="a maior parte do tempo[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoDepressão6"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="raramente[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton101"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="de vez em quando[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton102"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="boa parte do tempo[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton103"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="a maior parte do tempo[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoDepressão6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="6. Eu me sinto alegre"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="6. Eu me sinto alegre"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton120"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton120"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="a maior parte[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton121"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="muitas vezes[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton122"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="poucas vezes[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton123"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="nunca[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoAnsiedade7"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="a maior parte[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="muitas vezes[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton122"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="poucas vezes[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="nunca[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoAnsiedade7"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="7. Consigo ficar sentado à vontade e me sentir relaxado"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="7. Consigo ficar sentado à vontade e me sentir relaxado"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton140"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton140"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="sim, quase sempre[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton141"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="muitas vezes[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton142"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="poucas vezes[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton143"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="nunca[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoDepressão8"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="sim, quase sempre[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton141"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="muitas vezes[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton142"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="poucas vezes[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton143"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="nunca[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoDepressão8"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="8. Eu estou lenta (o) para pensar e fazer coisas"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="8. Eu estou lenta (o) para pensar e fazer coisas"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton160"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton160"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="nunca[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton161"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="poucas vezes[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton162"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="muitas vezes[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton163"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="quase sempre[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoAnsiedade9"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="nunca[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton161"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="poucas vezes[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton162"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="muitas vezes[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton163"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="quase sempre[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoAnsiedade9"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="9. Eu tenho uma sensação ruim de medo, como um frio na barriga ou um aperto no estômago:"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="9. Eu tenho uma sensação ruim de medo, como um frio na barriga ou um aperto no estômago:"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton180"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton180"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="nunca[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton181"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="poucas vezes[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton182"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="muitas vezes[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton183"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="quase sempre[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoDepressão10"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="nunca[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton181"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="poucas vezes[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton182"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="muitas vezes[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton183"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="quase sempre[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoDepressão10"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="10. Eu perdi o interesse em cuidar da minha aparência"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="10. Eu perdi o interesse em cuidar da minha aparência"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton200"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton200"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="me cuido do mesmo jeito que antes[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton201"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="talvez não tanto quanto antes[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton202"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="não estou mais me cuidando como eu deveria[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton203"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="completamente[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoAnsiedade11"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="me cuido do mesmo jeito que antes[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton201"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="talvez não tanto quanto antes[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton202"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="não estou mais me cuidando como eu deveria[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton203"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="completamente[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoAnsiedade11"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="11. Eu me sinto inquieta (o), como se eu não pudesse ficar parada (o) em lugar nenhum"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="11. Eu me sinto inquieta (o), como se eu não pudesse ficar parada (o) em lugar nenhum"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton220"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton220"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="não me sinto assim[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton221"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="um pouco[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton222"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="bastante[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton223"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="sim, demais[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoDepressão12"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="não me sinto assim[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton221"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="um pouco[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="bastante[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton223"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="sim, demais[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoDepressão12"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="12. Fico animada (o) esperando animado as coisas boas que estão por vir"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="12. Fico animada (o) esperando animado as coisas boas que estão por vir"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton240"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton240"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="do mesmo jeito que antes[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton241"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="um pouco menos que antes[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton242"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="bem menos do que antes[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton243"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="quase nunca[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoAnsiedade13"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="do mesmo jeito que antes[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton241"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="um pouco menos que antes[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton242"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="bem menos do que antes[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton243"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="quase nunca[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoAnsiedade13"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="13. De repente, tenho a sensação de entrar em pânico"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="13. De repente, tenho a sensação de entrar em pânico"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton260"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton260"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="não senti isso[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton261"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="de vez em quando[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton262"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="várias vezes[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton263"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="a quase todo momento[3]"/>
-                </RadioGroup><TextView
-                android:id="@+id/textoDepressão14"
-                android:layout_height="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="não senti isso[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton261"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="de vez em quando[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton262"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="várias vezes[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton263"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="a quase todo momento[3]"/>
+            </RadioGroup><TextView
+            android:id="@+id/textoDepressão14"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="14. Consigo sentir prazer quando assisto a um bom programa de televisão, de rádio ou quando leio alguma coisa"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:text="14. Consigo sentir prazer quando assisto a um bom programa de televisão, de rádio ou quando leio alguma coisa"
-                android:layout_margin="10sp"
-                android:gravity="center"
+                android:layout_height="fill_parent"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-                <RadioGroup
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioButton280"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/radioButton280"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="quase sempre[0]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton281"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="várias vezes[1]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton282"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="poucas vezes[2]"/>
-                    <RadioButton
-                        android:id="@+id/radioButton283"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp"
-                        android:paddingHorizontal="15dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:text="quase nunca[3]"/>
-                </RadioGroup>
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="quase sempre[0]"/>
+                <RadioButton
+                    android:id="@+id/radioButton281"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="várias vezes[1]"/>
+                <RadioButton
+                    android:id="@+id/radioButton282"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="poucas vezes[2]"/>
+                <RadioButton
+                    android:id="@+id/radioButton283"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:paddingHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="quase nunca[3]"/>
+            </RadioGroup>
 
-            </LinearLayout>
-        </ScrollView>
+        </LinearLayout>
+    </ScrollView>
 
 
 

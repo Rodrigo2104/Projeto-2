@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:columnCount="3"
+            android:columnCount="50"
             android:rowCount="1">
 
             <Button
@@ -45,16 +45,36 @@
 
             <Button
                 android:id="@+id/button_goMethodIV"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+
+                android:layout_column="48"
+
+                android:layout_gravity="end"
+                android:background="@drawable/custom_buttom"
+                android:text="Menu"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_goMethodIII"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
 
                 android:background="@drawable/custom_buttom"
 
+                android:text="Próximo"
                 android:textAllCaps="true"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:text="Próximo"/>
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_editor_absoluteY="88dp"
+                tools:layout_editor_absoluteX="265dp"
+                tools:layout_conversion_absoluteWidth="0dp"
+                android:layout_row="0"
+                android:layout_column="49" />
 
         </GridLayout>
 

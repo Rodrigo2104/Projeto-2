@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:columnCount="3"
+            android:columnCount="10"
             android:rowCount="1">
 
             <Button
@@ -45,7 +45,7 @@
                 android:src="@drawable/unifesp_escrito" />
 
             <Button
-                android:id="@+id/button_goMethodIX"
+                android:id="@+id/button_goMethodIXA"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -55,7 +55,21 @@
                 android:textAllCaps="true"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:text="Próximo"/>
+                android:text="Menu"
+                android:layout_column="9"/>
+
+            <Button
+                android:id="@+id/button_goMethodIX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/custom_buttom"
+
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Próximo"
+                android:layout_column="9"/>
 
         </GridLayout>
 
