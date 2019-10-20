@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
+import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodXActivity extends AppCompatActivity {
 
@@ -28,11 +29,14 @@ public class MethodXActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_x);
 
-        Button buttonGoMethodIX = findViewById(R.id.button_goMethodIX);
-        buttonGoMethodIX.setOnClickListener((view) -> startMethodActivity(MethodIXActivity.class));
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIXActivity.class));
 
-        Button buttonGoMethodXI = findViewById(R.id.button_goMethodXI);
-        buttonGoMethodXI.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
+        Button buttonGoMenu = findViewById(R.id.button_goMenu);
+        buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
 
         TextView resultadoSoma = findViewById(R.id.resultadox);
 

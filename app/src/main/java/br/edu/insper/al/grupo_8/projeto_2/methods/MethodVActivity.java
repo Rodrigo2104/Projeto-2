@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.LinkedList;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
+import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodVActivity extends AppCompatActivity {
 
@@ -26,11 +27,14 @@ public class MethodVActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_v);
 
-        Button buttonGoMethodIV = findViewById(R.id.button_goMethodIV);
-        buttonGoMethodIV.setOnClickListener((view) -> startMethodActivity(MethodIVActivity.class));
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIVActivity.class));
 
-        Button buttonGoMethodVI = findViewById(R.id.button_goMethodVI);
-        buttonGoMethodVI.setOnClickListener((view) -> startMethodActivity(MethodVIActivity.class));
+        Button buttonGoMenu = findViewById(R.id.button_goMenu);
+        buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodVIActivity.class));
 
         boxes = new LinkedList<>();
 

@@ -14,6 +14,7 @@ import android.widget.TextView;
 import java.util.HashMap;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
+import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodIIActivity extends AppCompatActivity {
     private HashMap<RadioButton, Integer> testes = new HashMap<RadioButton, Integer>();
@@ -72,11 +73,14 @@ public class MethodIIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_ii);
 
-        Button buttonGoMethodI = findViewById(R.id.button_goTests);
-        buttonGoMethodI.setOnClickListener((view) -> startMethodActivity(MethodIActivity.class));
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIActivity.class));
 
-        Button buttonGoMethodIII = findViewById(R.id.button_goMethodIII);
-        buttonGoMethodIII.setOnClickListener((view) -> startMethodActivity(MethodIIIActivity.class));
+        Button buttonGoMenu = findViewById(R.id.button_goMenu);
+        buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodIIIActivity.class));
 
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         radioButton2 = (RadioButton) findViewById(R.id.radioButton2);

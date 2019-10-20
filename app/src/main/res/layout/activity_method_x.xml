@@ -23,7 +23,7 @@
             android:rowCount="1">
 
             <Button
-                android:id="@+id/button_goMethodIX"
+                android:id="@+id/button_goTests"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -44,7 +44,7 @@
                 android:src="@drawable/unifesp_escrito" />
 
             <Button
-                android:id="@+id/button_goMethodXIA"
+                android:id="@+id/button_goMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -58,7 +58,7 @@
                 android:layout_column="8"/>
 
             <Button
-                android:id="@+id/button_goMethodXI"
+                android:id="@+id/button_goMethodIII"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 

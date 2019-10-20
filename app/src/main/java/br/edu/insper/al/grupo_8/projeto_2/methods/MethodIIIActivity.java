@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.LinkedList;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
+import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodIIIActivity extends AppCompatActivity {
 
@@ -30,11 +31,14 @@ public class MethodIIIActivity extends AppCompatActivity {
         boxes = new LinkedList<>();
         TextView resultadoSoma = findViewById(R.id.resultado);
 
-        Button buttonGoMethodII = findViewById(R.id.button_goMethodII);
-        buttonGoMethodII.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
 
-        Button buttonGoMethodIV = findViewById(R.id.button_goMethodIV);
-        buttonGoMethodIV.setOnClickListener((view) -> startMethodActivity(MethodIVActivity.class));
+        Button buttonGoMenu = findViewById(R.id.button_goMenu);
+        buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodIVActivity.class));
 
         CheckBox cb1 = findViewById(R.id.checkBox);
         CheckBox cb2 = findViewById(R.id.checkBox1);

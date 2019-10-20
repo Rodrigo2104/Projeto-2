@@ -10,8 +10,10 @@ import android.widget.TextView;
 
 import java.util.HashMap;
 
+import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
 import br.edu.insper.al.grupo_8.projeto_2.MethodPacienteActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
+import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodIActivity extends AppCompatActivity {
     private HashMap<CheckBox, Integer> testes = new HashMap<CheckBox, Integer>();
@@ -56,6 +58,15 @@ public class MethodIActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_i);
+
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+
+        Button buttonGoMenu = findViewById(R.id.button_goMenu);
+        buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
 
 
 
