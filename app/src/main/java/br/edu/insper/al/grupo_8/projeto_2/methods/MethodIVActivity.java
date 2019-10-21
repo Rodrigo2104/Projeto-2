@@ -8,6 +8,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
+import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodIVActivity extends AppCompatActivity {
     private int soma1, soma2, soma3, soma4, soma5, soma6;
@@ -22,12 +23,14 @@ public class MethodIVActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_iv);
 
-        Button buttonGoMethodIII = findViewById(R.id.button_goMethodIII);
-        buttonGoMethodIII.setOnClickListener((view) -> startMethodActivity(MethodIIIActivity.class));
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIIIActivity.class));
 
-        Button buttonGoMethodV = findViewById(R.id.button_goMethodV);
-        buttonGoMethodV.setOnClickListener((view) -> startMethodActivity(MethodVActivity.class));
+        Button buttonGoMenu = findViewById(R.id.button_goMenu);
+        buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodVActivity.class));
         TextView resultadoSoma = findViewById(R.id.resultado);
 
         RadioButton cb1 = findViewById(R.id.radioButton1);

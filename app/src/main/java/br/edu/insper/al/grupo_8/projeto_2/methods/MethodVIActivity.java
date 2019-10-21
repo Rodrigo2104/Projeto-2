@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
+import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodVIActivity extends AppCompatActivity {
 
@@ -19,10 +20,13 @@ public class MethodVIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_vi);
 
-        Button buttonGoMethodV = findViewById(R.id.button_goMethodV);
-        buttonGoMethodV.setOnClickListener((view) -> startMethodActivity(MethodVActivity.class));
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodVActivity.class));
 
-        Button buttonGoMethodVII = findViewById(R.id.button_goMethodVII);
-        buttonGoMethodVII.setOnClickListener((view) -> startMethodActivity(MethodVIIActivity.class));
+        Button buttonGoMenu = findViewById(R.id.button_goMenu);
+        buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodVIIActivity.class));
     }
 }

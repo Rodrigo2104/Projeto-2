@@ -18,47 +18,89 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:columnCount="50"
             android:orientation="vertical"
-            android:columnCount="3"
             android:rowCount="1">
 
             <Button
                 android:id="@+id/button_goTests"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
 
                 android:background="@drawable/custom_buttom"
 
+                android:text="Voltar"
                 android:textAllCaps="true"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:text="Voltar"/>
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_editor_absoluteY="88dp"
+                tools:layout_editor_absoluteX="265dp"
+                tools:layout_conversion_absoluteWidth="0dp"
+                android:layout_column="0"/>
+
+            <Space
+                android:id="@+id/Space"
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_column="1" />
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginLeft="210dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="46"
                 android:contentDescription="unifesp_escrito"
-                android:src="@drawable/unifesp_escrito" />
+                android:src="@drawable/unifesp_escrito"
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_conversion_absoluteWidth="0dp"
+                tools:layout_editor_absoluteX="265dp"
+                tools:layout_editor_absoluteY="88dp" />
+
+            <Button
+                android:id="@+id/button_goMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/custom_buttom"
+                android:text="Menu"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_editor_absoluteY="88dp"
+                tools:layout_editor_absoluteX="265dp"
+                tools:layout_conversion_absoluteWidth="0dp"
+                android:layout_row="0"
+                android:layout_column="48" />
 
             <Button
                 android:id="@+id/button_goMethodIII"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
 
                 android:background="@drawable/custom_buttom"
 
+                android:text="Próximo"
                 android:textAllCaps="true"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:text="Próximo"/>
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_editor_absoluteY="88dp"
+                tools:layout_editor_absoluteX="265dp"
+                tools:layout_conversion_absoluteWidth="0dp"
+                android:layout_row="0"
+                android:layout_column="49" />
+
+
 
         </GridLayout>
 
     </android.support.v7.widget.Toolbar>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/Header"

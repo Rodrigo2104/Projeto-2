@@ -13,6 +13,7 @@ import java.util.HashMap;
 
 import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
+import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodXIIActivity extends AppCompatActivity {
 
@@ -93,11 +94,12 @@ public class MethodXIIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_xii);
 
-        Button buttonGoMethodXI = findViewById(R.id.button_goMethodXI);
-        buttonGoMethodXI.setOnClickListener((view) -> startMethodActivity(MethodXActivity.class));
+        Button buttonGoBack = findViewById(R.id.button_goMethodX);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
 
-        Button buttonGoHome = findViewById(R.id.button_goLog);
-        buttonGoHome.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
+
+        Button buttonNext = findViewById(R.id.button_goMethodXII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
 
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         radioButton2 = (RadioButton) findViewById(R.id.radioButton2);

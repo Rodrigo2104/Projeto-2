@@ -12,6 +12,7 @@ import android.widget.TextView;
 import java.util.LinkedList;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
+import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodVIIActivity extends AppCompatActivity {
 
@@ -31,11 +32,14 @@ public class MethodVIIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_vii);
 
-        Button buttonGoMethodVI = findViewById(R.id.button_goMethodVI);
-        buttonGoMethodVI.setOnClickListener((view) -> startMethodActivity(MethodVIActivity.class));
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodVIActivity.class));
 
-        Button buttonGoMethodVIII = findViewById(R.id.button_goMethodVIII);
-        buttonGoMethodVIII.setOnClickListener((view) -> startMethodActivity(MethodVIIIActivity.class));
+        Button buttonGoMenu = findViewById(R.id.button_goMenu);
+        buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodVIIIActivity.class));
 
         checkedAusente = new LinkedList<>();
         checkedLeve = new LinkedList<>();
