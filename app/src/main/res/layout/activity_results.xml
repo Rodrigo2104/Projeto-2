@@ -95,6 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Nome:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -105,9 +106,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView0"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit0"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -121,6 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="RH:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -131,9 +144,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView1"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit1"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -147,6 +171,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Data de internação:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -157,9 +182,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView2"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit2"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -173,6 +209,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Idade:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -183,9 +220,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView3"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit3"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -199,6 +247,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Sexo:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -209,9 +258,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView4"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit4"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -225,6 +285,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Diagnóstico Médico:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -235,9 +296,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView5"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit5"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -251,6 +323,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Cor de pele autorreferida:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -261,9 +334,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView6"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit6"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -277,6 +361,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Estado Civil:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -287,9 +372,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView7"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit7"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -303,6 +399,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Escolaridade:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -313,9 +410,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView8"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit8"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -329,6 +437,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Ocupação:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -339,9 +448,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView9"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit9"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -355,6 +475,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Renda do Idoso:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -365,9 +486,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView10"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit10"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -381,6 +513,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Provedor da Casa:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -391,9 +524,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView11"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit11"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -407,6 +551,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Renda Familia:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -417,9 +562,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView12"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit12"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -433,6 +589,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Quantas pessoas dependem dessa renda:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -443,9 +600,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView13"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit13"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -459,6 +627,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Religião:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -469,9 +638,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView14"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit14"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -485,6 +665,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Hábitos de Vida:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -495,9 +676,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView15"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit15"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -511,6 +703,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Alta Hospitalar:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -521,9 +714,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView16"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit16"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -537,6 +741,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
                     android:text="Procedência:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
@@ -547,9 +752,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView17"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit17"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -563,7 +779,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Principal queixa:PA:"
+                    android:layout_centerVertical="true"
+                    android:text="Principal queixa:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -573,9 +790,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView18"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit18"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -589,7 +817,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="P:"
+                    android:layout_centerVertical="true"
+                    android:text="PA:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -599,9 +828,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView19"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit19"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -615,7 +855,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="R:"
+                    android:layout_centerVertical="true"
+                    android:text="P:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -625,9 +866,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView20"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit20"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -641,7 +893,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Tmax:"
+                    android:layout_centerVertical="true"
+                    android:text="R:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -651,9 +904,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView21"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit21"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -667,7 +931,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Dx:"
+                    android:layout_centerVertical="true"
+                    android:text="Tmax:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -677,9 +942,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView22"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit22"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -693,7 +969,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Antecedentes Pessoais:"
+                    android:layout_centerVertical="true"
+                    android:text="Dx:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -703,9 +980,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView23"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit23"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -719,7 +1007,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Outros:"
+                    android:layout_centerVertical="true"
+                    android:text="Antecedentes Pessoais:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -729,9 +1018,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView24"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit24"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -745,7 +1045,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Medicamentos sendo usados em casa:"
+                    android:layout_centerVertical="true"
+                    android:text="Outros:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -755,9 +1056,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView25"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit25"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -771,7 +1083,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Medicamentos em uso no hospital:"
+                    android:layout_centerVertical="true"
+                    android:text="Medicamentos sendo usados em casa:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -781,9 +1094,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView26"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit26"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -797,7 +1121,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Anti-coagulação:"
+                    android:layout_centerVertical="true"
+                    android:text="Medicamentos em uso no hospital:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -807,9 +1132,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView27"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit27"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -823,19 +1159,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Dor:"
+                    android:layout_centerVertical="true"
+                    android:text="Anti-coagulação"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/anti_coagulação"
+                    android:id="@+id/anti_coagulacao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView28"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit28"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -849,7 +1197,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Tratamentos Anteriores:"
+                    android:layout_centerVertical="true"
+                    android:text="Dor:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -859,9 +1208,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView29"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit29"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -875,7 +1235,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Exame Físico:"
+                    android:layout_centerVertical="true"
+                    android:text="Tratamentos Anteriores:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -885,9 +1246,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView30"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit30"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -901,19 +1273,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Nível de Consciência:"
+                    android:layout_centerVertical="true"
+                    android:text="Exame Físico:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/exame_físico"
+                    android:id="@+id/exame_fisico"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView31"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit31"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -927,19 +1311,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Avaliação Pulmonar:"
+                    android:layout_centerVertical="true"
+                    android:text="Nível de Consciência:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/consciência"
+                    android:id="@+id/consciencia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView32"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit32"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -953,7 +1349,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Avaliação Cardiovascular:"
+                    android:layout_centerVertical="true"
+                    android:text="Avaliação Pulmonar:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -963,9 +1360,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView33"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit33"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -979,7 +1387,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Avaliação Gastrointestinal:"
+                    android:layout_centerVertical="true"
+                    android:text="Avaliação Cardiovascular:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -989,9 +1398,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView34"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit34"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1005,7 +1425,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Avaliação Geniturinário:"
+                    android:layout_centerVertical="true"
+                    android:text="Avaliação Gastrointestinal:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -1015,9 +1436,20 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView35"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit35"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1031,19 +1463,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Extremidades:"
+                    android:layout_centerVertical="true"
+                    android:text="Avaliação Geniturinário:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/geniturinário"
+                    android:id="@+id/geniturinario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView36"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit36"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1057,7 +1501,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:text="Pele e Anexos:"
+                    android:layout_centerVertical="true"
+                    android:text="Extremidades:"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -1067,9 +1512,58 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView37"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
                     android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit37"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"
+                    android:text="Pele e Anexos:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/pea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textView38"
+                    android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/edit38"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_buttom"
+                    android:text="Editar" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
