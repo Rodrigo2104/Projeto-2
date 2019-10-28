@@ -162,36 +162,42 @@
                     android:layout_width="match_parent">
 
                     <EditText
+                        android:id="@+id/ultima_semana_a1"
                         android:layout_height="50dp"
                         android:layout_width="100dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/ultima_semana_b1"
                         android:layout_height="50dp"
                         android:layout_width="100dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/ultima_semana_c1"
                         android:layout_height="50dp"
                         android:layout_width="100dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/ultima_semana_d1"
                         android:layout_height="50dp"
                         android:layout_width="100dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/ultima_semana_e1"
                         android:layout_height="50dp"
                         android:layout_width="100dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/ultima_semana_f1"
                         android:layout_height="50dp"
                         android:layout_width="100dp"
                         android:textColor="@color/black"
@@ -327,7 +333,6 @@
 
             </TableLayout>
 
-            <!-- === Tarefa B === -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -398,36 +403,42 @@
                     android:layout_width="match_parent">
 
                     <EditText
+                        android:id="@+id/quanto_essa_medicacao_a1"
                         android:layout_height="50dp"
                         android:layout_width="150dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/quanto_essa_medicacao_b1"
                         android:layout_height="50dp"
                         android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/quanto_essa_medicacao_c1"
                         android:layout_height="50dp"
                         android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/quanto_essa_medicacao_d1"
                         android:layout_height="50dp"
                         android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/quanto_essa_medicacao_e1"
                         android:layout_height="50dp"
                         android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/quanto_essa_medicacao_f1"
                         android:layout_height="50dp"
                         android:layout_width="300dp"
                         android:textColor="@color/black"
@@ -563,7 +574,6 @@
 
             </TableLayout>
 
-            <!-- === Tarefa C === -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -624,24 +634,28 @@
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Abrir_ou_fechar_a_embalagem_Muito"
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Abrir_ou_fechar_a_embalagem_UmPouco"
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Abrir_ou_fechar_a_embalagem_NaoMuito"
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Abrir_ou_fechar_a_embalagem_Comentario"
                         android:layout_height="50dp"
                         android:layout_width="310dp"
                         android:textColor="@color/black"
@@ -654,30 +668,37 @@
                     android:layout_width="match_parent">
 
                     <TextView
+
                         android:layout_height="wrap_content"
                         android:layout_width="200dp"
                         android:text="Ler o que está escrito na embalagem"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Ler_o_que_esta_escrito_na_embalagem_Muito"
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Ler_o_que_esta_escrito_na_embalagem_UmPouco"
+
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Ler_o_que_esta_escrito_na_embalagem_NaoMuito"
+
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Ler_o_que_esta_escrito_na_embalagem_Comentario"
                         android:layout_height="50dp"
                         android:layout_width="310dp"
                         android:textColor="@color/black"
@@ -696,24 +717,31 @@
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Lembrar_o_que_esta_escrito_na_embalagem_Muito"
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Lembrar_o_que_esta_escrito_na_embalagem_UmPouco"
+
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Lembrar_o_que_esta_escrito_na_embalagem_NaoMuito"
+
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Lembrar_o_que_esta_escrito_na_embalagem_Comentario"
+
                         android:layout_height="50dp"
                         android:layout_width="310dp"
                         android:textColor="@color/black"
@@ -732,24 +760,32 @@
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Conseguir_Medicamento_Muito"
+
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Conseguir_Medicamento_UmPouco"
+
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Conseguir_Medicamento_NaoMuito"
+
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Conseguir_Medicamento_Comentario"
+
                         android:layout_height="50dp"
                         android:layout_width="310dp"
                         android:textColor="@color/black"
@@ -768,24 +804,29 @@
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Tomar_tantos_medicamentos_ao_mesmo_tempo_Muito"
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Tomar_tantos_medicamentos_ao_mesmo_tempo_UmPouco"
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Tomar_tantos_medicamentos_ao_mesmo_tempo_NaoMuito"
                         android:layout_height="50dp"
                         android:layout_width="80dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                     <EditText
+                        android:id="@+id/Tomar_tantos_medicamentos_ao_mesmo_tempo_Comentario"
+
                         android:layout_height="50dp"
                         android:layout_width="310dp"
                         android:textColor="@color/black"
