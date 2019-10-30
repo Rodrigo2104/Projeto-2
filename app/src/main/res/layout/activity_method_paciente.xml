@@ -8,50 +8,35 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/green_unifesp"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme">
+        app:theme="?attr/actionBarTheme">
 
-        <GridLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:columnCount="3"
-            android:rowCount="1">
+            android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button_goLog"
+                android:id="@+id/button_goBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
                 android:background="@drawable/custom_buttom"
-                android:textAllCaps="true"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:text="Sair"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginStart="210dp"
-                android:contentDescription="unifesp_escrito"
-                android:src="@drawable/unifesp_escrito" />
-
-            <Button
-                android:id="@+id/button_goTests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:background="@drawable/custom_buttom"
-                android:text="Salvar e Continuar"
+                android:text="Voltar"
+                android:layout_alignParentStart="true"
                 android:textAllCaps="true"
                 android:textSize="18sp"
                 android:textStyle="bold" />
-        </GridLayout>
+
+            <ImageView
+                android:layout_width="146dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="Unifesp_Escrito"
+                android:src="@drawable/unifesp_escrito" />
+        </RelativeLayout>
     </android.support.v7.widget.Toolbar>
 
     <TextView

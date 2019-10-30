@@ -3,73 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".methods.MethodVIActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar2"
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/green_unifesp"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme">
+        app:theme="?attr/actionBarTheme">
 
-        <GridLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:columnCount="10"
-            android:rowCount="1">
-
-            <Button
-                android:id="@+id/button_goTests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-
-                android:background="@drawable/custom_buttom"
-
-                android:textAllCaps="true"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:text="Voltar"/>
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginLeft="210dp"
-                android:contentDescription="unifesp_escrito"
-                android:src="@drawable/unifesp_escrito" />
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/button_goMenu"
-                android:layout_width="116dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-
-                android:background="@drawable/custom_buttom"
-                android:text="Menu"
-                android:textAllCaps="true"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:layout_column="8" />
-
-            <Button
-                android:id="@+id/button_goMethodIII"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:background="@drawable/custom_buttom"
+                android:text="Menu"
+                android:layout_alignParentStart="true"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:layout_width="146dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="Unifesp_Escrito"
+                android:src="@drawable/unifesp_escrito" />
+
+            <Button
+                android:id="@+id/button_goMethodVII"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/custom_buttom"
+                android:text="Salvar e Continuar"
                 android:textAllCaps="true"
                 android:textSize="18dp"
-                android:textStyle="bold"
-                android:text="Próximo"
-                android:layout_column="9"/>
-
-        </GridLayout>
-
+                android:textStyle="bold" />
+        </RelativeLayout>
     </android.support.v7.widget.Toolbar>
 
     <TextView

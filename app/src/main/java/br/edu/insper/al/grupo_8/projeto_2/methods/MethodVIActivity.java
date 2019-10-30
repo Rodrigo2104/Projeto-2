@@ -9,9 +9,11 @@ import br.edu.insper.al.grupo_8.projeto_2.R;
 import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodVIActivity extends AppCompatActivity {
+    private String rh;
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
+        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
@@ -20,13 +22,14 @@ public class MethodVIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_vi);
 
-        Button buttonGoBack = findViewById(R.id.button_goTests);
-        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodVActivity.class));
+        Bundle extras = getIntent().getExtras();
+        assert extras != null;
+        rh = extras.getString("rh");
 
         Button buttonGoMenu = findViewById(R.id.button_goMenu);
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
-        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        Button buttonNext = findViewById(R.id.button_goMethodVII);
         buttonNext.setOnClickListener((view) -> startMethodActivity(MethodVIIActivity.class));
     }
 }

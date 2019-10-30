@@ -33,8 +33,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".TestsActivity" />
-        <activity android:name=".methods.MethodXIIActivity" />
         <activity android:name=".methods.MethodXIActivity" />
+        <activity android:name=".methods.MethodXIIActivity" />
         <activity android:name=".methods.MethodVActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".LogInActivity" />

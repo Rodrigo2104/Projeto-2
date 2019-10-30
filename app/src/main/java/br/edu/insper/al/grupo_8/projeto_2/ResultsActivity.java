@@ -31,7 +31,7 @@ public class ResultsActivity extends AppCompatActivity {
         rh = extras.getString("rh");
         rh_text.setText(rh);
 
-        Button buttonGoLog = findViewById(R.id.button_goLog);
+        Button buttonGoLog = findViewById(R.id.button_goBack);
         buttonGoLog.setOnClickListener((view) -> startMethodActivity(PacientLog.class));
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Pacientes");
         DatabaseReference rhRef = ref.child(rh);
@@ -79,6 +79,19 @@ public class ResultsActivity extends AppCompatActivity {
                 TextView geniturinario = findViewById(R.id.geniturinario);
                 TextView extremidades = findViewById(R.id.extremidades);
                 TextView pea = findViewById(R.id.pea);
+
+                TextView t01 = findViewById(R.id.t01);
+                TextView t02 = findViewById(R.id.t02);
+                TextView t03 = findViewById(R.id.t03);
+                TextView t04 = findViewById(R.id.t04);
+                TextView t05 = findViewById(R.id.t05);
+                TextView t06 = findViewById(R.id.t06);
+                TextView t07 = findViewById(R.id.t07);
+                TextView t08 = findViewById(R.id.t08);
+                TextView t09 = findViewById(R.id.t09);
+                TextView t10 = findViewById(R.id.t10);
+                TextView t11 = findViewById(R.id.t11);
+                TextView t12 = findViewById(R.id.t12);
                 Paciente pac = new Paciente();
 
                 pac.setNome(dataSnapshot.child("Info").child("nome").getValue(String.class));
@@ -104,7 +117,6 @@ public class ResultsActivity extends AppCompatActivity {
                 pac.setR(dataSnapshot.child("Info").child("r").getValue(String.class));
                 pac.setTmax(dataSnapshot.child("Info").child("tmax").getValue(String.class));
                 pac.setDx(dataSnapshot.child("Info").child("dx").getValue(String.class));
-
                 pac.setOutros(dataSnapshot.child("Info").child("outros").getValue(String.class));
                 pac.setMedicamentos_casa(dataSnapshot.child("Info").child("medicamento casa").getValue(String.class));
                 pac.setMedicamentos_hospital(dataSnapshot.child("Info").child("medicamento hospital").getValue(String.class));
@@ -112,7 +124,6 @@ public class ResultsActivity extends AppCompatActivity {
                 pac.setDor(dataSnapshot.child("Info").child("dor").getValue(String.class));
                 pac.setTratamentos_anteriores(dataSnapshot.child("Info").child("tratamentos anteriores").getValue(String.class));
                 pac.setExame_fisico(dataSnapshot.child("Info").child("exame fisico").getValue(String.class));
-
                 pac.setAntecedentes(dataSnapshot.child("Info").child("antecedentes").getValue(String.class));
                 pac.setConsciencia(dataSnapshot.child("Info").child("consciencia").getValue(String.class));
                 pac.setPulmonar(dataSnapshot.child("Info").child("avaliacao pulmonar").getValue(String.class));
@@ -121,6 +132,19 @@ public class ResultsActivity extends AppCompatActivity {
                 pac.setGeniturinario(dataSnapshot.child("Info").child("avaliacao genitu").getValue(String.class));
                 pac.setExtremidades(dataSnapshot.child("Info").child("extremidades").getValue(String.class));
                 pac.setPea(dataSnapshot.child("Info").child("pea").getValue(String.class));
+
+                pac.setT01(dataSnapshot.child("Testes").child("t01").getValue(String.class));
+                pac.setT02(dataSnapshot.child("Testes").child("t02").getValue(String.class));
+                pac.setT03(dataSnapshot.child("Testes").child("t03").getValue(String.class));
+                pac.setT04(dataSnapshot.child("Testes").child("t04").getValue(String.class));
+                pac.setT05(dataSnapshot.child("Testes").child("t05").getValue(String.class));
+                pac.setT06(dataSnapshot.child("Testes").child("t06").getValue(String.class));
+                pac.setT07(dataSnapshot.child("Testes").child("t07").getValue(String.class));
+                pac.setT08(dataSnapshot.child("Testes").child("t08").getValue(String.class));
+                pac.setT09(dataSnapshot.child("Testes").child("t09").getValue(String.class));
+                pac.setT10(dataSnapshot.child("Testes").child("t10").getValue(String.class));
+                pac.setT11(dataSnapshot.child("Testes").child("t11").getValue(String.class));
+                pac.setT12(dataSnapshot.child("Testes").child("t12").getValue(String.class));
 
                 nome.setText(pac.getNome());
                 data.setText(pac.getData_internacao());
@@ -145,7 +169,6 @@ public class ResultsActivity extends AppCompatActivity {
                 r.setText(pac.getR());
                 tmax.setText(pac.getTmax());
                 dx.setText(pac.getDx());
-
                 outros.setText(pac.getOutros());
                 medicamentos_casa.setText(pac.getMedicamentos_casa());
                 medicamentos_hospital.setText(pac.getMedicamentos_hospital());
@@ -153,7 +176,6 @@ public class ResultsActivity extends AppCompatActivity {
                 dor.setText(pac.getDor());
                 tratamentos_anteriores.setText(pac.getTratamentos_anteriores());
                 exame_fisico.setText(pac.getExame_fisico());
-
                 antecedentes.setText(pac.getAntecedentes());
                 consciencia.setText(pac.getConsciencia());
                 pulmonar.setText(pac.getPulmonar());
@@ -162,6 +184,19 @@ public class ResultsActivity extends AppCompatActivity {
                 geniturinario.setText(pac.getGeniturinario());
                 extremidades.setText(pac.getExtremidades());
                 pea.setText(pac.getPea());
+
+                t01.setText(pac.getT01());
+                t02.setText(pac.getT02());
+                t03.setText(pac.getT03());
+                t04.setText(pac.getT04());
+                t05.setText(pac.getT05());
+                t06.setText(pac.getT06());
+                t07.setText(pac.getT07());
+                t08.setText(pac.getT08());
+                t09.setText(pac.getT09());
+                t10.setText(pac.getT10());
+                t11.setText(pac.getT11());
+                t12.setText(pac.getT12());
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
