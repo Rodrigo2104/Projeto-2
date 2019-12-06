@@ -116,6 +116,7 @@ public class MethodXIIActivity extends AppCompatActivity {
         radioButton13 = (RadioButton) findViewById(R.id.radioButton13);
         radioButton14 = (RadioButton) findViewById(R.id.radioButton14);
         radioButton15 = (RadioButton) findViewById(R.id.radioButton15);
+        radioButton16 = (RadioButton) findViewById(R.id.radioButton16);
         radioButton17 =  (RadioButton) findViewById(R.id.radioButton17);
         radioButton18 =  (RadioButton) findViewById(R.id.radioButton18);
         radioButton19 =  (RadioButton) findViewById(R.id.radioButton19);
