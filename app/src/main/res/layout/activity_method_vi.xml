@@ -66,6 +66,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:text="Próximo"
+                android:onClick="checkone"
                 android:layout_column="9"/>
 
         </GridLayout>
@@ -103,232 +104,247 @@
                 android:textSize="18dp" />
 
             <TableLayout
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="30dp">
 
                 <TextView
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="NA ÚLTIMA SEMANA"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:text="a) Nome da medicação e dosagem"
                         android:textSize="16dp" />
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:text="b) Quantos dias você tomou esse remédio"
                         android:textSize="16dp" />
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:text="c) Quantas vezes por dia você tomou esse remédio"
                         android:textSize="16dp" />
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:text="d) Quantos comprimidos você tomou em cada vez"
                         android:textSize="16dp" />
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="150dp"
+                        android:layout_height="wrap_content"
                         android:text="e) Quantas vezes você esqueceu de tomar algum comprimido"
                         android:textSize="16dp" />
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="200dp"
+                        android:layout_height="wrap_content"
                         android:text="f) Como essa medicação funciona para você:1 = Funciona Bem; 2 = Funciona Regular; 3 = Não funciona bem"
                         android:textSize="16dp" />
 
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/ultima_semana_a1"
-                        android:layout_height="50dp"
                         android:layout_width="100dp"
+                        android:layout_height="50dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/ultima_semana_b1"
-                        android:layout_height="50dp"
                         android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/ultima_semana_c1"
-                        android:layout_height="50dp"
                         android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/ultima_semana_d1"
-                        android:layout_height="50dp"
                         android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/ultima_semana_e1"
-                        android:layout_height="50dp"
                         android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/ultima_semana_f1"
-                        android:layout_height="50dp"
                         android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <EditText
-                        android:layout_height="50dp"
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_a2"
                         android:layout_width="100dp"
+                        android:layout_height="50dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
-                    <EditText
-                        android:layout_height="50dp"
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_b2"
                         android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_c2"
+                        android:layout_width="100dp"
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_d2"
+                        android:layout_width="100dp"
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_e2"
+                        android:layout_width="100dp"
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_f2"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <EditText
-                        android:layout_height="50dp"
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_a3"
                         android:layout_width="100dp"
+                        android:layout_height="50dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
-                    <EditText
-                        android:layout_height="50dp"
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_b3"
                         android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_c3"
+                        android:layout_width="100dp"
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_d3"
+                        android:layout_width="100dp"
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_e3"
+                        android:layout_width="100dp"
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_f3"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <EditText
-                        android:layout_height="50dp"
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_a4"
                         android:layout_width="100dp"
+                        android:layout_height="50dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
-                    <EditText
-                        android:layout_height="50dp"
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_b4"
                         android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_c4"
+                        android:layout_width="100dp"
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_d4"
+                        android:layout_width="100dp"
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
-                    <EditText
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_e4"
+                        android:layout_width="100dp"
                         android:layout_height="50dp"
-                        android:layout_width="100dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
 
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/ultima_semana_f4"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal" />
                 </TableRow>
 
             </TableLayout>
@@ -337,239 +353,245 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2) Alguma das suas medicações causa problemas para você? (0) Não (1) Sim a) Se o entrevistado respondeu SIM, por favor, liste os nomes das medicações e quanto elas o incomodam."
                 android:layout_marginTop="50dp"
+                android:text="2) Alguma das suas medicações causa problemas para você? (0) Não (1) Sim a) Se o entrevistado respondeu SIM, por favor, liste os nomes das medicações e quanto elas o incomodam."
                 android:textSize="18dp" />
 
             <TableLayout
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="30dp">
 
 
                 <TextView
-                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="QUANTO ESSA MEDICAÇÃO INCOMODOU VOCÊ?"
                     android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:textSize="16dp" />
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
 
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
+                        android:layout_width="50dp"
                         android:layout_height="wrap_content"
-                        android:layout_width="150dp"
                         android:text="Medicação"
                         android:textSize="16dp" />
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="75dp"
-                        android:text="Muito"
+                        android:layout_height="wrap_content"
+                        android:text=""
                         android:textSize="16dp" />
 
                     <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="75dp"
-                        android:text="Um pouco"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="75dp"
-                        android:text="Muito pouco"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="75dp"
-                        android:text="Nunca"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="300dp"
+                        android:layout_width="150dp"
+                        android:layout_height="59dp"
                         android:text="De que forma você é incomodado por ela?"
                         android:textSize="16dp" />
 
                 </TableRow>
 
                 <TableRow
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    >
 
-                    <EditText
+                    <EditText android:onClick="checkone"
                         android:id="@+id/quanto_essa_medicacao_a1"
-                        android:layout_height="50dp"
                         android:layout_width="150dp"
+                        android:layout_height="50dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
-                    <EditText
-                        android:id="@+id/quanto_essa_medicacao_b1"
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/quanto_essa_medicacao_c1"
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2a"
+                            android:layout_width="111dp"
+                            android:layout_height="wrap_content"
+                            android:text="Muito" />
 
-                    <EditText
-                        android:id="@+id/quanto_essa_medicacao_d1"
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2b"
+                            android:layout_width="108dp"
+                            android:layout_height="wrap_content"
+                            android:text="Um Pouco" />
 
-                    <EditText
-                        android:id="@+id/quanto_essa_medicacao_e1"
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2c"
+                            android:layout_width="124dp"
+                            android:layout_height="wrap_content"
+                            android:text="Muito Pouco" />
 
-                    <EditText
-                        android:id="@+id/quanto_essa_medicacao_f1"
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2d"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nunca" />
+                    </RadioGroup>
+
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/incomoda2a"
+                        android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_width="300dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <EditText
-                        android:layout_height="50dp"
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/quanto_essa_medicacao_a2"
                         android:layout_width="150dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
                         android:layout_height="50dp"
-                        android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
-                    <EditText
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2a1"
+                            android:layout_width="111dp"
+                            android:layout_height="wrap_content"
+                            android:text="Muito" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2b1"
+                            android:layout_width="108dp"
+                            android:layout_height="wrap_content"
+                            android:text="Um Pouco" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2c1"
+                            android:layout_width="124dp"
+                            android:layout_height="wrap_content"
+                            android:text="Muito Pouco" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2d1"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nunca" />
+                    </RadioGroup>
+
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/incomoda2b"
+                        android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
-
-                    <EditText
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:layout_height="50dp"
-                        android:layout_width="300dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <EditText
-                        android:layout_height="50dp"
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/quanto_essa_medicacao_a3"
                         android:layout_width="150dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
                         android:layout_height="50dp"
-                        android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
-                    <EditText
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2a2"
+                            android:layout_width="111dp"
+                            android:layout_height="wrap_content"
+                            android:text="Muito" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2b2"
+                            android:layout_width="108dp"
+                            android:layout_height="wrap_content"
+                            android:text="Um Pouco" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2c2"
+                            android:layout_width="124dp"
+                            android:layout_height="wrap_content"
+                            android:text="Muito Pouco" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2d2"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nunca" />
+                    </RadioGroup>
+
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/incomoda2c"
+                        android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
-
-                    <EditText
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:layout_height="50dp"
-                        android:layout_width="300dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <EditText
-                        android:layout_height="50dp"
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/quanto_essa_medicacao_a4"
                         android:layout_width="150dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
                         android:layout_height="50dp"
-                        android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
-                    <EditText
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2a3"
+                            android:layout_width="111dp"
+                            android:layout_height="wrap_content"
+                            android:text="Muito" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2b3"
+                            android:layout_width="108dp"
+                            android:layout_height="wrap_content"
+                            android:text="Um Pouco" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2c3"
+                            android:layout_width="124dp"
+                            android:layout_height="wrap_content"
+                            android:text="Muito Pouco" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton2d3"
+                            android:layout_width="85dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nunca" />
+                    </RadioGroup>
+
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/incomoda2d"
+                        android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_width="75dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
-
-                    <EditText
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:layout_height="50dp"
-                        android:layout_width="75dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:layout_height="50dp"
-                        android:layout_width="300dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
                 </TableRow>
 
             </TableLayout>
@@ -578,257 +600,254 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="3) Agora, citarei uma lista de problemas que as pessoas, às vezes, têm com seus medicamentos."
                 android:layout_marginTop="50dp"
+                android:text="3) Agora, citarei uma lista de problemas que as pessoas, às vezes, têm com seus medicamentos."
                 android:textSize="18dp" />
 
             <TableLayout
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="30dp">
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="200dp"
+                        android:layout_height="wrap_content"
                         android:text="Quanto é difícil para você:"
                         android:textSize="16dp" />
 
                     <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="80dp"
-                        android:text="Muito difícil"
+                        android:layout_width="134dp"
+                        android:layout_height="match_parent"
                         android:textSize="16dp" />
 
                     <TextView
+                        android:layout_width="148dp"
                         android:layout_height="wrap_content"
-                        android:layout_width="80dp"
-                        android:text="Um pouco difícil"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="80dp"
-                        android:text="Não muito difícil"
-                        android:textSize="16dp" />
-
-                    <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="310dp"
                         android:text="Comentário (Qual medicamento)"
                         android:textSize="16dp" />
 
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_height="wrap_content"
-                        android:layout_width="200dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="Abrir ou fechar a embalagem"
                         android:textSize="16dp" />
 
-                    <EditText
-                        android:id="@+id/Abrir_ou_fechar_a_embalagem_Muito"
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/Abrir_ou_fechar_a_embalagem_UmPouco"
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3a"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Muito difícil" />
 
-                    <EditText
-                        android:id="@+id/Abrir_ou_fechar_a_embalagem_NaoMuito"
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3b"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Um pouco difícil" />
 
-                    <EditText
-                        android:id="@+id/Abrir_ou_fechar_a_embalagem_Comentario"
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3c"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Não Muito difícil" />
+
+                    </RadioGroup>
+
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/comentario"
+                        android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_width="310dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
 
-                        android:layout_height="wrap_content"
                         android:layout_width="200dp"
+                        android:layout_height="wrap_content"
                         android:text="Ler o que está escrito na embalagem"
                         android:textSize="16dp" />
 
-                    <EditText
-                        android:id="@+id/Ler_o_que_esta_escrito_na_embalagem_Muito"
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3a1"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Muito difícil" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3b1"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Um pouco difícil" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3c1"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Não Muito difícil" />
+
+                    </RadioGroup>
+
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/comentario1"
+                        android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:id="@+id/Ler_o_que_esta_escrito_na_embalagem_UmPouco"
-
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:id="@+id/Ler_o_que_esta_escrito_na_embalagem_NaoMuito"
-
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:id="@+id/Ler_o_que_esta_escrito_na_embalagem_Comentario"
-                        android:layout_height="50dp"
-                        android:layout_width="310dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="200dp"
+                        android:layout_height="wrap_content"
                         android:text="Lembrar de tomar todo remédio"
                         android:textSize="16dp" />
 
-                    <EditText
-                        android:id="@+id/Lembrar_o_que_esta_escrito_na_embalagem_Muito"
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3a2"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Muito difícil" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3b2"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Um pouco difícil" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3c2"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Não Muito difícil" />
+
+                    </RadioGroup>
+
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/comentario2"
+                        android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:id="@+id/Lembrar_o_que_esta_escrito_na_embalagem_UmPouco"
-
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:id="@+id/Lembrar_o_que_esta_escrito_na_embalagem_NaoMuito"
-
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:id="@+id/Lembrar_o_que_esta_escrito_na_embalagem_Comentario"
-
-                        android:layout_height="50dp"
-                        android:layout_width="310dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="200dp"
+                        android:layout_height="wrap_content"
                         android:text="Conseguir o medicamento"
                         android:textSize="16dp" />
 
-                    <EditText
-                        android:id="@+id/Conseguir_Medicamento_Muito"
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3a3"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Muito difícil" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3b3"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Um pouco difícil" />
+
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3c3"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Não Muito difícil" />
+
+                    </RadioGroup>
+
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/comentario3"
+                        android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:id="@+id/Conseguir_Medicamento_UmPouco"
-
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:id="@+id/Conseguir_Medicamento_NaoMuito"
-
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
-
-                    <EditText
-                        android:id="@+id/Conseguir_Medicamento_Comentario"
-
-                        android:layout_height="50dp"
-                        android:layout_width="310dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
                 </TableRow>
 
                 <TableRow
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:layout_height="wrap_content"
                         android:layout_width="200dp"
+                        android:layout_height="wrap_content"
                         android:text="Tomar tantos comprimidos ao mesmo tempo"
                         android:textSize="16dp" />
 
-                    <EditText
-                        android:id="@+id/Tomar_tantos_medicamentos_ao_mesmo_tempo_Muito"
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/Tomar_tantos_medicamentos_ao_mesmo_tempo_UmPouco"
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3a4"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Muito difícil" />
 
-                    <EditText
-                        android:id="@+id/Tomar_tantos_medicamentos_ao_mesmo_tempo_NaoMuito"
-                        android:layout_height="50dp"
-                        android:layout_width="80dp"
-                        android:textColor="@color/black"
-                        android:textSize="16dp" />
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3b4"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Um pouco difícil" />
 
-                    <EditText
-                        android:id="@+id/Tomar_tantos_medicamentos_ao_mesmo_tempo_Comentario"
+                        <RadioButton android:onClick="checkone"
+                            android:id="@+id/radioButton3c4"
+                            android:layout_width="117dp"
+                            android:layout_height="match_parent"
+                            android:text="Não Muito difícil" />
 
+                    </RadioGroup>
+
+                    <EditText android:onClick="checkone"
+                        android:id="@+id/comentario4"
+                        android:layout_width="150dp"
                         android:layout_height="50dp"
-                        android:layout_width="310dp"
                         android:textColor="@color/black"
                         android:textSize="16dp" />
 
