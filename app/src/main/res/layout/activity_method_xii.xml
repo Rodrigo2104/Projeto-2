@@ -122,35 +122,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -188,35 +188,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -252,35 +252,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton12"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -316,35 +316,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -380,35 +380,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -444,35 +444,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton26"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton27"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton28"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton29"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton30"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -508,35 +508,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton31"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton32"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton33"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton34"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton35"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -572,35 +572,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton36"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton37"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton38"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton39"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton40"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -636,35 +636,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton41"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton42"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton43"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton44"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton45"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -700,35 +700,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton46"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton47"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton48"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton49"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton50"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -764,35 +764,35 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton51"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Péssimo" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton52"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ruim" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton53"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Regular" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton54"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Bom" />
 
-                    <RadioButton
+                    <RadioButton android:onClick="checRad"
                         android:id="@+id/radioButton55"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
