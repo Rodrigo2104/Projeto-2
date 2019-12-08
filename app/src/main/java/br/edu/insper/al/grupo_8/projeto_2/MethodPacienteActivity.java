@@ -38,8 +38,8 @@ public class MethodPacienteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_paciente);
 
-        Button buttonTests = findViewById(R.id.button_goTests);
-        Button buttonGoHome = findViewById(R.id.button_goLog);
+        Button buttonTests = findViewById(R.id.button_goMenu);
+        Button buttonGoHome = findViewById(R.id.button_goBack);
 
         TextView dataIn = findViewById(R.id.data_txt);
         EditText nomeIn = findViewById(R.id.nome_txt);

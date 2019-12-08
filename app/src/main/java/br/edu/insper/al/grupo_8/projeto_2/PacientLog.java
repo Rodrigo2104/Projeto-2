@@ -28,7 +28,7 @@ public class PacientLog extends AppCompatActivity {
         setContentView(R.layout.activity_pacient_log);
 
         TextView nome = findViewById(R.id.nome);
-        Button buttonGoHome = findViewById(R.id.button_goLog);
+        Button buttonGoHome = findViewById(R.id.button_goBack);
         Button buttonGoActualPacient = findViewById(R.id.button_results);
         Button buttonGoTests = findViewById(R.id.button_tests);
         Button buttonDelete = findViewById(R.id.button_delete);
