@@ -8,22 +8,17 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.LinkedList;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
 import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodVActivity extends AppCompatActivity {
-    private String rh;
 
     private LinkedList<RadioButton> boxes;
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
-        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
@@ -31,23 +26,15 @@ public class MethodVActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_v);
-        TextView resultSoma = findViewById(R.id.result);
 
-        Bundle extras = getIntent().getExtras();
-        assert extras != null;
-        rh = extras.getString("rh");
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("Pacientes");
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIVActivity.class));
 
         Button buttonGoMenu = findViewById(R.id.button_goMenu);
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
-        Button buttonNext = findViewById(R.id.button_goMethodVI);
-        buttonNext.setOnClickListener((view) -> {
-            ref.child(rh).child("Testes").child("t05").setValue(resultSoma.getText().toString());
-            startMethodActivity(MethodVIActivity.class);
-        });
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodVIActivity.class));
 
         boxes = new LinkedList<>();
 
@@ -123,6 +110,8 @@ public class MethodVActivity extends AppCompatActivity {
         boxes.add(cblTests[19]);
         boxes.add(cblTests[20]);
 
+        TextView resultSoma = findViewById(R.id.result);
+
         for (RadioButton box :  boxes){
             box.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -133,7 +122,7 @@ public class MethodVActivity extends AppCompatActivity {
                             soma += Integer.parseInt(cblTest.getText().toString().substring(0,1));
                         }
                     }
-                    resultSoma.setText(soma);
+                    resultSoma.setText("TOTAL : " + String.valueOf(soma));
                 }
             });
         }

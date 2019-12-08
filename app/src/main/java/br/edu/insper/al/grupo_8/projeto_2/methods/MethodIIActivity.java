@@ -11,9 +11,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.HashMap;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
@@ -24,8 +21,9 @@ public class MethodIIActivity extends AppCompatActivity {
     private HashMap<CheckBox, Integer> testes_checkBox = new HashMap<CheckBox, Integer>();
     private HashMap<CheckBox, Integer> testes_meio = new HashMap<CheckBox, Integer>();
 
+
     private int Resultados;
-    private String rh;
+
     private TextView resultado;
 
     private RadioButton radioButton1;
@@ -44,6 +42,9 @@ public class MethodIIActivity extends AppCompatActivity {
     private RadioButton radioButton14;
     private RadioButton radioButton15;
     private RadioGroup rg;
+
+
+
 
     private CheckBox checkBox1;
     private CheckBox checkBox2;
@@ -64,7 +65,6 @@ public class MethodIIActivity extends AppCompatActivity {
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
-        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
@@ -73,21 +73,14 @@ public class MethodIIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_ii);
 
-        Bundle extras = getIntent().getExtras();
-        assert extras != null;
-        rh = extras.getString("rh");
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("Pacientes");
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIActivity.class));
 
         Button buttonGoMenu = findViewById(R.id.button_goMenu);
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
         Button buttonNext = findViewById(R.id.button_goMethodIII);
-        buttonNext.setOnClickListener((view) ->{
-            ref.child(rh).child("Testes").child("t02").setValue(resultado.getText().toString());
-            startMethodActivity(MethodIIIActivity.class);
-        });
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodIIIActivity.class));
 
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
@@ -341,7 +334,9 @@ public class MethodIIActivity extends AppCompatActivity {
             this.Resultados += 1;
         }
 
-        resultado.setText(Resultados);
+        resultado.setText("TOTAL : " + String.valueOf(Resultados));
+
+
     }
 
 

@@ -7,14 +7,11 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
+import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodXActivity extends AppCompatActivity {
-    private String rh;
 
     private int s1, s2, s3, s4, s5,
             s6, s7, s8, s9, s10,
@@ -24,7 +21,6 @@ public class MethodXActivity extends AppCompatActivity {
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
-        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
@@ -32,24 +28,17 @@ public class MethodXActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_x);
-        TextView resultadoSoma = findViewById(R.id.resultadox);
 
-
-        Bundle extras = getIntent().getExtras();
-        assert extras != null;
-        rh = extras.getString("rh");
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("Pacientes");
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIXActivity.class));
 
         Button buttonGoMenu = findViewById(R.id.button_goMenu);
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
-        Button buttonNext = findViewById(R.id.button_goMethodXI);
-        buttonNext.setOnClickListener((view) -> {
-            ref.child(rh).child("Testes").child("t10").setValue(resultadoSoma.getText().toString());
-            startMethodActivity(MethodXIActivity.class);
-        });
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
+
+        TextView resultadoSoma = findViewById(R.id.resultadox);
 
         RadioButton cb0 = findViewById(R.id.radioButtonx00);
         RadioButton cb1 = findViewById(R.id.radioButtonx01);
