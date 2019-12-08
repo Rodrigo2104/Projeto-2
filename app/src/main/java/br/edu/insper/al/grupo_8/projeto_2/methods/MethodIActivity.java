@@ -8,9 +8,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.HashMap;
 
 import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
@@ -21,9 +18,10 @@ import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 public class MethodIActivity extends AppCompatActivity {
     private HashMap<CheckBox, Integer> testes = new HashMap<CheckBox, Integer>();
     private int Resultados;
-    private String rh;
 
     private TextView resultado;
+
+
     private CheckBox checkBox1;
     private CheckBox checkBox2;
     private CheckBox checkBox3;
@@ -53,7 +51,6 @@ public class MethodIActivity extends AppCompatActivity {
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
-        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
@@ -62,21 +59,16 @@ public class MethodIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_i);
 
-        Bundle extras = getIntent().getExtras();
-        assert extras != null;
-        rh = extras.getString("rh");
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("Pacientes");
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
         Button buttonGoMenu = findViewById(R.id.button_goMenu);
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
-        Button buttonNext = findViewById(R.id.button_goMethodII);
-        buttonNext.setOnClickListener((view) -> {
-            startMethodActivity(MethodIIActivity.class);
-            ref.child(rh).child("Testes").child("t01").setValue(resultado.getText().toString());
-        });
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
+
+
 
         //=============================
 
@@ -110,6 +102,10 @@ public class MethodIActivity extends AppCompatActivity {
         checkBox25 =  (CheckBox) findViewById(R.id.checkBox26);
 
         resultado = (TextView) findViewById(R.id.textView44);
+
+
+
+
     }
 
     public void checkone(View v){
@@ -293,6 +289,7 @@ public class MethodIActivity extends AppCompatActivity {
         //=============================
 
         resultados();
+        System.out.print(Resultados);
     }
 
     public void resultados(){
