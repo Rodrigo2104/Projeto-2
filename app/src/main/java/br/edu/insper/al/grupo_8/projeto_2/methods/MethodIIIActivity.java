@@ -7,6 +7,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.LinkedList;
 
 import br.edu.insper.al.grupo_8.projeto_2.R;
@@ -15,11 +18,12 @@ import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 public class MethodIIIActivity extends AppCompatActivity {
 
     private int soma;
-
+    private String rh;
     private LinkedList<CheckBox> boxes;
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
+        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
@@ -28,17 +32,24 @@ public class MethodIIIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_iii);
 
+        Bundle extras = getIntent().getExtras();
+        assert extras != null;
+        rh = extras.getString("rh");
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("Pacientes");
+
         boxes = new LinkedList<>();
         TextView resultadoSoma = findViewById(R.id.resultado);
-
-        Button buttonGoBack = findViewById(R.id.button_goTests);
-        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIIActivity.class));
 
         Button buttonGoMenu = findViewById(R.id.button_goMenu);
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
-        Button buttonNext = findViewById(R.id.button_goMethodIII);
-        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodIVActivity.class));
+        Button buttonNext = findViewById(R.id.button_goMethodIV);
+        buttonNext.setOnClickListener((view) -> {
+            ref.child(rh).child("Testes").child("t03").setValue(soma);
+            startMethodActivity(MethodIVActivity.class);
+        });
 
         CheckBox cb1 = findViewById(R.id.checkBox);
         CheckBox cb2 = findViewById(R.id.checkBox1);

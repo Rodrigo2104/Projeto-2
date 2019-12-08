@@ -22,22 +22,21 @@
                 android:id="@+id/button_goBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_buttom"
                 android:text="Voltar"
-                android:layout_alignParentEnd="true"
-                android:background="@color/green_unifesp"
-                android:textColor="#fff"
+                android:layout_alignParentStart="true"
                 android:textAllCaps="true"
-                android:textSize="14sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="146dp"
                 android:layout_height="45dp"
+                android:layout_centerInParent="true"
                 android:contentDescription="Unifesp_Escrito"
                 android:src="@drawable/unifesp_escrito" />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
-
 
     <TextView
         android:id="@+id/nome"
@@ -48,8 +47,8 @@
         android:gravity="center"
         android:text="Dados do Paciente e Resultado nos testes"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="22sp" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30dp" />
 
     <View
         android:id="@+id/divider"
@@ -59,25 +58,24 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
                 android:layout_gravity="center"
                 android:text="Dados do Usuário"
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textSize="21sp" />
+                android:textSize="27sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -89,11 +87,11 @@
                     android:id="@+id/textView0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Nome:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/nome_txt"
@@ -104,7 +102,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -117,11 +115,11 @@
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="RH:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/rh"
@@ -132,7 +130,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -145,11 +143,11 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Data de internação:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/data"
@@ -160,7 +158,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -173,11 +171,11 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Idade:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/idade"
@@ -188,7 +186,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -201,11 +199,11 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Sexo:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/sexo"
@@ -216,7 +214,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -229,11 +227,11 @@
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Diagnóstico Médico:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/diagnostico"
@@ -244,7 +242,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -257,11 +255,11 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Cor de pele autorreferida:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/pele"
@@ -272,7 +270,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -285,11 +283,11 @@
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Estado Civil:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/estado_civil"
@@ -300,7 +298,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -313,11 +311,11 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Escolaridade:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/escolaridade"
@@ -328,7 +326,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -341,11 +339,11 @@
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Ocupação:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/ocupacao"
@@ -356,7 +354,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -369,11 +367,11 @@
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Renda do Idoso:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/renda_idoso"
@@ -384,7 +382,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -397,11 +395,11 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Provedor da Casa:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/provedor"
@@ -412,7 +410,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -425,11 +423,11 @@
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Renda Familia:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/renda_familiar"
@@ -440,7 +438,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -453,11 +451,11 @@
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Quantas pessoas dependem dessa renda:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/nPessoas"
@@ -468,7 +466,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -481,11 +479,11 @@
                     android:id="@+id/textView14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Religião:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/religiao"
@@ -496,7 +494,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -509,11 +507,11 @@
                     android:id="@+id/textView15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Hábitos de Vida:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/habitos"
@@ -524,7 +522,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -537,11 +535,11 @@
                     android:id="@+id/textView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Alta Hospitalar:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/alta"
@@ -552,7 +550,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -565,11 +563,11 @@
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Procedência:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/procedencia"
@@ -580,7 +578,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -593,11 +591,11 @@
                     android:id="@+id/textView18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Principal queixa:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/queixa"
@@ -608,7 +606,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -621,11 +619,11 @@
                     android:id="@+id/textView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="PA:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/pa"
@@ -636,7 +634,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -649,11 +647,11 @@
                     android:id="@+id/textView20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="P:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/p"
@@ -664,7 +662,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -677,11 +675,11 @@
                     android:id="@+id/textView21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="R:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/r"
@@ -692,7 +690,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -705,11 +703,11 @@
                     android:id="@+id/textView22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Tmax:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tmax"
@@ -720,7 +718,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -733,11 +731,11 @@
                     android:id="@+id/textView23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Dx:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/dx"
@@ -748,7 +746,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -761,11 +759,11 @@
                     android:id="@+id/textView24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Antecedentes Pessoais:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/antecedentes"
@@ -776,7 +774,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -789,11 +787,11 @@
                     android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Outros:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/outros"
@@ -804,7 +802,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -817,11 +815,11 @@
                     android:id="@+id/textView26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Medicamentos sendo usados em casa:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/medicamentos_casa"
@@ -832,7 +830,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -845,11 +843,11 @@
                     android:id="@+id/textView27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Medicamentos em uso no hospital:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/medicamentos_hospital"
@@ -860,7 +858,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -873,11 +871,11 @@
                     android:id="@+id/textView28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Anti-coagulação"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/anti_coagulacao"
@@ -888,7 +886,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -901,11 +899,11 @@
                     android:id="@+id/textView29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Dor:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/dor"
@@ -916,7 +914,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -929,11 +927,11 @@
                     android:id="@+id/textView30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Tratamentos Anteriores:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tratamentos_anteriores"
@@ -944,7 +942,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -957,11 +955,11 @@
                     android:id="@+id/textView31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Exame Físico:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/exame_fisico"
@@ -972,7 +970,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -985,11 +983,11 @@
                     android:id="@+id/textView32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Nível de Consciência:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/consciencia"
@@ -1000,7 +998,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1013,11 +1011,11 @@
                     android:id="@+id/textView33"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Avaliação Pulmonar:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/pulmonar"
@@ -1028,7 +1026,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1041,11 +1039,11 @@
                     android:id="@+id/textView34"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Avaliação Cardiovascular:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/cardiovascular"
@@ -1056,7 +1054,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1069,11 +1067,11 @@
                     android:id="@+id/textView35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Avaliação Gastrointestinal:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/gastrointestinal"
@@ -1084,7 +1082,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1097,11 +1095,11 @@
                     android:id="@+id/textView36"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Avaliação Geniturinário:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/geniturinario"
@@ -1112,7 +1110,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1125,11 +1123,11 @@
                     android:id="@+id/textView37"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Extremidades:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/extremidades"
@@ -1140,7 +1138,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1153,11 +1151,11 @@
                     android:id="@+id/textView38"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="2dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_centerVertical="true"
                     android:text="Pele e Anexos:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/pea"
@@ -1168,7 +1166,7 @@
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <View
@@ -1185,7 +1183,7 @@
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textSize="21sp" />
+                android:textSize="27sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -1198,21 +1196,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_I"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView39"
+                    android:layout_toEndOf="@+id/textView39"
                     android:textStyle = "italic|bold"
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1226,21 +1224,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_II"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView40"
+                    android:layout_toEndOf="@+id/textView40"
                     android:textStyle = "italic|bold"
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1254,21 +1252,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_III"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView41"
+                    android:layout_toEndOf="@+id/textView41"
                     android:textStyle = "italic|bold"
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1282,21 +1280,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_IV"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t04"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView42"
+                    android:layout_toEndOf="@+id/textView42"
                     android:textStyle = "italic|bold"
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1310,21 +1308,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_V"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t05"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView43"
+                    android:layout_toEndOf="@+id/textView43"
                     android:textStyle = "italic|bold"
                     android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1338,20 +1336,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_VI"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t06"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView44"
+                    android:layout_toEndOf="@+id/textView44"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1365,20 +1364,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_VII"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t07"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView45"
+                    android:layout_toEndOf="@+id/textView45"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1392,20 +1392,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_VIII"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t08"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView46"
+                    android:layout_toEndOf="@+id/textView46"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1419,20 +1420,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_IX"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t09"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView47"
+                    android:layout_toEndOf="@+id/textView47"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1446,20 +1448,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_X"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView48"
+                    android:layout_toEndOf="@+id/textView48"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1473,20 +1476,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
+                    android:layout_centerVertical="true"
                     android:text="@string/teste_XI"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView49"
+                    android:layout_toEndOf="@+id/textView49"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -1500,20 +1504,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="5dp"
-                    android:layout_marginBottom=".5dp"
-                    android:text="@string/teste_XI"
+                    android:layout_centerVertical="true"
+                    android:text="@string/teste_XII"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/t12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView50"
+                    android:layout_toEndOf="@+id/textView50"
                     android:textStyle = "italic|bold"
+                    android:layout_centerVertical="true"
                     android:text=""
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="20sp" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>

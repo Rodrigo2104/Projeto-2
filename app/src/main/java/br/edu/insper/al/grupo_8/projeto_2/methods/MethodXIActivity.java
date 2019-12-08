@@ -91,11 +91,11 @@ public class MethodXIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_xi);
 
-        Button buttonGoBack = findViewById(R.id.button_goMethodX);
-        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodXActivity.class));
+        Button buttonGoBack = findViewById(R.id.button_goMethodXII);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
 
-        Button buttonNext = findViewById(R.id.button_goMethodXII);
-        buttonNext.setOnClickListener((view) -> startMethodActivity(HomeActivity.class));
+        Button buttonNext = findViewById(R.id.button_goMenu);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
