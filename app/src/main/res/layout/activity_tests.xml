@@ -3,197 +3,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".TestsActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/green_unifesp"
         android:minHeight="?attr/actionBarSize"
-        app:theme="?attr/actionBarTheme">
+        android:theme="?attr/actionBarTheme">
 
-        <RelativeLayout
+        <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:columnCount="3"
+            android:rowCount="1">
 
             <Button
-                android:id="@+id/button_goBack"
+                android:id="@+id/button_goLog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Voltar"
-                android:layout_alignParentEnd="true"
-                android:background="@color/green_unifesp"
-                android:textColor="#fff"
+                android:layout_gravity="end"
+                android:background="@drawable/custom_buttom"
                 android:textAllCaps="true"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Voltar"/>
 
             <ImageView
-                android:layout_width="146dp"
-                android:layout_height="45dp"
-                android:contentDescription="Unifesp_Escrito"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="210dp"
+                android:contentDescription="unifesp_escrito"
                 android:src="@drawable/unifesp_escrito" />
-        </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:visibility="invisible"
+                android:background="@drawable/custom_buttom"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Próximo"/>
+        </GridLayout>
     </android.support.v7.widget.Toolbar>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
-        <RelativeLayout
+        <Button
+            android:id="@+id/button_goTests"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_gravity="center"
+            android:text="@string/teste_I" />
 
-            <Button
-                android:id="@+id/button_goMethodI"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:text="@string/teste_I" />
+        <Button
+            android:id="@+id/button_goMethodII"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/teste_II" />
 
-            <Button
-                android:id="@+id/button_goMethodII"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodI"
-                android:text="@string/teste_II" />
 
-            <Button
-                android:id="@+id/button_goMethodIII"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodII"
-                android:text="@string/teste_III" />
+        <Button
+            android:id="@+id/button_goMethodIII"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/teste_III" />
 
-            <Button
-                android:id="@+id/button_goMethodIV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodIII"
-                android:text="@string/teste_IV" />
 
-            <Button
-                android:id="@+id/button_goMethodV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodIV"
-                android:text="@string/teste_V" />
+        <Button
+            android:id="@+id/button_goMethodIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/teste_IV" />
 
-            <Button
-                android:id="@+id/button_goMethodVI"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodV"
-                android:text="@string/teste_VI" />
 
-            <Button
-                android:id="@+id/button_goMethodVII"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodVI"
-                android:text="@string/teste_VII" />
+        <Button
+            android:id="@+id/button_goMethodV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/teste_V" />
 
-            <Button
-                android:id="@+id/button_goMethodVIII"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodVII"
-                android:text="@string/teste_VIII" />
 
-            <Button
-                android:id="@+id/button_goMethodIX"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodVIII"
-                android:text="@string/teste_IX" />
+        <Button
+            android:id="@+id/button_goMethodVI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/teste_VI" />
 
-            <Button
-                android:id="@+id/button_goMethodX"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodIX"
-                android:text="@string/teste_X" />
 
-            <Button
-                android:id="@+id/button_goMethodXI"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodX"
-                android:text="@string/teste_XI" />
+        <Button
+            android:id="@+id/button_goMethodVII"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/teste_VII" />
 
-            <Button
-                android:id="@+id/button_goMethodXII"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="10dp"
-                android:padding="20dp"
-                android:textSize="16sp"
-                android:background="@drawable/custom_buttom"
-                android:layout_below="@+id/button_goMethodXI"
-                android:text="@string/teste_XII" />
 
-        </RelativeLayout>
-    </ScrollView>
+        <Button
+            android:id="@+id/button_goMethodVIII"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/teste_VIII" />
+
+
+        <Button
+            android:id="@+id/button_goMethodIX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/teste_IX" />
+
+
+        <Button
+            android:id="@+id/button_goMethodX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/teste_X" />
+
+        <Button
+            android:id="@+id/button_goMethodXII"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Instrumento de Classificação de Cuidado de Pacientes de Fugulin" />
+
+        <Button
+            android:id="@+id/button_goMethodXI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SATISFAÇÃO AO CLIENTE" />
+
+        <Button
+            android:id="@+id/button_goMethodXIII"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Paciente"/>
+
+    </LinearLayout>
+
+
 </LinearLayout>

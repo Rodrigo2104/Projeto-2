@@ -7,35 +7,39 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/green_unifesp"
         android:minHeight="?attr/actionBarSize"
-        app:theme="?attr/actionBarTheme">
+        android:theme="?attr/actionBarTheme">
 
-        <RelativeLayout
+        <GridLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:columnCount="3"
+            android:rowCount="1">
 
             <Button
-                android:id="@+id/button_goBack"
+                android:id="@+id/button_goLog"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:background="@color/green_unifesp"
-                android:text="Voltar"
+                android:layout_gravity="end"
+                android:background="@drawable/custom_buttom"
                 android:textAllCaps="true"
-                android:textColor="#fff"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Voltar"/>
 
             <ImageView
-                android:layout_width="146dp"
-                android:layout_height="45dp"
-                android:contentDescription="Unifesp_Escrito"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="210dp"
+                android:contentDescription="unifesp_escrito"
                 android:src="@drawable/unifesp_escrito" />
-        </RelativeLayout>
+        </GridLayout>
     </android.support.v7.widget.Toolbar>
 
     <RelativeLayout
@@ -53,43 +57,46 @@
 
         <Button
             android:id="@+id/button_results"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_buttom"
             android:layout_above="@+id/button_tests"
-            android:layout_alignStart="@+id/button_tests"
-            android:layout_alignEnd="@+id/button_tests"
             android:layout_centerHorizontal="true"
-            android:padding="30dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:layout_marginStart="500dp"
+            android:layout_marginBottom="20dp"
             android:textColor="@color/green_unifesp"
             android:textStyle="bold"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:text="RESULTADOS" />
 
         <Button
             android:id="@+id/button_tests"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/button_delete"
-            android:layout_alignEnd="@+id/button_delete"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
             android:background="@drawable/custom_buttom"
-            android:padding="30dp"
-            android:text="FAZER TESTES"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:layout_marginStart="500dp"
+            android:layout_marginBottom="20dp"
             android:textColor="@color/green_unifesp"
+            android:textStyle="bold"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="TESTES" />
 
         <Button
             android:id="@+id/button_delete"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/button_tests"
             android:background="@drawable/custom_buttom"
             android:layout_centerHorizontal="true"
-            android:padding="30dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:layout_marginStart="500dp"
             android:textColor="@color/green_unifesp"
             android:textStyle="bold"
             android:textSize="20sp"

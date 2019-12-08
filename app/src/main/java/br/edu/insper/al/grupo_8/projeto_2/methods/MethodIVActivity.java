@@ -7,19 +7,14 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 import br.edu.insper.al.grupo_8.projeto_2.R;
 import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodIVActivity extends AppCompatActivity {
     private int soma1, soma2, soma3, soma4, soma5, soma6;
-    private String rh;
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
-        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
@@ -27,23 +22,16 @@ public class MethodIVActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_iv);
-        TextView resultadoSoma = findViewById(R.id.resultado);
 
-        Bundle extras = getIntent().getExtras();
-        assert extras != null;
-        rh = extras.getString("rh");
-
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("Pacientes");
+        Button buttonGoBack = findViewById(R.id.button_goTests);
+        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodIIIActivity.class));
 
         Button buttonGoMenu = findViewById(R.id.button_goMenu);
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
-        Button buttonNext = findViewById(R.id.button_goMethodV);
-        buttonNext.setOnClickListener((view) -> {
-            ref.child(rh).child("Testes").child("t04").setValue(resultadoSoma.getText().toString());
-            startMethodActivity(MethodVActivity.class);
-        });
+        Button buttonNext = findViewById(R.id.button_goMethodIII);
+        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodVActivity.class));
+        TextView resultadoSoma = findViewById(R.id.resultado);
 
         RadioButton cb1 = findViewById(R.id.radioButton1);
         RadioButton cb2 = findViewById(R.id.radioButton2);

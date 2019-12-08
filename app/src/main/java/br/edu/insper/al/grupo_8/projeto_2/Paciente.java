@@ -5,7 +5,9 @@ public class Paciente {
     private String nome, rh, data_internacao, idade, sexo, diagnostico, cor, estado_civil, escolaridade, ocupacao, provedor, renda_familiar, nPessoas,
             religiao, habitos, alta, procedencia, queixa, pa, p, r, tmax, dx, antecedentes, outros, medicamentos_casa, medicamentos_hospital, anti_coagulacao,
             dor,  tratamentos_anteriores, exame_fisico, consciencia, pulmonar, cardiovascular, gastrointestinal, geniturinario, extremidades, pea,
-            renda_idoso, t01, t02, t03, t04, t05, t06, t07, t08, t09, t10, t11, t12;
+            renda_idoso;
+
+    private int t01, t02, t03, t04, t05, t08, t09, t10;
     
     public Paciente() {
     }
@@ -16,7 +18,7 @@ public class Paciente {
                     String dx, String antecedentes, String outros, String medicamentos_casa, String medicamentos_hospital, String anti_coagulacao,
                     String dor, String tratamentos_anteriores, String exame_fisico, String consciencia, String pulmonar, String cardiovascular,
                     String gastrointestinal, String geniturinario, String extremidades, String pea, String renda_idoso,
-                    String t01, String t02, String t03, String t04, String t05, String t06, String t07, String t08, String t09, String t10, String t11, String t12) {
+                    int t01, int t02, int t03, int t04, int t05, int t08, int t09, int t10) {
 
         this.nome = nome;
         this.rh = rh;
@@ -67,100 +69,68 @@ public class Paciente {
         this.t10 = t10;
     }
 
-    public String getT01() {
+    public int getT01() {
         return t01;
     }
 
-    public void setT01(String t01) {
+    public void setT01(Integer t01) {
         this.t01 = t01;
     }
 
-    public String getT02() {
+    public int getT02() {
         return t02;
     }
 
-    public void setT02(String t02) {
+    public void setT02(Integer t02) {
         this.t02 = t02;
     }
 
-    public String getT03() {
+    public int getT03() {
         return t03;
     }
 
-    public void setT03(String t03) {
+    public void setT03(Integer t03) {
         this.t03 = t03;
     }
 
-    public String getT04() {
+    public int getT04() {
         return t04;
     }
 
-    public void setT04(String t04) {
+    public void setT04(Integer t04) {
         this.t04 = t04;
     }
 
-    public String getT05() {
+    public int getT05() {
         return t05;
     }
 
-    public void setT05(String t05) {
+    public void setT05(Integer t05) {
         this.t05 = t05;
     }
 
-    public String getT06() {
-        return t06;
-    }
-
-    public void setT06(String t06) {
-        this.t06 = t06;
-    }
-
-    public String getT07() {
-        return t07;
-    }
-
-    public void setT07(String t07) {
-        this.t07 = t07;
-    }
-
-    public String getT08() {
+    public int getT08() {
         return t08;
     }
 
-    public void setT08(String t08) {
+    public void setT08(Integer t08) {
         this.t08 = t08;
     }
 
-    public String getT09() {
+    public int getT09() {
         return t09;
     }
 
-    public void setT09(String t09) {
+    public void setT09(Integer t09) {
         this.t09 = t09;
     }
 
-    public String getT10() {
+    public int getT10() {
         return t10;
     }
 
-    public void setT10(String t10) {
+    public void setT10(Integer t10) {
         this.t10 = t10;
-    }
-
-    public String getT11() {
-        return t11;
-    }
-
-    public void setT11(String t11) {
-        this.t11 = t11;
-    }
-
-    public String getT12() {
-        return t12;
-    }
-
-    public void setT12(String t12) {
-        this.t12 = t12;
     }
 
     public String getRenda_familiar() {

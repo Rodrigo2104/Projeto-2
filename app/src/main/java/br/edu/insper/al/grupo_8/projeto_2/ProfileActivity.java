@@ -26,21 +26,16 @@ public class ProfileActivity extends AppCompatActivity {
 
         button_add.setOnClickListener(v -> {
             progress.setVisibility(View.VISIBLE);
-            if (!userNewLogin.getText().toString().isEmpty() && !userNewPass.getText().toString().isEmpty()) {
-                newauth.createUserWithEmailAndPassword(userNewLogin.getText().toString(), userNewPass.getText().toString()).addOnCompleteListener(task -> {
-                    progress.setVisibility(View.GONE);
-                    if (task.isSuccessful()) {
-                        Toast.makeText(this, "Registrado com Sucesso", Toast.LENGTH_LONG).show();
-                        userNewLogin.setText("");
-                        userNewPass.setText("");
-                    } else {
-                        Toast.makeText(this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_LONG).show();
-                    }
-                });
-            } else {
-                progress.setVisibility(View.GONE);
-                Toast.makeText(this, "Faltam Dados", Toast.LENGTH_LONG).show();
-            }
+            newauth.createUserWithEmailAndPassword(userNewLogin.getText().toString(), userNewPass.getText().toString()).addOnCompleteListener(task -> {
+               progress.setVisibility(View.GONE);
+               if(task.isSuccessful()){
+                   Toast.makeText(this, "Registrado com Sucesso", Toast.LENGTH_LONG).show();
+                   userNewLogin.setText("");
+                   userNewPass.setText("");
+               } else {
+                   Toast.makeText(this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_LONG).show();
+               }
+           });
         });
     }
 }

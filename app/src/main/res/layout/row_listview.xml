@@ -21,7 +21,6 @@
         android:layout_marginStart="10sp"
         android:text=""
         android:textColor="#000"
-        android:textSize="24sp"
         android:textStyle="italic" />
 
     <TextView
@@ -31,6 +30,5 @@
         android:layout_marginStart="10sp"
         android:text=""
         android:textColor="#000"
-        android:textSize="24sp"
         android:textStyle="italic" />
 </LinearLayout>
