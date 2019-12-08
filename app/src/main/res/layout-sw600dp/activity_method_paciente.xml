@@ -20,34 +20,32 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button_goMenu"
+                android:id="@+id/button_goBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Salvar"
-                android:layout_alignParentEnd="true"
-                android:background="@color/green_unifesp"
-                android:textColor="#fff"
+                android:background="@drawable/custom_buttom"
+                android:text="Voltar"
+                android:layout_alignParentStart="true"
                 android:textAllCaps="true"
-                android:textSize="14sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="146dp"
                 android:layout_height="45dp"
+                android:layout_centerInParent="true"
                 android:contentDescription="Unifesp_Escrito"
-                android:layout_centerHorizontal="true"
                 android:src="@drawable/unifesp_escrito" />
 
             <Button
-                android:id="@+id/button_goBack"
+                android:id="@+id/button_goMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Voltar"
-                android:layout_alignParentStart="true"
-                android:background="@color/green_unifesp"
-                android:textColor="#fff"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/custom_buttom"
+                android:text="Salvar"
                 android:textAllCaps="true"
-                android:textSize="14sp"
+                android:textSize="18dp"
                 android:textStyle="bold" />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
@@ -58,10 +56,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8dp"
-        android:textSize="18dp"
         android:gravity="center"
-        android:textColor="@color/black"
-        android:text="Questionário com dados sócio demográficos, clínicos, crença religiosas e econômicos" />
+        android:text="Questionário com dados sócio demográficos, clínicos, crença religiosas e econômicos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <View
         android:id="@+id/divider"
@@ -83,7 +80,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -91,7 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:text="Nome:"/>
 
@@ -101,7 +98,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@+id/textView0"
-                    android:textSize="15sp"
                     android:hint="Nome"
                     android:inputType="textCapWords|textCapSentences|textPersonName"
                     app:backgroundTint="@color/black"
@@ -111,7 +107,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
+                android:layout_marginBottom="15dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -120,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:text="RH:"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true" />
 
                 <android.support.v7.widget.AppCompatEditText
@@ -128,28 +124,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView1"
-                    android:textSize="15sp"
                     android:hint="RH"
                     android:inputType="number"
-                    android:layout_alignParentEnd="true"
+                    android:minEms="7"
+                    android:layout_marginEnd="10dp"
                     android:text=""
                     app:backgroundTint="@color/black" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/rh_txt"
                     android:text="Data de internação:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/data_txt"
@@ -158,25 +148,20 @@
                     android:layout_toEndOf="@+id/textView2"
                     android:hint="Selecione a Data"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_centerVertical="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
-                    android:text="Idade:"/>
+                    android:text="Idade:"
+                    android:layout_toEndOf="@+id/data_txt" />
 
                 <android.support.v7.widget.AppCompatEditText
                     android:id="@+id/idade_txt"
@@ -184,7 +169,6 @@
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@+id/textView3"
-                    android:textSize="15sp"
                     android:hint="Idade"
                     android:inputType="number"
                     android:text=""
@@ -194,15 +178,14 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_marginEnd="15dp"
                     android:layout_centerVertical="true"
                     android:text="Sexo:" />
@@ -219,14 +202,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="15dp"
-                        android:textSize="15sp"
+                        android:textSize="18sp"
                         android:text="Masculino" />
 
                     <RadioButton
                         android:id="@+id/checkBox2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:textSize="18sp"
                         android:text="Feminino" />
                 </RadioGroup>
             </RelativeLayout>
@@ -234,15 +217,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
                     android:text="Diagnóstico Médico:" />
 
                 <android.support.v7.widget.AppCompatEditText
@@ -250,9 +233,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView5"
-                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/textView5"
                     android:hint="Diagnóstico Médico"
                     android:inputType="text"
                     android:text=""
@@ -262,24 +243,24 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_marginBottom="3dp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"
                     android:text="Cor de pele autorreferida:" />
 
                 <RadioGroup
                     android:id="@+id/radioC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView6"
-                    android:orientation="vertical">
+                    android:layout_toEndOf="@+id/textView6"
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/checkBox3"
@@ -287,7 +268,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Branco"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox4"
@@ -295,7 +276,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Amarelo"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox5"
@@ -303,7 +284,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Negro"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox6"
@@ -311,7 +292,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Pardo"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox7"
@@ -319,30 +300,30 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Indígena"
-                        android:textSize="14sp"/>
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_marginBottom="3dp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"
                     android:text="Estado Civil:" />
 
                 <RadioGroup
                     android:id="@+id/radioEC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textView7"
+                    android:layout_toEndOf="@id/textView7"
                     android:orientation="horizontal">
 
                     <RadioButton
@@ -351,7 +332,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Solteiro"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox9"
@@ -359,7 +340,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Divorciado"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox10"
@@ -367,7 +348,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Casado"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox11"
@@ -375,30 +356,32 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Viúvo"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
                     android:text="Escolaridade:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/textView8"
                     android:layout_alignStart="@id/textView8"
-                    android:layout_below="@+id/textView8"
+                    android:layout_marginEnd="25dp"
+                    android:layout_toEndOf="@+id/textView8"
                     android:orientation="vertical">
 
                     <RadioButton
@@ -406,130 +389,126 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Nenhum nível de ensino"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Fundamental incompleto "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Médio incompleto "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Superior incompleto "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox16"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Fundamental completo "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox17"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Médio completo"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox18"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Superior completo"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignStart="@id/radioGroup1"
+                    android:layout_marginEnd="20dp"
                     android:text="Ocupação:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textView9">
+                    android:layout_below="@id/textView9"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toEndOf="@id/radioGroup0">
 
                     <RadioButton
                         android:id="@+id/checkBox19"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Aposentado/Pensionista "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox20"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Trabalhador autônomo "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Desempregado"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Trabalhador informal"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox24"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Do lar"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Trabalhador formal"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
+
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_marginEnd="5dp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
                     android:layout_centerVertical="true"
                     android:text="Provedor da casa:" />
 
@@ -546,38 +525,37 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="20dp"
                         android:text="Sim"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox26"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Não"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_marginBottom="3dp"
-                    android:layout_marginEnd="5dp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
                     android:text="Renda Idoso:" />
 
                 <RadioGroup
                     android:id="@+id/radioRenIdo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textView11"
+                    android:layout_toEndOf="@id/textView11"
                     android:orientation="horizontal">
 
                     <RadioButton
@@ -586,7 +564,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="01 SM "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox28"
@@ -594,7 +572,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="04 SM "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox29"
@@ -602,31 +580,30 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="De 01 a 04 SM"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_marginBottom="3dp"
-                    android:layout_marginEnd="5dp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
                     android:text="Renda Familiar:" />
 
                 <RadioGroup
                     android:id="@+id/radioRenFam"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textView12"
+                    android:layout_toEndOf="@id/textView12"
                     android:orientation="horizontal">
 
                     <RadioButton
@@ -635,7 +612,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="01 SM "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox31"
@@ -643,7 +620,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="04 SM "
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox32"
@@ -651,31 +628,31 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="De 01 a 04 SM"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_marginBottom="3dp"
-                    android:text="Quantas pessoas dependem dessa renda:" />
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Quantas pessoas\ndependem dessa renda:" />
 
                 <RadioGroup
                     android:id="@+id/radionPessoa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_below="@id/textView13"
+                    android:layout_toEndOf="@id/textView13"
                     android:orientation="horizontal">
 
                     <RadioButton
@@ -684,7 +661,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="01"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox34"
@@ -692,7 +669,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="02 a 03"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox35"
@@ -700,31 +677,31 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="04 ou mais"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_marginBottom="3dp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
                     android:text="Religião:" />
 
                 <RadioGroup
                     android:id="@+id/radioRel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView14"
-                    android:orientation="vertical">
+                    android:layout_toEndOf="@+id/textView14"
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/checkBox36"
@@ -732,7 +709,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Católico"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox37"
@@ -740,7 +717,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Espírita"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox38"
@@ -748,7 +725,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Budista"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox39"
@@ -756,31 +733,32 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Evangélico"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
+
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="false"
+                    android:layout_marginEnd="20dp"
                     android:text="Hábitos de Vida:"
-                    android:layout_marginBottom="3dp"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <RadioGroup
                     android:id="@+id/radioHab"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView15"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/checkBox40"
@@ -788,7 +766,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Sedentarismo"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox41"
@@ -796,7 +774,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Prática regular de atividade física"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox42"
@@ -804,7 +782,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Tabagismo"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox43"
@@ -812,22 +790,21 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="Etilismo"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:text="Alta Hospitalar:" />
 
@@ -837,7 +814,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@+id/textView16"
-                    android:textSize="15sp"
                     android:hint="Alta Hospitalar"
                     android:inputType="textCapWords|textCapSentences|textPersonName"
                     app:backgroundTint="@color/black"
@@ -847,16 +823,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="9dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_marginEnd="5dp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="20dp"
                     android:layout_centerVertical="true"
                     android:text="Procedência:" />
 
@@ -873,7 +848,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Casa"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox45"
@@ -881,7 +856,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Hospital"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox46"
@@ -889,22 +864,21 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Outro"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView18"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:text="Principal queixa:"/>
 
@@ -914,7 +888,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@+id/textView18"
-                    android:textSize="15sp"
                     android:hint="Principal Queixa"
                     android:inputType="textCapWords|textCapSentences|textPersonName"
                     app:backgroundTint="@color/black"
@@ -924,15 +897,14 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView19"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:text="PA:"/>
@@ -942,7 +914,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView19"
-                    android:textSize="15sp"
                     android:hint="PA"
                     android:layout_marginEnd="10dp"
                     android:minEms="5"
@@ -956,8 +927,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:layout_toEndOf="@+id/PA_txt"
-                    android:layout_marginEnd="10dp"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:text="P:"/>
 
@@ -966,8 +936,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView20"
-                    android:textSize="15sp"
                     android:hint="P"
+                    android:layout_marginEnd="10dp"
                     android:minEms="5"
                     android:inputType="textCapWords|textCapSentences|textPersonName"
                     app:backgroundTint="@color/black"
@@ -977,9 +947,9 @@
                     android:id="@+id/textView21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/P_txt"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/P_txt"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:text="R:"/>
 
@@ -988,27 +958,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView21"
-                    android:textSize="15sp"
                     android:hint="R"
                     android:layout_marginEnd="10dp"
                     android:minEms="5"
                     android:inputType="textCapWords|textCapSentences|textPersonName"
                     app:backgroundTint="@color/black"
                     android:text="" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/textView22"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/R_txt"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:text="Tmax:"/>
 
@@ -1018,7 +981,6 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView22"
                     android:hint="Tmax"
-                    android:textSize="15sp"
                     android:layout_marginEnd="10dp"
                     android:minEms="5"
                     android:inputType="textCapWords|textCapSentences|textPersonName"
@@ -1031,7 +993,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:layout_toEndOf="@+id/tmax_txt"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:text="Dx:"/>
 
@@ -1040,7 +1002,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/textView23"
-                    android:textSize="15sp"
                     android:hint="Dx"
                     android:minEms="5"
                     android:layout_marginEnd="10dp"
@@ -1052,15 +1013,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginEnd="10dp">
 
                 <TextView
                     android:id="@+id/textView24"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="10dp"
                     android:text="Antecedentes Pessoais:"/>
 
                 <CheckBox
@@ -1068,9 +1029,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:layout_marginEnd="100dp"
-                    android:textSize="15sp"
-                    android:layout_below="@id/textView24"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/textView24"
                     android:text="HAS" />
 
                 <CheckBox
@@ -1078,8 +1039,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_below="@id/checkBox1a"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/checkBox1a"
                     android:text="DM" />
 
                 <CheckBox
@@ -1087,8 +1049,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_below="@id/checkBox2a"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/checkBox2a"
                     android:text="DPOC" />
 
                 <CheckBox
@@ -1096,8 +1059,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_below="@id/checkBox3a"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@id/checkBox3a"
                     android:text="Cardiopatia" />
 
                 <CheckBox
@@ -1105,30 +1069,31 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_marginEnd="5dp"
-                    android:layout_below="@id/checkBox4a"
+                    android:layout_toEndOf="@id/checkBox4a"
                     android:text="Câncer" />
+
 
                 <CheckBox
                     android:id="@+id/checkBox6a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_toEndOf="@+id/checkBox1a"
-                    android:layout_below="@+id/textView24"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_below="@+id/checkBox5a"
+                    android:layout_alignStart="@+id/checkBox1a"
                     android:text="Etilismo" />
-
 
                 <CheckBox
                     android:id="@+id/checkBox7a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_below="@+id/checkBox6a"
-                    android:layout_alignStart="@+id/checkBox6a"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/checkBox6a"
+                    android:layout_below="@+id/checkBox5a"
                     android:text="Insuficiência Renal" />
 
                 <CheckBox
@@ -1136,9 +1101,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_below="@+id/checkBox7a"
-                    android:layout_alignStart="@+id/checkBox6a"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/checkBox7a"
+                    android:layout_below="@+id/checkBox5a"
                     android:text="Alergias" />
 
                 <CheckBox
@@ -1146,9 +1111,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_below="@+id/checkBox8a"
-                    android:layout_alignStart="@+id/checkBox6a"
+                    android:textSize="18sp"
+                    android:layout_toEndOf="@id/checkBox8a"
+                    android:layout_below="@+id/checkBox5a"
                     android:text="Sedentarismo" />
 
                 <CheckBox
@@ -1156,8 +1121,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_below="@+id/checkBox9a"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/checkBox6a"
                     android:layout_alignStart="@+id/checkBox6a"
                     android:text="Tabagismo" />
             </RelativeLayout>
@@ -1165,15 +1130,14 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
                     android:layout_centerVertical="true"
                     android:text="Outros:" />
 
@@ -1183,7 +1147,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_toEndOf="@+id/textView25"
-                    android:textSize="15sp"
                     android:hint="Outros"
                     android:inputType="textCapWords|textCapSentences|textPersonName"
                     app:backgroundTint="@color/black"
@@ -1193,15 +1156,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
                     android:text="Medicamentos sendo usados em casa:"/>
 
                 <android.support.v7.widget.AppCompatEditText
@@ -1209,9 +1172,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView26"
-                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/textView26"
                     android:hint="Medicamentos sendo usados em casa:"
                     android:inputType="textCapWords|textCapSentences|textPersonName"
                     app:backgroundTint="@color/black"
@@ -1221,15 +1182,15 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView27"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
                     android:text="Medicamentos em uso no hospital:"/>
 
                 <android.support.v7.widget.AppCompatEditText
@@ -1237,9 +1198,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView27"
-                    android:textSize="15sp"
+                    android:layout_toEndOf="@+id/textView27"
                     android:hint="Medicamentos em uso no hospital:"
                     android:inputType="textCapWords|textCapSentences|textPersonName"
                     app:backgroundTint="@color/black"
@@ -1249,18 +1208,17 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView28"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginEnd="5dp"
+                    android:layout_marginEnd="15dp"
                     android:text="Anti-coagulação:"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="18sp" />
 
                 <RadioGroup
                     android:id="@+id/radioCoag"
@@ -1275,30 +1233,29 @@
                         android:layout_height="match_parent"
                         android:layout_marginEnd="15dp"
                         android:text="Sim"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
 
                     <RadioButton
                         android:id="@+id/checkBox48"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Não"
-                        android:textSize="15sp" />
+                        android:textSize="18sp" />
                 </RadioGroup>
             </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:layout_marginEnd="5dp"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="15dp"
                     android:layout_centerVertical="true"
                     android:text="Dor:"/>
 
@@ -1314,7 +1271,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="15dp"
                         android:text="1" />
 
                     <RadioButton
@@ -1322,7 +1278,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="15dp"
                         android:text="2" />
 
                     <RadioButton
@@ -1330,7 +1285,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="15dp"
                         android:text="3" />
 
                     <RadioButton
@@ -1338,7 +1292,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="15dp"
                         android:text="4" />
 
                     <RadioButton
@@ -1346,7 +1299,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textSize="15dp"
                         android:text="5" />
                 </RadioGroup>
             </RelativeLayout>
@@ -1354,8 +1306,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView30"
@@ -1381,8 +1332,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView31"
@@ -1408,8 +1358,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp">
 
                 <TextView
                     android:id="@+id/textView32"
@@ -1487,8 +1436,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="3dp"
-                android:orientation="horizontal">
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView33"

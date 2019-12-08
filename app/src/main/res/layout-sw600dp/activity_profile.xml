@@ -23,8 +23,7 @@
             android:src="@drawable/unifesp_escrito" />
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
-        android:id="@+id/content"
+    <LinearLayout android:id="@+id/content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
@@ -36,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <TextView
@@ -44,18 +43,18 @@
                 android:layout_height="wrap_content"
                 android:text="Login: "
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="33sp" />
 
             <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/text_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="8"
+                android:ems="13"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 android:textCursorDrawable="@null"
-                android:textSize="22sp"
+                android:textSize="25sp"
                 app:backgroundTint="@color/white" />
         </LinearLayout>
 
@@ -64,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <TextView
@@ -72,17 +71,17 @@
                 android:layout_height="wrap_content"
                 android:text="Senha: "
                 android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:textSize="33sp" />
 
             <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/text_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="8"
+                android:ems="13"
                 android:inputType="textPassword"
                 android:textColor="@color/white"
                 android:textCursorDrawable="@null"
-                android:textSize="22sp"
+                android:textSize="25sp"
                 app:backgroundTint="@color/white" />
         </LinearLayout>
 
@@ -90,11 +89,12 @@
             android:id="@+id/button_add"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50sp"
             android:background="@drawable/custom_buttom"
             android:text="Adicionar novo médico"
             android:textColor="@color/green_unifesp"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
 

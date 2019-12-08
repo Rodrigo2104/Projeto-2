@@ -60,5 +60,7 @@ assinale \"7\".</string>
     <string name="test_4_4_1">(1 ponto)\nTem completo controle sobre suas eliminações (urinar e evacuar)</string>
     <string name="test_4_5_0">(0 pontos)\nNecessita de ajuda parcial ou total com a alimentação ou requer alimentação parenteral</string>
     <string name="test_4_5_1">(1 ponto)\nLeva a comida do prato à boca sem ajuda. Preparação da comida pode ser feita por outra pessoa</string>
+    <string name="teste_XI">Instrumento de Classificação de Cuidade de Pacientes de Fugulin</string>
+    <string name="teste_XII">Satisfação ao Cliente</string>
 
 </resources>
