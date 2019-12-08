@@ -47,7 +47,7 @@ public class MethodIIIActivity extends AppCompatActivity {
 
         Button buttonNext = findViewById(R.id.button_goMethodIV);
         buttonNext.setOnClickListener((view) -> {
-            ref.child(rh).child("Testes").child("t03").setValue(resultadoSoma.getText().toString());
+            ref.child(rh).child("Testes").child("t03").setValue(soma);
             startMethodActivity(MethodIVActivity.class);
         });
 
