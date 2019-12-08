@@ -341,9 +341,7 @@ public class MethodIIActivity extends AppCompatActivity {
             this.Resultados += 1;
         }
 
-        resultado.setText("Total: " + String.valueOf(Resultados));
-
-
+        resultado.setText(Resultados);
     }
 
 
