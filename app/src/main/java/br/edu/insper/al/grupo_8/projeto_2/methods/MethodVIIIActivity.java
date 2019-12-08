@@ -31,7 +31,6 @@ public class MethodVIIIActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_viii);
-        TextView resultado = findViewById(R.id.result);
 
         Bundle extras = getIntent().getExtras();
         assert extras != null;
@@ -45,7 +44,7 @@ public class MethodVIIIActivity extends AppCompatActivity {
 
         Button buttonNext = findViewById(R.id.button_goMethodIX);
         buttonNext.setOnClickListener((view) -> {
-            ref.child(rh).child("Testes").child("t08").setValue(resultado.getText().toString());
+            ref.child(rh).child("Testes").child("t08").setValue(total);
             startMethodActivity(MethodIXActivity.class);
         });
 
@@ -89,6 +88,8 @@ public class MethodVIIIActivity extends AppCompatActivity {
 
         CheckBox cb13 = findViewById(R.id.cb13);
         checked.add(cb13);
+
+        TextView resultado = findViewById(R.id.result);
 
         for (CheckBox box : checked){
             box.setOnClickListener(new View.OnClickListener() {

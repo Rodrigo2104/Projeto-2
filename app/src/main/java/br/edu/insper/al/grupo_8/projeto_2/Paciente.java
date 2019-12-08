@@ -107,13 +107,21 @@ public class Paciente {
         this.t05 = t05;
     }
 
-    public String getT06() { return t06; }
+    public String getT06() {
+        return t06;
+    }
 
-    public void setT06(String t06) { this.t06 = t06; }
+    public void setT06(String t06) {
+        this.t06 = t06;
+    }
 
-    public String getT07() { return t07; }
+    public String getT07() {
+        return t07;
+    }
 
-    public void setT07(String t07) { this.t07 = t07; }
+    public void setT07(String t07) {
+        this.t07 = t07;
+    }
 
     public String getT08() {
         return t08;
@@ -139,13 +147,21 @@ public class Paciente {
         this.t10 = t10;
     }
 
-    public String getT11() { return t11; }
+    public String getT11() {
+        return t11;
+    }
 
-    public void setT11(String t11) { this.t11 = t11; }
+    public void setT11(String t11) {
+        this.t11 = t11;
+    }
 
-    public String getT12() { return t12; }
+    public String getT12() {
+        return t12;
+    }
 
-    public void setT12(String t12) { this.t12 = t12; }
+    public void setT12(String t12) {
+        this.t12 = t12;
+    }
 
     public String getRenda_familiar() {
         return renda_familiar;
