@@ -90,8 +90,6 @@ public class MethodXIActivity extends AppCompatActivity {
     private RadioButton radioButton54;
     private RadioButton radioButton55;
 
-    private RadioGroup rg;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -172,45 +170,63 @@ public class MethodXIActivity extends AppCompatActivity {
 
     }
 
-    public void checRad(View v) {
+    public void checkone(View v) {
 
         if (radioButton1.isChecked()) {
             resultados.put("Os profissionais que fazem o atendimento são educados e cordiais? Como o Sr (a) avalia este aspecto?", radioButton1.getText().toString());
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
 
         if (radioButton2.isChecked()) {
             resultados.put("Os profissionais que fazem o atendimento são educados e cordiais? Como o Sr (a) avalia este aspecto?", radioButton2.getText().toString());
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
-
 
         if (radioButton3.isChecked()) {
             resultados.put("Os profissionais que fazem o atendimento são educados e cordiais? Como o Sr (a) avalia este aspecto?", radioButton3.getText().toString());
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton4.isChecked()) {
             resultados.put("Os profissionais que fazem o atendimento são educados e cordiais? Como o Sr (a) avalia este aspecto?", radioButton4.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton5.isChecked()) {
             resultados.put("Os profissionais que fazem o atendimento são educados e cordiais? Como o Sr (a) avalia este aspecto?", radioButton5.getText().toString());
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         //============================
         if (radioButton6.isChecked()) {
             resultados.put("Como o Sr (a) considera a estrutura hospitalar em termos de conforto e privacidade do usuário?", radioButton6.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton7.isChecked()) {
             resultados.put("Como o Sr (a) considera a estrutura hospitalar em termos de conforto e privacidade do usuário?", radioButton7.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
 
         if (radioButton8.isChecked()) {
             resultados.put("Como o Sr (a) considera a estrutura hospitalar em termos de conforto e privacidade do usuário?", radioButton8.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton9.isChecked()) {
             resultados.put("Como o Sr (a) considera a estrutura hospitalar em termos de conforto e privacidade do usuário?", radioButton9.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton10.isChecked()) {
             resultados.put("Como o Sr (a) considera a estrutura hospitalar em termos de conforto e privacidade do usuário?", radioButton10.getText().toString());
 
@@ -218,77 +234,105 @@ public class MethodXIActivity extends AppCompatActivity {
         //============================
         if (radioButton11.isChecked()) {
             resultados.put("Como é o estado de conservação do local de atendimento?", radioButton11.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
 
         if (radioButton12.isChecked()) {
             resultados.put("Como é o estado de conservação do local de atendimento?", radioButton12.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton13.isChecked()) {
             resultados.put("Como é o estado de conservação do local de atendimento?", radioButton13.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton14.isChecked()) {
             resultados.put("Como é o estado de conservação do local de atendimento?", radioButton15.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton15.isChecked()) {
             resultados.put("Como é o estado de conservação do local de atendimento?", radioButton15.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         //============================
         if (radioButton16.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton16.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton17.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton17.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton18.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton18.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
 
         if (radioButton19.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton19.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton20.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton20.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
         //============================
         if (radioButton21.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton21.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton22.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton22.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton23.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton23.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton24.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton24.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
 
         if (radioButton25.isChecked()) {
             resultados.put("Como o Sr (a) considera o espaço físico para acolher o acompanhante? (É suficiente?)", radioButton25.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
         //============================
         if (radioButton26.isChecked()) {
             resultados.put("Os profissionais contribuem para que o (a) Sr (a) se sinta confortável e seguro? Como o Sr (a) avalia este aspecto?", radioButton26.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
+
         if (radioButton27.isChecked()) {
             resultados.put("Os profissionais contribuem para que o (a) Sr (a) se sinta confortável e seguro? Como o Sr (a) avalia este aspecto?", radioButton27.getText().toString());
-
+        } else {
+            resultados.put("Sem Resposta", "Nada");
         }
         if (radioButton28.isChecked()) {
             resultados.put("Os profissionais contribuem para que o (a) Sr (a) se sinta confortável e seguro? Como o Sr (a) avalia este aspecto?", radioButton28.getText().toString());
@@ -411,5 +455,4 @@ public class MethodXIActivity extends AppCompatActivity {
 
         }
     }
-
 }

@@ -37,6 +37,9 @@ public class MethodVIIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_vii);
 
+        TextView result = findViewById(R.id.result);
+        TextView numTotal = findViewById(R.id.total);
+
         Bundle extras = getIntent().getExtras();
         assert extras != null;
         rh = extras.getString("rh");
@@ -49,7 +52,7 @@ public class MethodVIIActivity extends AppCompatActivity {
 
         Button buttonNext = findViewById(R.id.button_goMethodVIII);
         buttonNext.setOnClickListener((view) -> {
-            ref.child(rh).child("Testes").child("t07").setValue(total);
+            ref.child(rh).child("Testes").child("t07").setValue(numTotal.getText().toString());
             startMethodActivity(MethodVIIIActivity.class);
         });
 
@@ -176,9 +179,6 @@ public class MethodVIIActivity extends AppCompatActivity {
         // UTI (apache > 10)
         CheckBox cb23 = findViewById(R.id.cb23);
         checkedGrave.add(cb23);
-
-        TextView result = findViewById(R.id.result);
-        TextView numTotal = findViewById(R.id.total);
 
         for (CheckBox box : checkedLeve){
             box.setOnClickListener(new View.OnClickListener() {
