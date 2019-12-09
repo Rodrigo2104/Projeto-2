@@ -85,13 +85,11 @@ public class ResultsActivity extends AppCompatActivity {
                 TextView t03 = findViewById(R.id.t03);
                 TextView t04 = findViewById(R.id.t04);
                 TextView t05 = findViewById(R.id.t05);
-                TextView t06 = findViewById(R.id.t06);
                 TextView t07 = findViewById(R.id.t07);
                 TextView t08 = findViewById(R.id.t08);
                 TextView t09 = findViewById(R.id.t09);
                 TextView t10 = findViewById(R.id.t10);
                 TextView t11 = findViewById(R.id.t11);
-                TextView t12 = findViewById(R.id.t12);
                 Paciente pac = new Paciente();
 
                 pac.setNome(dataSnapshot.child("Info").child("nome").getValue(String.class));
@@ -138,13 +136,11 @@ public class ResultsActivity extends AppCompatActivity {
                 pac.setT03(dataSnapshot.child("Testes").child("t03").getValue(String.class));
                 pac.setT04(dataSnapshot.child("Testes").child("t04").getValue(String.class));
                 pac.setT05(dataSnapshot.child("Testes").child("t05").getValue(String.class));
-                pac.setT06(dataSnapshot.child("Testes").child("t06").getValue(String.class));
                 pac.setT07(dataSnapshot.child("Testes").child("t07").getValue(String.class));
                 pac.setT08(dataSnapshot.child("Testes").child("t08").getValue(String.class));
                 pac.setT09(dataSnapshot.child("Testes").child("t09").getValue(String.class));
                 pac.setT10(dataSnapshot.child("Testes").child("t10").getValue(String.class));
                 pac.setT11(dataSnapshot.child("Testes").child("t11").getValue(String.class));
-                pac.setT12(dataSnapshot.child("Testes").child("t12").getValue(String.class));
 
                 nome.setText(pac.getNome());
                 data.setText(pac.getData_internacao());
@@ -190,13 +186,11 @@ public class ResultsActivity extends AppCompatActivity {
                 t03.setText(pac.getT03());
                 t04.setText(pac.getT04());
                 t05.setText(pac.getT05());
-                t06.setText(pac.getT06());
                 t07.setText(pac.getT07());
                 t08.setText(pac.getT08());
                 t09.setText(pac.getT09());
                 t10.setText(pac.getT10());
                 t11.setText(pac.getT11());
-                t12.setText(pac.getT12());
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {

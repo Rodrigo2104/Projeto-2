@@ -9,17 +9,19 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.gson.Gson;
 import java.util.HashMap;
-
-import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodXIIActivity extends AppCompatActivity {
-
+    private String rh;
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
+        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
@@ -27,6 +29,8 @@ public class MethodXIIActivity extends AppCompatActivity {
 
 
     private HashMap<String, String> resultados = new HashMap<String, String>();
+    private Gson gson = new Gson();
+    private String save;
 
     private TextView resultado;
 
@@ -94,12 +98,22 @@ public class MethodXIIActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_xii);
 
+        Bundle extras = getIntent().getExtras();
+        assert extras != null;
+        rh = extras.getString("rh");
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("Pacientes");
+
         Button buttonGoBack = findViewById(R.id.button_goMenu);
         buttonGoBack.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
 
-        Button buttonNext = findViewById(R.id.button_goEnd);
-        buttonNext.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+        Button buttonEnd = findViewById(R.id.button_goEnd);
+        buttonEnd.setOnClickListener((view) -> {
+            ref.child(rh).child("Testes").child("t12").setValue(this.save);
+            startMethodActivity(TestsActivity.class);
+        });
 
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
@@ -399,6 +413,8 @@ public class MethodXIIActivity extends AppCompatActivity {
             resultados.put("Como o Sr (a) considera a resolutividade do atendimento?", radioButton55.getText().toString());
 
         }
+        save = gson.toJson(resultados);
+
     }
 
 }

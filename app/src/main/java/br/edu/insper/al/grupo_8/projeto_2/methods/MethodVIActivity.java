@@ -9,6 +9,10 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.gson.Gson;
+
 import org.w3c.dom.Text;
 
 import java.lang.reflect.Array;
@@ -21,6 +25,9 @@ import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 public class MethodVIActivity extends AppCompatActivity {
     private String rh;
     private HashMap<String, String> testeF = new HashMap<String, String>();
+
+    private Gson gson = new Gson();
+    private String save;
 
     //METODO 1
     private LinkedHashMap<Integer, HashMap> TESTE1 = new LinkedHashMap<>();
@@ -158,11 +165,17 @@ public class MethodVIActivity extends AppCompatActivity {
         assert extras != null;
         rh = extras.getString("rh");
 
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("Pacientes");
+
         Button buttonGoMenu = findViewById(R.id.button_goMenu);
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
         Button buttonNext = findViewById(R.id.button_goMethodVII);
-        buttonNext.setOnClickListener((view) -> startMethodActivity(MethodVIIActivity.class));
+        buttonNext.setOnClickListener((view) -> {
+            ref.child(rh).child("Testes").child("t06").setValue(this.save);
+            startMethodActivity(MethodVIIActivity.class);
+        });
 
         quanto_essa_medicacao_a1 = (EditText) findViewById(R.id.quanto_essa_medicacao_a1);
         incomoda2a = (EditText) findViewById(R.id.incomoda2a);
@@ -248,9 +261,9 @@ public class MethodVIActivity extends AppCompatActivity {
 
 
     }
-        //===================================================================================
-        //Primeiro Teste
-        //===================================================================================
+    //===================================================================================
+    //Primeiro Teste
+    //===================================================================================
     public void checkone(View v){
 
         teste1a.put("Nome da medicação e dosagem",ultima_semana_a1.getText().toString());
@@ -476,7 +489,7 @@ public class MethodVIActivity extends AppCompatActivity {
         TESTEF.put(1,TESTE1);
         TESTEF.put(2,TESTE2);
         TESTEF.put(3,TESTE3);
-        System.out.print(TESTEF);
+        save = gson.toJson(TESTEF);
 
     }
 
