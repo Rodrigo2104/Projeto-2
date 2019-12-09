@@ -34,7 +34,6 @@ public class MethodXActivity extends AppCompatActivity {
         setContentView(R.layout.activity_method_x);
         TextView resultadoSoma = findViewById(R.id.resultadox);
 
-
         Bundle extras = getIntent().getExtras();
         assert extras != null;
         rh = extras.getString("rh");

@@ -43,10 +43,6 @@ public class MethodVIIIActivity extends AppCompatActivity {
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
         Button buttonNext = findViewById(R.id.button_goMethodIX);
-        buttonNext.setOnClickListener((view) -> {
-            ref.child(rh).child("Testes").child("t08").setValue(total);
-            startMethodActivity(MethodIXActivity.class);
-        });
 
         checked = new LinkedList<>();
 
@@ -92,19 +88,21 @@ public class MethodVIIIActivity extends AppCompatActivity {
         TextView resultado = findViewById(R.id.result);
 
         for (CheckBox box : checked){
-            box.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (box.isChecked()){
-                        total ++;
-                    }
-
-                    if (!box.isChecked()){
-                        total --;
-                    }
-                    resultado.setText(String.valueOf(total));
+            box.setOnClickListener(v -> {
+                if (box.isChecked()){
+                    total ++;
                 }
+
+                if (!box.isChecked()){
+                    total --;
+                }
+                resultado.setText(String.valueOf(total));
             });
         }
+
+        buttonNext.setOnClickListener((view) -> {
+            ref.child(rh).child("Testes").child("t08").setValue(resultado.getText().toString());
+            startMethodActivity(MethodIXActivity.class);
+        });
     }
 }

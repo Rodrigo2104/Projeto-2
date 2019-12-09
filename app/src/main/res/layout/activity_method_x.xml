@@ -45,7 +45,7 @@
                 android:background="@drawable/custom_buttom"
                 android:text="Salvar e Continuar"
                 android:textAllCaps="true"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
@@ -55,7 +55,6 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
@@ -67,7 +66,6 @@
         android:id="@+id/instructions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/title"
         android:layout_marginLeft="30sp"
         android:layout_marginRight="30sp"
         android:layout_marginBottom="20dp"
@@ -77,9 +75,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/totalidade"
-        android:layout_below="@+id/instructions">
+        android:layout_height="match_parent">
 
 
         <LinearLayout
@@ -203,7 +199,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox1"
+                android:id="@+id/textox2"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu sou capaz de depender de mim mais do que qualquer outra pessoa"
@@ -261,7 +257,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox2"
+                android:id="@+id/textox3"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Manter interesse nas coisas é importante para mim"
@@ -319,7 +315,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox2"
+                android:id="@+id/textox4"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu posso estar por minha conta se eu precisar"
@@ -377,7 +373,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox3"
+                android:id="@+id/textox5"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu sinto orgulho de ter realizado coisas em minha vida"
@@ -435,7 +431,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox3"
+                android:id="@+id/textox6"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu costumo aceitar as coisas sem muita preocupação"
@@ -493,7 +489,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox4"
+                android:id="@+id/textox7"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu sou amigo de mim mesmo"
@@ -551,7 +547,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox4"
+                android:id="@+id/textox8"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu sinto que posso lidar com várias coisas ao mesmo tempo"
@@ -609,7 +605,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox5"
+                android:id="@+id/textox9"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu sou determinado"
@@ -667,7 +663,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox5"
+                android:id="@+id/textox10"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu raramente penso sobre o objetivo das coisas"
@@ -725,7 +721,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox6"
+                android:id="@+id/textox11"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu faço as coisas um dia de cada vez"
@@ -783,7 +779,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox6"
+                android:id="@+id/textox12"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu posso enfrentar tempos difíceis porque já experimentei dificuldades antes"
@@ -841,7 +837,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox7"
+                android:id="@+id/textox13"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu sou disciplinado"
@@ -899,7 +895,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox7"
+                android:id="@+id/textox14"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu mantenho interesse nas coisas"
@@ -957,7 +953,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox8"
+                android:id="@+id/textox15"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu normalmente posso achar motivo para rir"
@@ -1015,7 +1011,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox8"
+                android:id="@+id/textox16"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Minha crença em mim mesmo me leva a atravessar tempos difíceis"
@@ -1073,7 +1069,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox9"
+                android:id="@+id/textox17"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Em uma emergência, eu sou uma pessoa em quem as pessoas podem contar"
@@ -1131,7 +1127,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox9"
+                android:id="@+id/textox18"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu posso geralmente olhar uma situação em diversas maneiras"
@@ -1189,7 +1185,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox10"
+                android:id="@+id/textox19"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Às vezes eu me obrigo a fazer coisas querendo ou não"
@@ -1247,7 +1243,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox10"
+                android:id="@+id/textox20"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Minha vida tem sentido"
@@ -1305,7 +1301,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox11"
+                android:id="@+id/textox21"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu não insisto em coisas as quais eu não posso fazer nada sobre elas"
@@ -1363,7 +1359,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox11"
+                android:id="@+id/textox22"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Quando eu estou numa situação difícil, eu normalmente acho uma saída"
@@ -1421,7 +1417,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox12"
+                android:id="@+id/textox23"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Eu tenho energia suficiente para fazer o que eu tenho que fazer"
@@ -1479,7 +1475,7 @@
                     android:text="7"/>
             </RadioGroup>
             <TextView
-                android:id="@+id/textox12"
+                android:id="@+id/textox24"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Tudo bem se há pessoas que não gostam de mim"
@@ -1536,9 +1532,6 @@
                     android:layout_margin="7sp"
                     android:text="7"/>
             </RadioGroup>
-
-
-
         </LinearLayout>
     </ScrollView>
 

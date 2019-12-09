@@ -45,12 +45,6 @@ public class MethodIIIActivity extends AppCompatActivity {
         Button buttonGoMenu = findViewById(R.id.button_goMenu);
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
-        Button buttonNext = findViewById(R.id.button_goMethodIV);
-        buttonNext.setOnClickListener((view) -> {
-            ref.child(rh).child("Testes").child("t03").setValue(soma);
-            startMethodActivity(MethodIVActivity.class);
-        });
-
         CheckBox cb1 = findViewById(R.id.checkBox);
         CheckBox cb2 = findViewById(R.id.checkBox1);
         CheckBox cb3 = findViewById(R.id.checkBox2);
@@ -100,5 +94,11 @@ public class MethodIIIActivity extends AppCompatActivity {
                 resultadoSoma.setText(String.valueOf(soma));
             });
         }
+
+        Button buttonNext = findViewById(R.id.button_goMethodIV);
+        buttonNext.setOnClickListener((view) -> {
+            ref.child(rh).child("Testes").child("t03").setValue(resultadoSoma.getText().toString());
+            startMethodActivity(MethodIVActivity.class);
+        });
     }
 }

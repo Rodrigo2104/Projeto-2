@@ -133,7 +133,7 @@ public class MethodVActivity extends AppCompatActivity {
                             soma += Integer.parseInt(cblTest.getText().toString().substring(0,1));
                         }
                     }
-                    resultSoma.setText("TOTAL : " + String.valueOf(soma));
+                    resultSoma.setText(String.valueOf(soma));
                 }
             });
         }

@@ -10,38 +10,34 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.HashMap;
-
-
-import br.edu.insper.al.grupo_8.projeto_2.HomeActivity;
 import br.edu.insper.al.grupo_8.projeto_2.R;
 import br.edu.insper.al.grupo_8.projeto_2.TestsActivity;
 
 public class MethodXIActivity extends AppCompatActivity {
+    private String rh;
 
     private void startMethodActivity(Class classe) {
         Intent intent = new Intent(this, classe);
+        intent.putExtra("rh", rh);
         startActivity(intent);
     }
 
     private HashMap<RadioButton, Integer> testes = new HashMap<RadioButton, Integer>();
-    private HashMap<CheckBox, Integer> testes_checkBox = new HashMap<CheckBox, Integer>();
-    private HashMap<CheckBox, Integer> testes_meio = new HashMap<CheckBox, Integer>();
-
     private int Resultados;
-
     private TextView resultado;
 
     private RadioButton radioButton1;
     private RadioButton radioButton2;
     private RadioButton radioButton3;
     private RadioButton radioButton4;
-
     private RadioButton radioButton1a;
     private RadioButton radioButton2a;
     private RadioButton radioButton3a;
     private RadioButton radioButton4a;
-
     private RadioButton radioButton5;
     private RadioButton radioButton6;
     private RadioButton radioButton7;
@@ -82,20 +78,27 @@ public class MethodXIActivity extends AppCompatActivity {
     private RadioButton radioButton41;
     private RadioButton radioButton42;
     private RadioButton radioButton43;
-    private RadioButton radioButton44;
-    private RadioGroup rg;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method_xi);
 
-        Button buttonGoBack = findViewById(R.id.button_goMethodXII);
-        buttonGoBack.setOnClickListener((view) -> startMethodActivity(MethodXIActivity.class));
+        Bundle extras = getIntent().getExtras();
+        assert extras != null;
+        rh = extras.getString("rh");
 
-        Button buttonNext = findViewById(R.id.button_goMenu);
-        buttonNext.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("Pacientes");
+
+        Button buttonGoNext = findViewById(R.id.button_goMethodXII);
+        buttonGoNext.setOnClickListener((view) -> {
+            ref.child(rh).child("Testes").child("t11").setValue(Integer.toString(this.Resultados));
+            startMethodActivity(MethodXIIActivity.class);
+        });
+
+        Button buttonGoMenu = findViewById(R.id.button_goMenu);
+        buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
         radioButton1 = (RadioButton) findViewById(R.id.radioButton1);
         radioButton2 = (RadioButton) findViewById(R.id.radioButton2);
@@ -491,18 +494,14 @@ public class MethodXIActivity extends AppCompatActivity {
             testes.put(radioButton43,0);
         }
         resultados();
-
     }
 
     public void resultados(){
         this.Resultados = 0;
         for (int e : testes.values()){
-
             this.Resultados += e;
         }
     }
-
-
 }
 
 

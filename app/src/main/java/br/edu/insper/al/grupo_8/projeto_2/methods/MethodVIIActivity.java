@@ -48,10 +48,6 @@ public class MethodVIIActivity extends AppCompatActivity {
         buttonGoMenu.setOnClickListener((view) -> startMethodActivity(TestsActivity.class));
 
         Button buttonNext = findViewById(R.id.button_goMethodVIII);
-        buttonNext.setOnClickListener((view) -> {
-            ref.child(rh).child("Testes").child("t07").setValue(total);
-            startMethodActivity(MethodVIIIActivity.class);
-        });
 
         checkedAusente = new LinkedList<>();
         checkedLeve = new LinkedList<>();
@@ -253,5 +249,10 @@ public class MethodVIIActivity extends AppCompatActivity {
                 }
             });
         }
+
+        buttonNext.setOnClickListener((view) -> {
+            ref.child(rh).child("Testes").child("t07").setValue(numTotal.getText().toString());
+            startMethodActivity(MethodVIIIActivity.class);
+        });
     }
 }
